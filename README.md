@@ -1,0 +1,2 @@
+forbrukerhjelpen-static
+=======================
