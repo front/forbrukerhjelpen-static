@@ -9,4 +9,18 @@
 		@include sassy-button("matte", 0, 18px, #754c6c, #672a55, $color-text-light, "false");
 		border: 1px solid #3a2a46;
 	}
+
+	&.btn-complex {
+    padding-right: 16px !important;
+    span {
+      display: inline-block;
+      margin: 5px 8px;
+      padding-right: 30px;
+      border-right: 1px solid lighten(#672a55, 46);
+      -webkit-font-smoothing: antialiased;
+    }
+    i {
+      vertical-align: middle;
+    }
+  }
 }

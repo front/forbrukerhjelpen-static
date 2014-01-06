@@ -28,9 +28,17 @@
 		padding: 70px 0;
 		z-index: 2;
 		ul {
-			padding-left: 26px;
+			padding-left: 0;
 			li {
 				font-size: em(22,16);
+				list-style: none;
+				&:before {
+					content: "g";
+					font-family: "forbrukerhjelpen";
+					font-size: em(14,16);
+					width: 30px;
+					display: inline-block;
+				}
 			}
 		}
 		p {
