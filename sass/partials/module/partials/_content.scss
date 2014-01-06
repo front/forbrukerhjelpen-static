@@ -14,6 +14,7 @@
 	// big hero unit image
 	position: relative;
 	overflow: hidden;
+	height: 660px;
 
 	img {
 		position: absolute;
@@ -50,10 +51,6 @@
 				color: $color-purple;
 			}
 		}
-	}
-	footer {
-		margin: 170px 0 70px;
-		font-size: em(14,16);
 	}
 }
 
