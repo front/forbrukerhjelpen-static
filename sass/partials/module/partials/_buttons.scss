@@ -1,0 +1,12 @@
+.btn {
+	font-weight: 400;
+	font-style: italic;
+	&.btn-blue {
+		@include sassy-button("matte", 0, 18px, #9fd8d8, #92d2d2, $color-text-dark, "false");
+		border: 1px solid #5db3b3;
+	}
+	&.btn-purple {
+		@include sassy-button("matte", 0, 18px, #754c6c, #672a55, $color-text-light, "false");
+		border: 1px solid #3a2a46;
+	}
+}

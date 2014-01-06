@@ -1,0 +1,65 @@
+.light-blue-block {
+	background-color: $color-blue-light;
+}
+
+// Hero unit
+.hero {
+	// big hero unit image
+	img {
+		position: absolute;
+		height: 100%;
+		right: 0;
+		bottom: 0;
+		z-index: 1;
+	}
+	// teaser text
+	.teaser {
+		position: relative;
+		max-width: 580px;
+		padding: 70px 0;
+		z-index: 2;
+		ul {
+			padding-left: 26px;
+			li {
+				font-size: em(22,16);
+			}
+		}
+		p {
+			font-size: em(14,16);
+			span {
+				font-weight: 600;
+				font-size: em(22,14);
+				color: $color-purple;
+			}
+		}
+	}
+}
+
+// Information items
+.info-items {
+	@extend .clearfix;
+	.info-item {
+		margin-bottom: 10px;
+		min-height: 105px;
+
+		p {
+			color: $color-grey;
+		}
+
+		@include breakpoint($break-min $break-medium) {
+			img {
+				float: left;
+				margin: 0 15px 0 0;
+			}
+		}
+
+		@include breakpoint($break-medium) {
+			@include grid-span(4);
+			margin-right: 12px;
+			text-align: center;
+			img {
+				margin-bottom: 24px;
+			}
+		}
+	}
+}

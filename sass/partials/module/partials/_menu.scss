@@ -1,0 +1,21 @@
+nav {
+	position: absolute;
+	top: 5px;
+	right: 0;
+
+	ul {
+		list-style: none;
+		padding: 0px;
+		margin: 0px;
+		li {
+			display: block;
+			float: left;
+			padding: 0px 8px;
+			font-size: em(14,16);
+			a {
+				text-decoration: none;
+				color: $color-text-dark;
+			}
+		}
+	}
+}

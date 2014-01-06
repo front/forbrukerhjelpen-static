@@ -1,0 +1,22 @@
+h1 {
+	font-size: em(36,16);
+	font-weight: 300;
+	color: $color-purple;
+	margin: 0 0 0.3em 0;
+}
+h2 {
+	@extend h1;
+	font-size: em(32,16);
+}
+h3 {
+	font-size: em(18,16);
+	font-weight: 300;
+	text-transform: uppercase;
+	margin: 0;
+}
+p {
+	margin: 0 0 0.3em 0;
+}
+a {
+	color: $color-purple;
+}

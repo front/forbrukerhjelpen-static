@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.l-container {
+  position: relative;
+  width: 100%;
+  max-width: $break-large;
+
+  @include breakpoint($break-large) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
