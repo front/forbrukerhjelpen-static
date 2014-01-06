@@ -400,7 +400,7 @@ a {
   content: "";
   width: 130px;
   height: 20px;
-  background: url(img/info-item-left.png) center left no-repeat;
+  background: url(../img/info-item-left.png) center left no-repeat;
   display: inline-block;
 }
 /* line 78, ../sass/partials/module/partials/_content.scss */
@@ -408,7 +408,7 @@ a {
   content: "";
   width: 130px;
   height: 20px;
-  background: url(img/info-item-right.png) center right no-repeat;
+  background: url(../img/info-item-right.png) center right no-repeat;
   display: inline-block;
 }
 @media (min-width: 960px) {
