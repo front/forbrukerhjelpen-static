@@ -20,6 +20,7 @@
 		right: 0;
 		bottom: 0;
 		z-index: 1;
+		height: 100%;
 	}
 	// teaser text
 	.teaser {
@@ -71,14 +72,14 @@
 			content: "";
 			width: 130px;
 			height: 20px;
-			background: url(/img/info-item-left.png) center left no-repeat;
+			background: url(img/info-item-left.png) center left no-repeat;
 			display: inline-block;
 		}
 		h2:after {
 			content: "";
 			width: 130px;
 			height: 20px;
-			background: url(/img/info-item-right.png) center right no-repeat;
+			background: url(img/info-item-right.png) center right no-repeat;
 			display: inline-block;
 		}
 
