@@ -10,10 +10,25 @@
     </head>
     <body>
 
-      <header>
+      <header class="header">
         <div class="l-container">
+          <nav class="main-menu">
+            <ul>
+              <li><a href="javascript:void(0)">Fordeler</a></li>
+              <li><a href="javascript:void(0)">Referanser</a></li>
+              <li><a href="javascript:void(0)">Kundeservice</a></li>
+              <li><a href="javascript:void(0)">Norge</a></li>
+            </ul>
+          </nav>
           <div class="logo"><a href="index.html"><img src="img/logo.png"></a></div>
-          <nav>
+        </div>
+      </header>
+
+      {{ content }}
+
+      <footer class="footer">
+        <div class="l-container menu-block clearfix">
+          <nav class="main-menu">
             <ul>
               <li><a href="javascript:void(0)">Fordeler</a></li>
               <li><a href="javascript:void(0)">Referanser</a></li>
@@ -22,15 +37,20 @@
             </ul>
           </nav>
         </div>
-      </header>
-
-      {{ content }}
-
-      <footer>
-        <div class="l-container">
-          this is the footer
+        <div>
+          <div class="l-container padded-block">
+            <div class="logo" style="float: left">
+              <a href="index.html"><img src="img/logo.png" alt="Forbrukerhjelpen"></a>
+            </div>
+            <p>Trenger du hjelp? Send oss en e-post</p>
+            <button class="btn btn-blue">Kontakt oss</button>
+          </div>
+        </div>
+        <div>
+          <div class="l-container copyright">
+            Copyright &copy; 2014 Forbrukerhjelpen
+          </div>
         </div>
       </footer>
-
     </body>
 </html>

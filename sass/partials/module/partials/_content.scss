@@ -1,13 +1,22 @@
 .light-blue-block {
 	background-color: $color-blue-light;
 }
+.dark-blue-block {
+	position: absolute;
+	z-index: 10;
+	bottom: 110px;
+	background-color: #92d2d2;
+	width: 100%;
+}
 
 // Hero unit
 .hero {
 	// big hero unit image
+	position: relative;
+	overflow: hidden;
+
 	img {
 		position: absolute;
-		height: 100%;
 		right: 0;
 		bottom: 0;
 		z-index: 1;
@@ -33,50 +42,55 @@
 			}
 		}
 	}
+	footer {
+		margin: 170px 0 70px;
+		font-size: em(14,16);
+	}
 }
 
 // Information items
 .info-items {
 	@extend .clearfix;
+	padding: 60px 0;
+
 	header {
 		margin: 0 0 1em 0;
-		.item-title-left, .item-title-right {
-			position: relative;
-			display: inline-block;
-			min-width: 83px;
-			min-height: 6px;
-			img {
-				position: absolute;
-				bottom: 5px;
-			}
+
+		h2 {
+			margin-bottom: 25px;
 		}
-		.item-title-left {
-			margin-right: 50px;
-			img {
-				left: 0;
-			}
-		}					
-		.item-title-right {
-			margin-left: 50px;
-			img {
-				right: 0;
-			}
-		}
-		.item-title {
+		h2:before {
+			content: "";
+			width: 130px;
+			height: 20px;
+			background: url(/img/info-item-left.png) center left no-repeat;
 			display: inline-block;
-			margin-top: 5px;
+		}
+		h2:after {
+			content: "";
+			width: 130px;
+			height: 20px;
+			background: url(/img/info-item-right.png) center right no-repeat;
+			display: inline-block;
 		}
 
 		@include breakpoint($break-medium) {
 			text-align: center;
-		}		
+		}
 	}
 	.info-item {
 		margin-bottom: 10px;
 		min-height: 105px;
 
 		p {
+			margin-top: 20px;
 			color: $color-grey-dark;
+			font-size: em(18,16);
+			// word-break: break-all;
+
+			&.recommend {
+				color: $color-text-dark;
+			}
 		}
 
 		@include breakpoint($break-min $break-medium) {
@@ -87,14 +101,20 @@
 		}
 
 		@include breakpoint($break-medium) {
-			@include grid-span(4);
-			margin-right: 12px;
+			@include float-span(4);
+      &:nth-of-type(3n) {
+        margin-right: 0;
+      }
 			text-align: center;
 			img {
 				margin-bottom: 24px;
 			}
 		}
 	}
+}
+
+hr {
+  border-top: 5px solid lighten($color-grey,50);
 }
 
 // Tables

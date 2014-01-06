@@ -1,0 +1,68 @@
+
+.arrow_box {
+  height: 50px;
+  background-color: #242d2d; position: absolute; top: -50px; color: #fff; padding: 12px 15px;
+  font-size: 18px;
+
+  &:after {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-top-color: #242d2d;
+    border-width: 10px;
+    margin-left: -10px;
+  }
+}
+
+.subscribe-form {
+  padding: 25px 0;
+
+  & > div {
+    position: relative;
+    float: left;
+    height: 58px;
+    width: 20%;
+    margin-right: 10px;
+
+    &.light {
+      padding: 12px 10px;
+      background-color: #fff;
+    }
+    &.dark {
+      width: 17%;
+      font-size: em(14,16);
+      margin-right: 20px;
+    }
+    &.small {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  img {
+    position: absolute;
+  }
+  input[type="text"] {
+    border: none;
+    margin: 5px 0 0 30px;
+    width: 180px;
+    background: none;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  button span {
+    display: inline-block;
+    border-right: 1px solid lighten(#672a55, 46);
+    margin: 5px 8px;
+    padding-right: 30px;
+    font-weight: 400 !important;
+    font-size: em(17,16);
+    -webkit-font-smoothing: antialiased;
+  }
+}
