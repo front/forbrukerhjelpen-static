@@ -7,9 +7,13 @@ body {
   position: relative;
   width: 100%;
   max-width: $break-large;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @include breakpoint($break-large) {
     margin-left: auto;
     margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
