@@ -110,6 +110,11 @@ body {
   clear: both;
 }
 
+/* line 17, ../sass/partials/module/partials/_helpers.scss */
+.text-center {
+  text-align: center;
+}
+
 /* line 1, ../sass/partials/module/partials/_typography.scss */
 h1, h2 {
   font-size: 2.25em;
@@ -333,23 +338,66 @@ nav ul li a {
 }
 
 /* line 41, ../sass/partials/module/partials/_content.scss */
+.info-items header {
+  margin: 0 0 1em 0;
+}
+/* line 43, ../sass/partials/module/partials/_content.scss */
+.info-items header .item-title-left, .info-items header .item-title-right {
+  position: relative;
+  display: inline-block;
+  min-width: 83px;
+  min-height: 6px;
+}
+/* line 48, ../sass/partials/module/partials/_content.scss */
+.info-items header .item-title-left img, .info-items header .item-title-right img {
+  position: absolute;
+  bottom: 5px;
+}
+/* line 53, ../sass/partials/module/partials/_content.scss */
+.info-items header .item-title-left {
+  margin-right: 50px;
+}
+/* line 55, ../sass/partials/module/partials/_content.scss */
+.info-items header .item-title-left img {
+  left: 0;
+}
+/* line 59, ../sass/partials/module/partials/_content.scss */
+.info-items header .item-title-right {
+  margin-left: 50px;
+}
+/* line 61, ../sass/partials/module/partials/_content.scss */
+.info-items header .item-title-right img {
+  right: 0;
+}
+/* line 65, ../sass/partials/module/partials/_content.scss */
+.info-items header .item-title {
+  display: inline-block;
+  margin-top: 5px;
+}
+@media (min-width: 960px) {
+  /* line 41, ../sass/partials/module/partials/_content.scss */
+  .info-items header {
+    text-align: center;
+  }
+}
+/* line 74, ../sass/partials/module/partials/_content.scss */
 .info-items .info-item {
   margin-bottom: 10px;
   min-height: 105px;
 }
-/* line 45, ../sass/partials/module/partials/_content.scss */
+/* line 78, ../sass/partials/module/partials/_content.scss */
 .info-items .info-item p {
   color: #787878;
 }
 @media (min-width: 320px) and (max-width: 960px) {
-  /* line 50, ../sass/partials/module/partials/_content.scss */
+  /* line 83, ../sass/partials/module/partials/_content.scss */
   .info-items .info-item img {
     float: left;
     margin: 0 15px 0 0;
   }
 }
 @media (min-width: 960px) {
-  /* line 41, ../sass/partials/module/partials/_content.scss */
+  /* line 74, ../sass/partials/module/partials/_content.scss */
   .info-items .info-item {
     width: 31.91489%;
     float: left;
@@ -359,10 +407,40 @@ nav ul li a {
     margin-right: 12px;
     text-align: center;
   }
-  /* line 60, ../sass/partials/module/partials/_content.scss */
+  /* line 93, ../sass/partials/module/partials/_content.scss */
   .info-items .info-item img {
     margin-bottom: 24px;
   }
+}
+
+/* line 101, ../sass/partials/module/partials/_content.scss */
+table {
+  width: 100%;
+  border-spacing: 0px;
+}
+/* line 104, ../sass/partials/module/partials/_content.scss */
+table thead {
+  background-color: #ededed;
+}
+/* line 106, ../sass/partials/module/partials/_content.scss */
+table thead th {
+  padding: 12px;
+  border-right: 1px solid #d5d5d5;
+  font-size: 0.75em;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: left;
+}
+/* line 116, ../sass/partials/module/partials/_content.scss */
+table tbody td {
+  padding: 12px;
+  font-size: 1.125em;
+  text-align: left;
+}
+/* line 121, ../sass/partials/module/partials/_content.scss */
+table tbody td.value {
+  font-weight: 600;
+  color: #692f59;
 }
 
 /* line 1, ../sass/partials/module/partials/_footer.scss */
