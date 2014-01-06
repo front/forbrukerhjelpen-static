@@ -71,3 +71,15 @@
 .icon-arrow-right:before {
   content: "k";
 }
+.icon-check-off:before {
+  content: "l";
+}
+.icon-check-on:before {
+  content: "m";
+}
+.icon-radio-off:before {
+  content: "n";
+}
+.icon-radio-on:before {
+  content: "o";
+}
