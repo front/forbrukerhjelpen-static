@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: "forbrukerhjelpen";
-  src:url("/fonts/forbrukerhjelpen.eot");
-  src:url("/fonts/forbrukerhjelpen.eot?#iefix") format("embedded-opentype"),
-    url("/fonts/forbrukerhjelpen.woff") format("woff"),
-    url("/fonts/forbrukerhjelpen.ttf") format("truetype"),
-    url("/fonts/forbrukerhjelpen.svg#forbrukerhjelpen") format("svg");
+  src:url("../fonts/forbrukerhjelpen.eot");
+  src:url("../fonts/forbrukerhjelpen.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/forbrukerhjelpen.woff") format("woff"),
+    url("../fonts/forbrukerhjelpen.ttf") format("truetype"),
+    url("../fonts/forbrukerhjelpen.svg#forbrukerhjelpen") format("svg");
   font-weight: normal;
   font-style: normal;
 
@@ -82,4 +82,16 @@
 }
 .icon-radio-on:before {
   content: "o";
+}
+.icon-chevron-down:before {
+  content: "t";
+}
+.icon-chevron-up:before {
+  content: "u";
+}
+.icon-chevron-right:before {
+  content: "v";
+}
+.icon-chevron-left:before {
+  content: "w";
 }
