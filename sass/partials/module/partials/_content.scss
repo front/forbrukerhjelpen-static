@@ -65,19 +65,21 @@
 		h2 {
 			margin-bottom: 25px;
 		}
-		h2:before {
-			content: "";
-			width: 130px;
-			height: 20px;
-			background: url(../img/info-item-left.png) center left no-repeat;
-			display: inline-block;
-		}
-		h2:after {
-			content: "";
-			width: 130px;
-			height: 20px;
-			background: url(../img/info-item-right.png) center right no-repeat;
-			display: inline-block;
+		@include breakpoint($break-small) {
+			h2:before {
+				content: "";
+				width: 130px;
+				height: 20px;
+				background: url(../img/info-item-left.png) center left no-repeat;
+				display: inline-block;
+			}
+			h2:after {
+				content: "";
+				width: 130px;
+				height: 20px;
+				background: url(../img/info-item-right.png) center right no-repeat;
+				display: inline-block;
+			}
 		}
 
 		@include breakpoint($break-medium) {
