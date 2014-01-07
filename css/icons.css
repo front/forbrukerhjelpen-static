@@ -83,3 +83,15 @@
 .icon-radio-on:before {
   content: "o";
 }
+.icon-chevron-down:before {
+  content: "t";
+}
+.icon-chevron-up:before {
+  content: "u";
+}
+.icon-chevron-right:before {
+  content: "v";
+}
+.icon-chevron-left:before {
+  content: "w";
+}
