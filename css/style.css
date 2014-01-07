@@ -87,7 +87,7 @@ body {
   padding-left: 20px;
   padding-right: 20px;
 }
-@media (min-width: 1160px) {
+@media (min-width: 1200px) {
   /* line 6, ../sass/partials/layout/_layout.scss */
   .l-container {
     margin-left: auto;
@@ -292,28 +292,119 @@ a {
   margin: 35px 0 30px 0;
 }
 
-/* line 1, ../sass/partials/module/partials/_menu.scss */
-.main-menu {
+@media (min-width: 0) and (max-width: 720px) {
+  /* line 3, ../sass/partials/module/partials/_menu.scss */
+  .main-menu {
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+  }
+  /* line 11, ../sass/partials/module/partials/_menu.scss */
+  .main-menu ul {
+    list-style: none;
+    padding: 0px;
+    margin: -0px;
+  }
+  /* line 16, ../sass/partials/module/partials/_menu.scss */
+  .main-menu ul li {
+    border-top: 1px solid #ccc;
+    background-color: #692f59;
+  }
+  /* line 19, ../sass/partials/module/partials/_menu.scss */
+  .main-menu ul li a {
+    display: block;
+    padding: 30px;
+    font-size: 1.125em;
+    color: #fff;
+    text-decoration: none;
+  }
+}
+@media (min-width: 721px) {
+  /* line 35, ../sass/partials/module/partials/_menu.scss */
+  .main-menu {
+    float: right;
+    margin: 5px 0 0;
+  }
+  /* line 38, ../sass/partials/module/partials/_menu.scss */
+  .main-menu ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+  }
+  /* line 42, ../sass/partials/module/partials/_menu.scss */
+  .main-menu ul li {
+    display: block;
+    float: left;
+    padding: 0px 8px;
+    font-size: 0.875em;
+  }
+  /* line 47, ../sass/partials/module/partials/_menu.scss */
+  .main-menu ul li a {
+    text-decoration: none;
+    color: black;
+  }
+}
+/* line 56, ../sass/partials/module/partials/_menu.scss */
+.menu-toggle {
   float: right;
-  margin: 5px 0 0;
+  border: 2px solid #ccc;
+  padding: 6px 6px;
+  width: 93px;
+  border-radius: 3px;
+  margin-top: -6px;
+  display: block;
 }
-/* line 5, ../sass/partials/module/partials/_menu.scss */
-.main-menu ul {
-  list-style: none;
-  padding: 0px;
-  margin: 0px;
+@media (min-width: 720px) {
+  /* line 56, ../sass/partials/module/partials/_menu.scss */
+  .menu-toggle {
+    display: none;
+  }
 }
-/* line 9, ../sass/partials/module/partials/_menu.scss */
-.main-menu ul li {
+/* line 68, ../sass/partials/module/partials/_menu.scss */
+.menu-toggle > span {
   display: block;
   float: left;
-  padding: 0px 8px;
-  font-size: 0.875em;
+  text-transform: uppercase;
+  color: #bbb;
+  font-size: 0.6875em;
+  font-weight: bold;
+  padding: 5px 0;
+  height: 25px;
 }
-/* line 14, ../sass/partials/module/partials/_menu.scss */
-.main-menu ul li a {
-  text-decoration: none;
-  color: black;
+/* line 78, ../sass/partials/module/partials/_menu.scss */
+.menu-toggle > div {
+  display: block;
+  float: right;
+  border-left: 1px solid #ccc;
+  padding-left: 8px;
+}
+/* line 83, ../sass/partials/module/partials/_menu.scss */
+.menu-toggle > div span {
+  display: block;
+  width: 30px;
+  height: 4px;
+  background-color: #ccc;
+  margin-top: 3px;
+}
+/* line 89, ../sass/partials/module/partials/_menu.scss */
+.menu-toggle > div span:first-child {
+  margin-top: 0;
+}
+/* line 95, ../sass/partials/module/partials/_menu.scss */
+.menu-toggle:hover, .menu-toggle.open {
+  border-color: #692f59;
+}
+/* line 97, ../sass/partials/module/partials/_menu.scss */
+.menu-toggle:hover > span, .menu-toggle.open > span {
+  color: #692f59;
+}
+/* line 100, ../sass/partials/module/partials/_menu.scss */
+.menu-toggle:hover > div span, .menu-toggle.open > div span {
+  background-color: #692f59;
 }
 
 /* line 1, ../sass/partials/module/partials/_content.scss */
@@ -334,7 +425,7 @@ a {
 .hero {
   position: relative;
   overflow: hidden;
-  height: 660px;
+  height: 650px;
 }
 /* line 19, ../sass/partials/module/partials/_content.scss */
 .hero img {
@@ -502,17 +593,20 @@ table tbody td.value {
 }
 /* line 10, ../sass/partials/module/partials/_footer.scss */
 .footer .menu-block {
-  padding: 15px 0 10px;
+  padding-top: 15px;
+  padding-bottom: 10px;
 }
-/* line 13, ../sass/partials/module/partials/_footer.scss */
+/* line 14, ../sass/partials/module/partials/_footer.scss */
 .footer .padded-block {
-  padding: 50px 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
   text-align: right;
   font-size: 18px;
 }
-/* line 18, ../sass/partials/module/partials/_footer.scss */
+/* line 20, ../sass/partials/module/partials/_footer.scss */
 .footer .copyright {
-  padding: 10px 0 5px;
+  padding-top: 10px;
+  padding-bottom: 5px;
   font-size: 14px;
   color: #898989;
 }
@@ -544,86 +638,107 @@ table tbody td.value {
 /* line 25, ../sass/partials/module/partials/_forms.scss */
 .dark-blue-block .extra-info {
   position: absolute;
-  bottom: -40px;
+  bottom: -36px;
   font-size: 0.875em;
 }
 
 /* line 33, ../sass/partials/module/partials/_forms.scss */
 .subscribe-form {
-  padding: 25px 0;
+  padding-top: 25px;
+  padding-bottom: 15px;
 }
-/* line 36, ../sass/partials/module/partials/_forms.scss */
-.subscribe-form > div {
+/* line 37, ../sass/partials/module/partials/_forms.scss */
+.subscribe-form div {
   position: relative;
   float: left;
   height: 58px;
-  width: 30%;
-  margin-right: 10px;
+  width: 31%;
+  margin-right: 2%;
+  margin-bottom: 10px;
 }
 @media (min-width: 960px) {
-  /* line 36, ../sass/partials/module/partials/_forms.scss */
-  .subscribe-form > div {
-    width: 24%;
+  /* line 37, ../sass/partials/module/partials/_forms.scss */
+  .subscribe-form div {
+    width: 23%;
+    margin-right: 2%;
   }
 }
 @media (min-width: 1160px) {
-  /* line 36, ../sass/partials/module/partials/_forms.scss */
-  .subscribe-form > div {
+  /* line 37, ../sass/partials/module/partials/_forms.scss */
+  .subscribe-form div {
     width: 20%;
+    margin-right: 2%;
   }
 }
-/* line 49, ../sass/partials/module/partials/_forms.scss */
-.subscribe-form > div.light {
+/* line 54, ../sass/partials/module/partials/_forms.scss */
+.subscribe-form div.large {
+  margin-right: 0;
+}
+@media (min-width: 960px) {
+  /* line 54, ../sass/partials/module/partials/_forms.scss */
+  .subscribe-form div.large {
+    width: 50%;
+  }
+}
+@media (min-width: 1160px) {
+  /* line 54, ../sass/partials/module/partials/_forms.scss */
+  .subscribe-form div.large {
+    width: 40%;
+  }
+}
+/* line 63, ../sass/partials/module/partials/_forms.scss */
+.subscribe-form div.large div {
+  width: 95%;
+  margin-right: 5%;
+}
+@media (min-width: 960px) {
+  /* line 63, ../sass/partials/module/partials/_forms.scss */
+  .subscribe-form div.large div {
+    width: 47%;
+    margin-right: 3%;
+  }
+}
+/* line 73, ../sass/partials/module/partials/_forms.scss */
+.subscribe-form div.light {
   padding: 12px 10px;
   background-color: #fff;
 }
-/* line 52, ../sass/partials/module/partials/_forms.scss */
-.subscribe-form > div.light i {
+/* line 76, ../sass/partials/module/partials/_forms.scss */
+.subscribe-form div.light i {
   position: absolute;
   font-size: 30px;
 }
-/* line 57, ../sass/partials/module/partials/_forms.scss */
-.subscribe-form > div.dark {
-  width: 28%;
+/* line 81, ../sass/partials/module/partials/_forms.scss */
+.subscribe-form div.dark {
   font-size: 0.875em;
-  margin-right: 20px;
 }
-@media (min-width: 960px) {
-  /* line 57, ../sass/partials/module/partials/_forms.scss */
-  .subscribe-form > div.dark {
-    width: 18%;
-  }
-}
-@media (min-width: 1160px) {
-  /* line 57, ../sass/partials/module/partials/_forms.scss */
-  .subscribe-form > div.dark {
-    width: 16%;
-  }
-}
-/* line 68, ../sass/partials/module/partials/_forms.scss */
-.subscribe-form > div.small {
+/* line 85, ../sass/partials/module/partials/_forms.scss */
+.subscribe-form div.small {
+  background-color: #fff;
   padding: 0;
   width: 30px;
   height: 30px;
+  margin-right: 10px;
+  margin-bottom: 28px;
 }
-/* line 75, ../sass/partials/module/partials/_forms.scss */
+/* line 95, ../sass/partials/module/partials/_forms.scss */
 .subscribe-form input[type="text"] {
   border: none;
   margin: 5px 0 0 36px;
   width: 180px;
   background: none;
 }
-/* line 80, ../sass/partials/module/partials/_forms.scss */
+/* line 100, ../sass/partials/module/partials/_forms.scss */
 .subscribe-form input[type="text"]:focus {
   outline: none;
 }
-/* line 85, ../sass/partials/module/partials/_forms.scss */
+/* line 105, ../sass/partials/module/partials/_forms.scss */
 .subscribe-form input[type="checkbox"] {
   visibility: hidden;
   margin: 2px 0 0 3px;
   display: block;
 }
-/* line 89, ../sass/partials/module/partials/_forms.scss */
+/* line 109, ../sass/partials/module/partials/_forms.scss */
 .subscribe-form input[type="checkbox"]:before {
   visibility: visible;
   content: "g";
@@ -634,19 +749,19 @@ table tbody td.value {
   opacity: 0.08;
   cursor: pointer;
 }
-/* line 99, ../sass/partials/module/partials/_forms.scss */
+/* line 119, ../sass/partials/module/partials/_forms.scss */
 .subscribe-form input[type="checkbox"]:checked:before {
   opacity: 1.0;
 }
-/* line 103, ../sass/partials/module/partials/_forms.scss */
+/* line 123, ../sass/partials/module/partials/_forms.scss */
 .subscribe-form label {
   cursor: pointer;
 }
-/* line 107, ../sass/partials/module/partials/_forms.scss */
+/* line 127, ../sass/partials/module/partials/_forms.scss */
 .subscribe-form button {
-  padding-right: 16px !important;
+  padding-right: 12px !important;
 }
-/* line 109, ../sass/partials/module/partials/_forms.scss */
+/* line 129, ../sass/partials/module/partials/_forms.scss */
 .subscribe-form button span {
   display: inline-block;
   border-right: 1px solid #d9a2c9;
@@ -656,7 +771,7 @@ table tbody td.value {
   font-size: 1.0625em;
   -webkit-font-smoothing: antialiased;
 }
-/* line 118, ../sass/partials/module/partials/_forms.scss */
+/* line 138, ../sass/partials/module/partials/_forms.scss */
 .subscribe-form button i {
   line-height: 20px;
   vertical-align: middle;
