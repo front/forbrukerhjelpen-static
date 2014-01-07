@@ -1,47 +1,43 @@
 .dark-blue-block {
   .arrow-box {
     position: absolute;
-    width: 100%;
-    top: -50px;
     z-index: 4;
-    span {
-      position: relative;
-      display: block;
-      height: 50px;
-      padding: 12px 15px;
-      color: #fff;
-      background-color: #242d2d;
-      font-size: 18px;
-      text-align: center;
-      @include breakpoint(0 $break-small) {
-        margin-right: 40px;
-      }
-      @include breakpoint($break-small) {
-        float: left;
-      }
+    top: -50px;
+    width: 90%;
+    left: 90%;
+    margin-left: -85%;
 
-      &:after {
-        position: absolute;
-        pointer-events: none;
-        top: 100%;
-        left: 50%;
-        border: solid transparent;
-        content: " ";
-        height: 0;
-        width: 0;
-        border-top-color: #242d2d;
-        border-width: 10px;
-        margin-left: -10px;
-      }
+    height: 50px;
+    padding: 12px 15px;
+    color: #fff;
+    background-color: #242d2d;
+    font-size: 18px;
+    text-align: center;
+    @include breakpoint($break-small) {
+      float: left;
+      width: auto;
+      left: auto;
+      margin-left: 0;
+    }
+
+    &:after {
+      position: absolute;
+      pointer-events: none;
+      top: 100%;
+      left: 50%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      border-top-color: #242d2d;
+      border-width: 10px;
+      margin-left: -10px;
     }
   }
   .extra-info {
+    @include extrude-pad;
     height: 50px;
-    margin-left: -20px;
-    margin-right: -20px;
     padding-top: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
     background-color: $color-blue-light;
     font-size: em(14,16);
 

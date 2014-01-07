@@ -12,3 +12,17 @@
     @content;
   }
 }
+
+@mixin extrude-pad {
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@mixin extrude-clear {
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
