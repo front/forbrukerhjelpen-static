@@ -1,26 +1,55 @@
 .footer {
-	border-top: 10px solid $color-blue;
-	background-color: $color-blue-light;
-	margin-top: 20px;
-
-  & > div {
-    border-top: 1px solid $color-blue;
+  position: relative;
+  margin-top: 20px;
+  @include breakpoint($break-small) {
+    border-top: 10px solid $color-blue;
+    background-color: $color-blue-light;
   }
-
   .menu-block {
     padding-top: 15px;
     padding-bottom: 10px;
   }
+
   .padded-block {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    border-top: 1px solid $color-blue;
+    &> div {
+      position: relative;
+      padding-top: 50px;
+      padding-bottom: 30px;
+    }
+    @include breakpoint($break-small) {
+      border-bottom: 1px solid $color-blue;
+      margin-bottom: 36px;
+      &> div {
+        padding-bottom: 50px;
+      }
+    }
+  }
+  .logo {
+    float: left;
+    margin-top: 25px;
+    @include breakpoint($break-small) {
+      margin-top: 0;
+    }
+  }
+  .contact {
+    float: right;
     text-align: right;
-    font-size: 18px;
+    font-size: em(18,16);
+    display: none;
+    @include breakpoint($break-small) {
+      display: block;
+    }
   }
   .copyright {
-    padding-top: 10px;
-    padding-bottom: 5px;
-    font-size: 14px;
+    position: absolute;
+    top: 30px;
+    font-size: em(18,16);
     color: darken($color-grey,30);
+    @include breakpoint($break-small) {
+      top: auto;
+      bottom: -32px;
+      font-size: em(14,16);
+    }
   }
 }
