@@ -299,11 +299,12 @@ a {
     top: 65px;
     left: 0;
     width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    height: 1200px;
+    background: rgba(0, 0, 0, 0.8);
     z-index: 100;
+    display: none;
   }
-  /* line 11, ../sass/partials/module/partials/_menu.scss */
+  /* line 12, ../sass/partials/module/partials/_menu.scss */
   .main-menu ul {
     list-style: none;
     padding: 0px;
@@ -311,44 +312,81 @@ a {
   }
   /* line 16, ../sass/partials/module/partials/_menu.scss */
   .main-menu ul li {
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #7b4970;
     background-color: #692f59;
+    display: none;
   }
-  /* line 19, ../sass/partials/module/partials/_menu.scss */
-  .main-menu ul li a {
+  /* line 20, ../sass/partials/module/partials/_menu.scss */
+  .main-menu ul li.mobile {
+    display: block;
+  }
+  /* line 22, ../sass/partials/module/partials/_menu.scss */
+  .main-menu ul li.mobile a {
     display: block;
     padding: 30px;
-    font-size: 1.125em;
+    font-size: 1.25em;
     color: #fff;
     text-decoration: none;
   }
+  /* line 28, ../sass/partials/module/partials/_menu.scss */
+  .main-menu ul li.mobile a i, .main-menu ul li.mobile a img {
+    display: block;
+    float: right;
+    font-size: 1.625em;
+    vertical-align: middle;
+    color: #7b4970;
+  }
+  /* line 35, ../sass/partials/module/partials/_menu.scss */
+  .main-menu ul li.mobile a i {
+    margin-top: -5px;
+  }
+  /* line 38, ../sass/partials/module/partials/_menu.scss */
+  .main-menu ul li.mobile a img {
+    margin-top: -15px;
+    margin-right: 15px;
+    height: 56px;
+  }
+
+  /* line 48, ../sass/partials/module/partials/_menu.scss */
+  .menu-open .main-menu {
+    display: block;
+  }
+
+  /* line 51, ../sass/partials/module/partials/_menu.scss */
+  .footer .main-menu {
+    display: none;
+  }
 }
 @media (min-width: 721px) {
-  /* line 35, ../sass/partials/module/partials/_menu.scss */
+  /* line 57, ../sass/partials/module/partials/_menu.scss */
   .main-menu {
     float: right;
     margin: 5px 0 0;
   }
-  /* line 38, ../sass/partials/module/partials/_menu.scss */
+  /* line 60, ../sass/partials/module/partials/_menu.scss */
   .main-menu ul {
     list-style: none;
     padding: 0px;
     margin: 0px;
   }
-  /* line 42, ../sass/partials/module/partials/_menu.scss */
+  /* line 64, ../sass/partials/module/partials/_menu.scss */
   .main-menu ul li {
     display: block;
     float: left;
     padding: 0px 8px;
     font-size: 0.875em;
   }
-  /* line 47, ../sass/partials/module/partials/_menu.scss */
+  /* line 69, ../sass/partials/module/partials/_menu.scss */
   .main-menu ul li a {
     text-decoration: none;
     color: black;
   }
+  /* line 73, ../sass/partials/module/partials/_menu.scss */
+  .main-menu ul li.mobile img, .main-menu ul li.mobile i {
+    display: none;
+  }
 }
-/* line 56, ../sass/partials/module/partials/_menu.scss */
+/* line 81, ../sass/partials/module/partials/_menu.scss */
 .menu-toggle {
   float: right;
   border: 2px solid #ccc;
@@ -359,12 +397,12 @@ a {
   display: block;
 }
 @media (min-width: 720px) {
-  /* line 56, ../sass/partials/module/partials/_menu.scss */
+  /* line 81, ../sass/partials/module/partials/_menu.scss */
   .menu-toggle {
     display: none;
   }
 }
-/* line 68, ../sass/partials/module/partials/_menu.scss */
+/* line 93, ../sass/partials/module/partials/_menu.scss */
 .menu-toggle > span {
   display: block;
   float: left;
@@ -375,14 +413,14 @@ a {
   padding: 5px 0;
   height: 25px;
 }
-/* line 78, ../sass/partials/module/partials/_menu.scss */
+/* line 103, ../sass/partials/module/partials/_menu.scss */
 .menu-toggle > div {
   display: block;
   float: right;
   border-left: 1px solid #ccc;
   padding-left: 8px;
 }
-/* line 83, ../sass/partials/module/partials/_menu.scss */
+/* line 108, ../sass/partials/module/partials/_menu.scss */
 .menu-toggle > div span {
   display: block;
   width: 30px;
@@ -390,20 +428,21 @@ a {
   background-color: #ccc;
   margin-top: 3px;
 }
-/* line 89, ../sass/partials/module/partials/_menu.scss */
+/* line 114, ../sass/partials/module/partials/_menu.scss */
 .menu-toggle > div span:first-child {
   margin-top: 0;
 }
-/* line 95, ../sass/partials/module/partials/_menu.scss */
-.menu-toggle:hover, .menu-toggle.open {
+
+/* line 121, ../sass/partials/module/partials/_menu.scss */
+.menu-toggle:hover, .menu-open .menu-toggle {
   border-color: #692f59;
 }
-/* line 97, ../sass/partials/module/partials/_menu.scss */
-.menu-toggle:hover > span, .menu-toggle.open > span {
+/* line 123, ../sass/partials/module/partials/_menu.scss */
+.menu-toggle:hover > span, .menu-open .menu-toggle > span {
   color: #692f59;
 }
-/* line 100, ../sass/partials/module/partials/_menu.scss */
-.menu-toggle:hover > div span, .menu-toggle.open > div span {
+/* line 126, ../sass/partials/module/partials/_menu.scss */
+.menu-toggle:hover > div span, .menu-open .menu-toggle > div span {
   background-color: #692f59;
 }
 
