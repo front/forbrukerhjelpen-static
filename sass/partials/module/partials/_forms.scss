@@ -24,27 +24,51 @@
   }
   .extra-info {
     position: absolute;
-    bottom: -40px;
+    bottom: -36px;
     font-size: em(14,16);
   }
 }
 
 
 .subscribe-form {
-  padding: 25px 0;
+  padding-top: 25px;
+  padding-bottom: 15px;
 
-  & > div {
+  & div {
     position: relative;
     float: left;
     height: 58px;
-    width: 30%;
+    width: 31%;
+    margin-right: 2%;
+    margin-bottom: 10px;
+    // border: 1px solid red;
+
     @include breakpoint($break-medium) {
-      width: 24%;
+      width: 23%;
+      margin-right: 2%;
     }
     @include breakpoint($break-large) {
       width: 20%;
+      margin-right: 2%;
     }
-    margin-right: 10px;
+    &.large {
+      margin-right: 0;
+      @include breakpoint($break-medium) {
+        width: 50%;
+      }
+      @include breakpoint($break-large) {
+        width: 40%;
+      }
+
+      div {
+        width: 95%;
+        margin-right: 5%;
+        @include breakpoint($break-medium) {
+          width: 47%;
+          margin-right: 3%;
+        }
+      }
+    }
 
     &.light {
       padding: 12px 10px;
@@ -55,20 +79,16 @@
       }
     }
     &.dark {
-      width: 28%;
-      @include breakpoint($break-medium) {
-        width: 18%;
-      }
-      @include breakpoint($break-large) {
-        width: 16%;
-      }
       font-size: em(14,16);
-      margin-right: 20px;
     }
+
     &.small {
+      background-color: #fff;
       padding: 0;
       width: 30px;
       height: 30px;
+      margin-right: 10px;
+      margin-bottom: 28px;
     }
   }
 
@@ -105,7 +125,7 @@
   }
 
   button {
-    padding-right: 16px !important;
+    padding-right: 12px !important;
     span {
       display: inline-block;
       border-right: 1px solid lighten(#672a55, 46);
