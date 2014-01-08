@@ -2,12 +2,48 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script>
 
-  $('a.menu-toggle').click(function () {
+ (function () {
+
+  /* Menu */
+   $('a.menu-toggle').click(function () {
     $('body').toggleClass('menu-open');
   });
 
+  /* Article items */
   $('.info-items header').click(function () {
     $(this).parent().toggleClass('open');
   });
+
+
+  /* Topics */
+  $('.topic-list li header').click(function () {
+    var isOpen = $(this).parent().hasClass('open');
+    $('.topic-list li').removeClass('open');
+    if(!isOpen) {
+      $(this).parent().addClass('open');
+    }
+  });
+
+  window.fhTopic = {
+    active: 0,
+    count: 8,
+    next: function () {
+      this.show((this.active+1)%this.count);
+    },
+    prev: function () {
+      this.show((this.active-1+this.count)%this.count);
+    },
+    show: function (index) {
+      // console.log(index);
+      $('.topic-list li').removeClass('active');
+      $($('.topic-list li').get(index)).addClass('active');
+
+      $('.topic-header-block nav li').removeClass('active');
+      $($('.topic-header-block nav li').get(index)).addClass('active');
+      this.active = index;
+    }
+  };
+
+})();
 
 </script>

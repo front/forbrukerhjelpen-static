@@ -31,7 +31,7 @@
     right: 0;
     width: 60%;
     bottom: 100px;
-    @include breakpoint($breakpoint-mobile-landscape) {
+    @include breakpoint($break-xsmall) {
       top: 30px;
       bottom: auto;
     }
