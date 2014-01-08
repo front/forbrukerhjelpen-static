@@ -95,3 +95,9 @@
 .icon-chevron-left:before {
   content: "w";
 }
+.icon-plus:before {
+  content: "p";
+}
+.icon-minus:before {
+  content: "q";
+}
