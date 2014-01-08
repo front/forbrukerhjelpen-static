@@ -10,7 +10,6 @@
     @include breakpoint($break-xsmall) {
       height: 345px;
     }
-
     .topic-img {
       position: absolute;
       z-index: 1;
@@ -22,7 +21,6 @@
         display: block;
       }
     }
-
     header {
       position: absolute;
       z-index: 3;
@@ -58,7 +56,6 @@
     @include breakpoint($break-small) {
       display: block;
     }
-
     ul {
       margin-top: 25px;
       li {
@@ -101,7 +98,7 @@
     @include breakpoint(0 ($break-small - 1px)) {
       text-align: left;
       cursor: pointer;
-      font-size: em(22,16);
+      font-size: em(20,16);
       color: $color-text-dark;
       font-weight: 600;
       padding-top: 20px;
