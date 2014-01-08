@@ -297,6 +297,23 @@ a {
   margin-bottom: 30px;
 }
 
+/* line 6, ../sass/partials/module/partials/_header.scss */
+.main-logo {
+  display: block;
+  width: 190px;
+  height: 28px;
+  background-size: 190px 28px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url(../img/logo.png);
+}
+@media only screen and (min-device-pixel-ratio: 1.5) {
+  /* line 6, ../sass/partials/module/partials/_header.scss */
+  .main-logo {
+    background-image: url(../img/logo-2x.png);
+  }
+}
+
 @media (min-width: 0) and (max-width: 719px) {
   /* line 3, ../sass/partials/module/partials/_menu.scss */
   .main-menu {
@@ -855,13 +872,13 @@ table tbody td.value {
   }
 }
 /* line 31, ../sass/partials/module/partials/_footer.scss */
-.footer .logo {
+.footer .main-logo {
   float: left;
   margin-top: 25px;
 }
 @media (min-width: 720px) {
   /* line 31, ../sass/partials/module/partials/_footer.scss */
-  .footer .logo {
+  .footer .main-logo {
     margin-top: 0;
   }
 }
