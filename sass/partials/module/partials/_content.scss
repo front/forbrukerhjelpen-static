@@ -2,38 +2,65 @@
 // Information items
 .info-items {
 	@extend .clearfix;
-	padding: 60px 0;
+	@include breakpoint($break-small) {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	@include breakpoint($break-medium) {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
 
 	header {
-		margin: 0 0 1em 0;
+		padding-top: 20px;
+		padding-bottom: 20px;
 
 		h2 {
 			margin-bottom: 25px;
-		}
-		@include breakpoint($break-small) {
-			h2:before {
-				content: "";
-				width: 130px;
-				height: 20px;
-				background: url(../img/info-item-left.png) center left no-repeat;
-				display: inline-block;
+			@include breakpoint(0 ($break-small - 1px)) {
+				cursor: pointer;
+				font-size: em(22,16);
+				color: $color-text-dark;
+				font-weight: 600;
+				margin-bottom: 0;
 			}
-			h2:after {
-				content: "";
-				width: 130px;
-				height: 20px;
-				background: url(../img/info-item-right.png) center right no-repeat;
-				display: inline-block;
+			i {
+				vertical-align: middle;
+				margin-right: 15px;
+				color: $color-grey;
+				@include breakpoint($break-small) {
+					display: none;
+				}
+			}
+			@include breakpoint($break-small) {
+				&:before {
+					content: "";
+					width: 130px;
+					height: 20px;
+					background: url(../img/info-item-left.png) center left no-repeat;
+					display: inline-block;
+				}
+				&:after {
+					content: "";
+					width: 130px;
+					height: 20px;
+					background: url(../img/info-item-right.png) center right no-repeat;
+					display: inline-block;
+				}
 			}
 		}
-
 		@include breakpoint($break-medium) {
 			text-align: center;
 		}
 	}
 	.info-item {
-		margin-bottom: 10px;
+		margin-bottom: 25px;
 		min-height: 105px;
+		display: none;
+		@include breakpoint($break-small) {
+			display: block;
+			margin-bottom: 10px;
+		}
 
 		p {
 			margin-top: 20px;
@@ -64,10 +91,33 @@
 			}
 		}
 	}
+	@include breakpoint(0 ($break-small - 1px)) {
+		.icon-minus {
+			display: none;
+		}
+		&.open {
+			.info-item {
+				display: block;
+			}
+			.icon-plus {
+				display: none;
+			}
+			.icon-minus {
+				display: inline;
+			}
+		}
+	}
 }
 
 hr {
-  border-top: 5px solid lighten($color-grey,50);
+  color: #f0f0f0;
+	background-color: #f0f0f0;
+	margin: 0 !important;
+	border: none !important;
+	height: 8px;
+	@include breakpoint($break-small) {
+		height: 2px;
+	}
 }
 
 // Tables

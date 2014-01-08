@@ -1,6 +1,5 @@
 .footer {
   position: relative;
-  margin-top: 20px;
   @include breakpoint($break-small) {
     border-top: 10px solid $color-blue;
     background-color: $color-blue-light;
@@ -8,6 +7,10 @@
   .menu-block {
     padding-top: 15px;
     padding-bottom: 10px;
+    display: none;
+    @include breakpoint($break-small) {
+      display: block;
+    }
   }
 
   .padded-block {
