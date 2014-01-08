@@ -1,0 +1,112 @@
+
+.topic-header-block {
+  position: relative;
+  background-color: $color-blue;
+  margin-bottom: 20px;
+
+  &> div {
+    position: relative;
+    overflow: hidden;
+    height: 420px;
+
+    .topic-img {
+      position: absolute;
+      z-index: 1;
+      height: 550px;
+      bottom: 0;
+      left: 40px;
+    }
+
+    header {
+      position: absolute;
+      z-index: 3;
+      margin-top:70px;
+      width: 100%;
+      text-align: center;
+      color: $color-text-light;
+    }
+    h1 {
+      text-transform: uppercase;
+      color: $color-text-light;
+      font-size: em(68,16);
+      margin-bottom: 0;
+    }
+    span {
+      font-size: em(22,16);
+      font-style: italic;
+    }
+  }
+
+  nav {
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    height: 75px;
+    width: 100%;
+    background-color: $color-blue-light;
+
+    ul {
+      margin-top: 25px;
+      li {
+        display: block;
+        float: left;
+        width: 12.5%;
+        a {
+          display: block;
+          border-left: 1px solid #ccc;
+          text-align: center;
+          height: 25px;
+          font-size: em(16,16);
+          line-height: em(18,16);
+          overflow: visible;
+          color: $color-text-dark;
+          text-decoration: none;
+        }
+        &:first-child a {
+          border-left: none;
+        }
+        &.active a, a:hover {
+          color: $color-purple;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+}
+
+.topic-footer, .topic-header {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+}
+.topic-footer span {
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: em(14,16);
+  img {
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+}
+.topic-content {
+  img {
+    margin: 25px;
+    float: left;
+  }
+  &> div {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    overflow: hidden;
+  }
+  p {
+    margin-bottom: 30px;
+    color: $color-grey-dark;
+    font-size: em(16,16);
+    line-height: em(28,16);
+  }
+}
+
+
+
