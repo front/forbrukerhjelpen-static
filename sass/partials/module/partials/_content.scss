@@ -2,9 +2,12 @@
 // Information items
 .info-items {
 	@extend .clearfix;
+	border-bottom: 8px solid $color-grey-light;
+
 	@include breakpoint($break-small) {
 		padding-top: 20px;
 		padding-bottom: 20px;
+		border-bottom: 2px solid $color-grey-light;
 	}
 	@include breakpoint($break-medium) {
 		padding-top: 40px;
@@ -23,13 +26,12 @@
 				color: $color-text-dark;
 				font-weight: 600;
 				margin-bottom: 0;
-			}
-			i {
-				vertical-align: middle;
-				margin-right: 15px;
-				color: $color-grey;
-				@include breakpoint($break-small) {
-					display: none;
+				&:before {
+        	font-family: "forbrukerhjelpen" !important;
+        	content: "p";
+					vertical-align: middle;
+					margin-right: 15px;
+					color: $color-grey;
 				}
 			}
 			@include breakpoint($break-small) {
@@ -61,25 +63,21 @@
 			display: block;
 			margin-bottom: 10px;
 		}
-
 		p {
 			margin-top: 20px;
 			color: $color-grey-dark;
 			font-size: em(18,16);
 			// word-break: break-all;
-
 			&.recommend {
 				color: $color-text-dark;
 			}
 		}
-
 		@include breakpoint($break-min ($break-medium - 1px)) {
 			img {
 				float: left;
 				margin: 0 15px 0 0;
 			}
 		}
-
 		@include breakpoint($break-medium) {
 			@include float-span(4);
       &:nth-of-type(3n) {
@@ -92,18 +90,12 @@
 		}
 	}
 	@include breakpoint(0 ($break-small - 1px)) {
-		.icon-minus {
-			display: none;
-		}
-		&.open {
+		.open {
 			.info-item {
 				display: block;
 			}
-			.icon-plus {
-				display: none;
-			}
-			.icon-minus {
-				display: inline;
+			h2:before {
+				content: "q";
 			}
 		}
 	}

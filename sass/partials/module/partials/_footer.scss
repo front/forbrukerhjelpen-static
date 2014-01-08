@@ -47,7 +47,7 @@
   .copyright {
     position: absolute;
     top: 30px;
-    font-size: em(18,16);
+    font-size: em(16,16);
     color: darken($color-grey,30);
     @include breakpoint($break-small) {
       top: auto;
