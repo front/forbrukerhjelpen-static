@@ -207,3 +207,16 @@
     }
   }
 }
+
+.topic-infobox {
+  background-color: $color-blue-light;
+  padding: 25px;
+  text-align: center;
+  h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+  @include breakpoint($break-small) {
+    display: none;
+  }
+}

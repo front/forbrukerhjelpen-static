@@ -1376,3 +1376,21 @@ table tbody td.value {
     display: block;
   }
 }
+
+/* line 211, ../sass/partials/module/partials/_topic.scss */
+.topic-infobox {
+  background-color: #deeced;
+  padding: 25px;
+  text-align: center;
+}
+/* line 215, ../sass/partials/module/partials/_topic.scss */
+.topic-infobox h4 {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+@media (min-width: 720px) {
+  /* line 211, ../sass/partials/module/partials/_topic.scss */
+  .topic-infobox {
+    display: none;
+  }
+}
