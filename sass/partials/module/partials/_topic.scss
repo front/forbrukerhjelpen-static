@@ -1,7 +1,6 @@
 
 .topic-header-block {
   position: relative;
-  background-color: $color-blue;
 
   &> div {
     position: relative;
@@ -13,10 +12,12 @@
     .topic-img {
       position: absolute;
       z-index: 1;
-      height: 550px;
-      bottom: -75px;
-      left: 40px;
+      height: 100%;
+      top: 0;
       display: none;
+      &.right {
+        right: 0;
+      }
       @include breakpoint($break-small) {
         display: block;
       }
@@ -41,6 +42,17 @@
       }
       margin-bottom: 0;
     }
+    h2 {
+      text-transform: uppercase;
+      color: $color-text-light;
+      font-size: em(38,16);
+      @include breakpoint($break-xsmall) {
+        font-size: em(54,16);
+        line-height: 1.2em;
+        margin-bottom: 0.2em;
+      }
+      margin-bottom: 0;
+    }
     span {
       font-style: italic;
       font-size: em(22,16);
@@ -51,7 +63,6 @@
     @extend .clearfix;
     position: relative;
     height: 75px;
-    background-color: $color-blue-light;
     display: none;
     @include breakpoint($break-small) {
       display: block;
