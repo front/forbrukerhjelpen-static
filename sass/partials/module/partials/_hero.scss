@@ -1,15 +1,14 @@
-.light-blue-block {
-  background-color: $color-blue-light;
+
+
+.frontpage-header-block {
   position: relative;
-}
-.dark-blue-block {
-  background-color: #92d2d2;
-  z-index: 5;
-  @include breakpoint($break-medium) {
-    width: 100%;
-    position: absolute;
-    z-index: 10;
-    top: 440px;
+  .form-block {
+    @include breakpoint($break-medium) {
+      width: 100%;
+      position: absolute;
+      z-index: 10;
+      top: 440px;
+    }
   }
 }
 
