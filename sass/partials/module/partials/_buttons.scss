@@ -43,5 +43,13 @@
       padding-left: 15px;
       padding-right: 15px;
     }
+    &.btn-resp {
+      @include breakpoint(0 ($break-medium - 1px)) {
+        padding-right: 5px;
+        &:before {
+          display: none;
+        }
+      }
+    }
   }
 }

@@ -3,18 +3,18 @@ body {
   padding: 0;
 }
 
-.p-container {
-  padding-left: 20px;
-  padding-right: 20px;
-}
+
 .l-container, .p-container {
   position: relative;
   width: 100%;
   max-width: $break-large;
-
+  margin-left: auto;
+  margin-right: auto;
+}
+.p-container {
+  padding-left: 20px;
+  padding-right: 20px;
   @include breakpoint($break-large + 40px) {
-    margin-left: auto;
-    margin-right: auto;
     padding-left: 0;
     padding-right: 0;
   }

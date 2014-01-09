@@ -3,51 +3,51 @@ layout: default
 title: Låneguiden
 ---
 
-<div class="topic-header-block dark-blue-block">
+<div class="slide-header-block dark-blue-block">
   <div class="l-container">
     <header>
       <img src="img/icon-calc-white.png">
       <h1>Låneguiden</h1>
       <span>&mdash;&nbsp; Velg tema under &nbsp;&mdash;</span>
     </header>
-    <img class="topic-img" src="img/topic-woman-bg.png">
+    <img class="back-img" src="img/topic-woman-bg.png">
   </div>
-  <nav class="light-blue-block">
+  <nav class="slide-nav light-blue-block">
     <ul class="p-container">
-      <li class="active">
-        <a href="javascript:fhTopic.show(0);">Introduksjon</a>
+      <li slideid="0" class="active">
+        <a href="javascript:fhSlides.show(0);">Introduksjon</a>
       </li>
-      <li>
-        <a href="javascript:fhTopic.show(1);">Documentasjon</a>
+      <li slideid="1">
+        <a href="javascript:fhSlides.show(1);">Documentasjon</a>
       </li>
-      <li>
-        <a href="javascript:fhTopic.show(2);">Forbruklån</a>
+      <li slideid="2">
+        <a href="javascript:fhSlides.show(2);">Forbruklån</a>
       </li>
-      <li>
-        <a href="javascript:fhTopic.show(3);">Enkeltperson foretak</a>
+      <li slideid="3">
+        <a href="javascript:fhSlides.show(3);">Enkeltperson foretak</a>
       </li>
-      <li>
-        <a href="javascript:fhTopic.show(4);">Boliglån</a>
+      <li slideid="4">
+        <a href="javascript:fhSlides.show(4);">Boliglån</a>
       </li>
-      <li>
-        <a href="javascript:fhTopic.show(5);">Refinansiering</a>
+      <li slideid="5">
+        <a href="javascript:fhSlides.show(5);">Refinansiering</a>
       </li>
-      <li>
-        <a href="javascript:fhTopic.show(6);">Sjekklisten</a>
+      <li slideid="6">
+        <a href="javascript:fhSlides.show(6);">Sjekklisten</a>
       </li>
-      <li>
-        <a href="javascript:fhTopic.show(7);">Betalings- anmerkninger</a>
+      <li slideid="7">
+        <a href="javascript:fhSlides.show(7);">Betalings- anmerkninger</a>
       </li>
     <ul>
   </nav>
 </div>
 
-<ul class="topic-list">
-  <li class="active">
-    <header class="topic-header">
+<ul class="slide-list topic-list">
+  <li slideid="0" class="active">
+    <header>
       <h2>Introduksjon</h2>
     </header>
-    <div class="p-container topic-content">
+    <div class="p-container slide-content topic-content">
       <img src="img/topic-image.png">
       <div>
         <h3>Kom Forberedt</h3>
@@ -59,10 +59,10 @@ title: Låneguiden
     </div>
   </li>
   <li>
-    <header class="topic-header">
+    <header>
       <h2>Documentasjon</h2>
     </header>
-    <div class="p-container topic-content">
+    <div class="p-container slide-content">
       <img src="img/topic-image.png">
       <div>
         <h3>Kom Forberedt</h3>
@@ -76,11 +76,11 @@ title: Låneguiden
       </div>
     </div>
   </li>
-  <li>
-    <header class="topic-header">
+  <li slideid="1">
+    <header>
       <h2>Forbruklån</h2>
     </header>
-    <div class="p-container topic-content">
+    <div class="p-container slide-content">
       <img src="img/topic-image.png">
       <div>
         <h3>Selvangivelse</h3>
@@ -91,11 +91,11 @@ title: Låneguiden
       </div>
     </div>
   </li>
-  <li>
-    <header class="topic-header">
+  <li slideid="2">
+    <header>
       <h2>Enkeltperson foretak</h2>
     </header>
-    <div class="p-container topic-content">
+    <div class="p-container slide-content">
       <img src="img/topic-image.png">
       <div>
         <h3>Selvangivelse</h3>
@@ -114,7 +114,7 @@ title: Låneguiden
 </div>
 
 <footer class="l-container topic-footer">
-  <button class="btn btn-blue" onclick="fhTopic.prev();">Forrige tema</button>
-  <button class="btn btn-blue" onclick="fhTopic.next();">Neste tema</button>
+  <button class="btn btn-blue" onclick="fhSlides.prev();">Forrige tema</button>
+  <button class="btn btn-blue" onclick="fhSlides.next();">Neste tema</button>
   <span><a href=""><img src="img/pdf-logo.png"> Last ned PDF</a></span>
 </footer>

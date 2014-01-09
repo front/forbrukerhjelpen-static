@@ -1,4 +1,16 @@
 
+.visible-desktop {
+	@include breakpoint(0 ($break-medium - 1px)) {
+		display: none !important;
+	}
+}
+.hidden-desktop {
+	@include breakpoint($break-medium) {
+		display: none !important;
+	}
+}
+
+
 // Information items
 .info-items {
 	@extend .clearfix;
@@ -136,9 +148,13 @@ table {
 			text-align: left;
 			border-bottom: 1px solid $color-grey;
 
-			&.value {
+			&.value, strong {
 				font-weight: 600;
 				color: $color-purple;
+			}
+			small {
+				font-size: 0.7em;
+				color: $color-grey-dark;
 			}
 		}
 	}

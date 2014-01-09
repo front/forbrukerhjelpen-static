@@ -16,15 +16,15 @@
 
 
   /* Topics */
-  $('.topic-list li header').click(function () {
+  $('.slide-list li header').click(function () {
     var isOpen = $(this).parent().hasClass('open');
-    $('.topic-list li').removeClass('open');
+    $('.slide-list li').removeClass('open');
     if(!isOpen) {
       $(this).parent().addClass('open');
     }
   });
 
-  window.fhTopic = {
+  window.fhSlides = {
     active: 0,
     count: 8,
     next: function () {
@@ -35,12 +35,18 @@
     },
     show: function (index) {
       // console.log(index);
-      $('.topic-list li').removeClass('active');
-      $($('.topic-list li').get(index)).addClass('active');
-
-      $('.topic-header-block nav li').removeClass('active');
-      $($('.topic-header-block nav li').get(index)).addClass('active');
       this.active = index;
+
+      $('.slide-list li').removeClass('active');
+      if(index < 0) {
+        $('.slide-list li').addClass('active');
+      }
+      else {
+        $('.slide-list li[slideid="' + index + '"]').addClass('active');
+      }
+
+      $('nav.slide-nav li').removeClass('active');
+      $('nav.slide-nav li[slideid="' + index + '"]').addClass('active');
     }
   };
 

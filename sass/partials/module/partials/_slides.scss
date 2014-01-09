@@ -1,0 +1,165 @@
+
+.slide-header-block {
+  position: relative;
+
+  &>div {
+    position: relative;
+    overflow: hidden;
+    height: 260px;
+    @include breakpoint($break-xsmall) {
+      height: 345px;
+    }
+    .back-img {
+      position: absolute;
+      z-index: 1;
+      height: 100%;
+      top: 0;
+      display: none;
+      &.right {
+        right: 0;
+      }
+      @include breakpoint($break-small) {
+        display: block;
+      }
+    }
+    header {
+      position: absolute;
+      z-index: 3;
+      margin-top: 50px;
+      @include breakpoint($break-small) {
+        margin-top: 70px;
+      }
+      width: 100%;
+      text-align: center;
+      color: $color-text-light;
+    }
+    h1 {
+      text-transform: uppercase;
+      color: $color-text-light;
+      font-size: em(46,16);
+      @include breakpoint($break-xsmall) {
+        font-size: em(68,16);
+      }
+      margin-bottom: 0;
+    }
+    h2 {
+      text-transform: uppercase;
+      color: $color-text-light;
+      font-size: em(36,16);
+      line-height: 1.2em;
+      @include breakpoint($break-xsmall) {
+        font-size: em(54,16);
+        margin-bottom: 0.2em;
+      }
+      margin-bottom: 0;
+    }
+    span {
+      font-style: italic;
+      font-size: em(22,16);
+    }
+  }
+
+  .slide-nav {
+    @extend .clearfix;
+    position: relative;
+    height: 75px;
+    display: none;
+    @include breakpoint($break-small) {
+      display: block;
+    }
+    ul {
+      margin-top: 25px;
+      li {
+        display: block;
+        float: left;
+        width: 12.5%;
+        a {
+          display: block;
+          border-left: 1px solid #ccc;
+          text-align: center;
+          height: 25px;
+          font-size: em(16,16);
+          line-height: em(18,16);
+          overflow: visible;
+          color: $color-text-dark;
+          text-decoration: none;
+        }
+        &:first-child a {
+          border-left: none;
+        }
+        &.active a, a:hover {
+          color: $color-purple;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.slide-list li header {
+  h2 {
+    position: relative;
+    padding: 40px 20px 20px;
+    text-align: center;
+    @include breakpoint(0 ($break-small - 1px)) {
+      text-align: left;
+      cursor: pointer;
+      font-size: em(20,16);
+      color: $color-text-dark;
+      font-weight: 600;
+      padding-top: 20px;
+      &:after {
+        font-family: "forbrukerhjelpen" !important;
+        content: "t";
+        display: block;
+        float: right;
+        vertical-align: middle;
+        font-size: em(26,16);
+        padding-left: 15px;
+        border-left: 1px solid $color-grey;
+        height: 35px;
+        color: $color-grey;
+      }
+    }
+  }
+}
+
+.slide-content {
+  display: none;
+}
+.slide-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  li {
+    list-style: none;
+    border-bottom: 8px solid $color-grey-light;
+    @include breakpoint($break-small) {
+      border-bottom: 2px solid $color-grey-light;
+    }
+    @include breakpoint(0 ($break-small - 1px)) {
+      display: block;
+      &.open {
+        .slide-content {
+          display: block;
+        }
+        header h2 {
+          background-color: $color-blue-light;
+          color: $color-purple;
+          &:after {
+            content: "u";
+          }
+        }
+      }
+    }
+    @include breakpoint($break-small) {
+      display: none;
+      &.active {
+        display: block;
+        .slide-content {
+          display: block;
+        }
+      }
+    }
+  }
+}

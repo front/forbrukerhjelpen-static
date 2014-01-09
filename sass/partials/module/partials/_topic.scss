@@ -1,136 +1,65 @@
 
-.topic-header-block {
-  position: relative;
-
-  &> div {
-    position: relative;
-    overflow: hidden;
-    height: 260px;
-    @include breakpoint($break-xsmall) {
-      height: 345px;
+.campaign-list {
+  header h2 {
+    margin-bottom: 0;
+  }
+  @include breakpoint($break-small) {
+    padding-bottom: 50px;
+    header h2 {
+      padding-bottom: 15px;
     }
-    .topic-img {
-      position: absolute;
-      z-index: 1;
-      height: 100%;
-      top: 0;
-      display: none;
-      &.right {
-        right: 0;
-      }
-      @include breakpoint($break-small) {
-        display: block;
-      }
-    }
-    header {
-      position: absolute;
-      z-index: 3;
-      margin-top: 50px;
-      @include breakpoint($break-small) {
-        margin-top: 70px;
-      }
-      width: 100%;
-      text-align: center;
-      color: $color-text-light;
-    }
-    h1 {
-      text-transform: uppercase;
-      color: $color-text-light;
-      font-size: em(46,16);
-      @include breakpoint($break-xsmall) {
-        font-size: em(68,16);
-      }
-      margin-bottom: 0;
-    }
-    h2 {
-      text-transform: uppercase;
-      color: $color-text-light;
-      font-size: em(38,16);
-      @include breakpoint($break-xsmall) {
-        font-size: em(54,16);
-        line-height: 1.2em;
-        margin-bottom: 0.2em;
-      }
-      margin-bottom: 0;
-    }
-    span {
-      font-style: italic;
-      font-size: em(22,16);
+    li {
+      border-bottom: none;
     }
   }
-
-  nav {
-    @extend .clearfix;
-    position: relative;
-    height: 75px;
-    display: none;
-    @include breakpoint($break-small) {
-      display: block;
-    }
-    ul {
-      margin-top: 25px;
-      li {
-        display: block;
-        float: left;
-        width: 12.5%;
-        a {
-          display: block;
-          border-left: 1px solid #ccc;
-          text-align: center;
-          height: 25px;
-          font-size: em(16,16);
-          line-height: em(18,16);
-          overflow: visible;
-          color: $color-text-dark;
-          text-decoration: none;
-        }
-        &:first-child a {
-          border-left: none;
-        }
-        &.active a, a:hover {
-          color: $color-purple;
-          text-decoration: underline;
-        }
-      }
+  @include breakpoint(0 ($break-small - 1px)) {
+    thead, tfoot {
+      display: none;
     }
   }
 }
 
-.topic-header {
-  h2 {
-    position: relative;
-    padding: 40px 20px 20px;
+.topic-list {
+  header h2 {
     margin-bottom: 25px;
     border-bottom: 2px solid $color-grey-light;
-    text-align: center;
-    &:after {
-      display: none;
-    }
+
     @include breakpoint(0 ($break-small - 1px)) {
-      text-align: left;
-      cursor: pointer;
-      font-size: em(20,16);
-      color: $color-text-dark;
-      font-weight: 600;
-      padding-top: 20px;
       margin-bottom: 0;
       border-bottom: none;
-      &:after {
-        font-family: "forbrukerhjelpen" !important;
-        content: "t";
+    }
+  }
+  .slide-content {
+    img {
+      margin-top: 25px;
+      margin-right: 25px;
+      margin-bottom: 15px;
+      display: none;
+      @include breakpoint($break-small) {
         display: block;
-        float: right;
-        vertical-align: middle;
-        font-size: em(26,16);
-        padding-left: 15px;
-        border-left: 1px solid #ccc;
-        height: 35px;
-        color: $color-grey;
       }
+      @include breakpoint($break-medium) {
+        margin-left: 15px;
+      }
+      float: left;
+    }
+    &>div {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      @include breakpoint($break-medium) {
+        overflow: hidden;
+      }
+    }
+    p {
+      margin-bottom: 30px;
+      color: $color-grey-dark;
+      font-size: em(16,16);
+      line-height: em(28,16);
     }
   }
 }
-.topic-footer{
+
+.topic-footer {
   padding-top: 25px;
   padding-bottom: 25px;
   text-align: center;
@@ -147,72 +76,6 @@
   display: none;
   @include breakpoint($break-small) {
     display: block;
-  }
-}
-.topic-content {
-  img {
-    margin-top: 25px;
-    margin-right: 25px;
-    margin-bottom: 15px;
-    display: none;
-    @include breakpoint($break-small) {
-      display: block;
-    }
-    @include breakpoint($break-medium) {
-      margin-left: 15px;
-    }
-    float: left;
-  }
-  &> div {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    @include breakpoint($break-medium) {
-      overflow: hidden;
-    }
-  }
-  p {
-    margin-bottom: 30px;
-    color: $color-grey-dark;
-    font-size: em(16,16);
-    line-height: em(28,16);
-  }
-  display: none;
-}
-
-.topic-list {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-  li {
-    list-style: none;
-    border-bottom: 8px solid $color-grey-light;
-    @include breakpoint($break-small) {
-      border-bottom: 2px solid $color-grey-light;
-    }
-    @include breakpoint(0 ($break-small - 1px)) {
-      display: block;
-      &.open {
-        .topic-content {
-          display: block;
-        }
-        header h2 {
-          background-color: $color-blue-light;
-          color: $color-purple;
-          &:after {
-            content: "u";
-          }
-        }
-      }
-    }
-    @include breakpoint($break-small) {
-      display: none;
-      &.active {
-        display: block;
-        .topic-content {
-          display: block;
-        }
-      }
-    }
   }
 }
 

@@ -3,186 +3,240 @@ layout: default
 title: Sammenlign Banker
 ---
 
-<div class="topic-header-block grey-block">
+<div class="slide-header-block grey-block">
   <div class="l-container">
     <header>
       <img src="img/icon-calc-white.png">
       <h2>Sammenlign<br/>Banker</h2>
       <span>&mdash;&nbsp; Sjekk dine muligheter &nbsp;&mdash;</span>
     </header>
-    <img class="topic-img right" src="img/campaign-woman-bg.png">
+    <img class="back-img right" src="img/campaign-woman-bg.png">
   </div>
-  <nav class="light-blue-block">
+  <nav class="slide-nav light-blue-block">
     <ul class="p-container">
-      <li class="active">
-        <a href="javascript:fhTopic.show(0);">Vis alle</a>
+      <li slideid="-1" class="active">
+        <a href="javascript:fhSlides.show(-1);">Vis alle</a>
       </li>
-      <li>
-        <a href="javascript:fhTopic.show(1);">Favorittlån</a>
+      <li slideid="0">
+        <a href="javascript:fhSlides.show(0);">Favorittlån</a>
       </li>
-      <li>
-        <a href="javascript:fhTopic.show(2);">Forbrukslån</a>
+      <li slideid="1">
+        <a href="javascript:fhSlides.show(1);">Forbrukslån</a>
       </li>
-      <li>
-        <a href="javascript:fhTopic.show(3);">Kredittkort</a>
+      <li slideid="2">
+        <a href="javascript:fhSlides.show(2);">Kredittkort</a>
       </li>
-      <li>
-        <a href="javascript:fhTopic.show(4);">Samle smålån</a>
+      <li slideid="3">
+        <a href="javascript:fhSlides.show(3);">Samle smålån</a>
       </li>
-      <li>
-        <a href="javascript:fhTopic.show(5);">Låneguide</a>
+      <li slideid="4">
+        <a href="javascript:fhSlides.show(4);">Låneguide</a>
       </li>
-      <li>
-        <a href="javascript:fhTopic.show(6);">Betalings anmerkninger</a>
+      <li slideid="5">
+        <a href="javascript:fhSlides.show(5);">Betalings anmerkninger</a>
       </li>
-      <li>
-        <a href="javascript:fhTopic.show(7);">Lånevelgeren</a>
+      <li slideid="6">
+        <a href="javascript:fhSlides.show(6);">Lånevelgeren</a>
       </li>
     <ul>
   </nav>
 </div>
 
-<div class="p-container campaign-block">
-  <h2>Brukerens favorittlån</h2>
-  <table>
-    <thead>
-      <tr>
-        <th>Långiver</th>
-        <th>Beløp</th>
-        <th>Reponstid</th>
-        <th>Aldersgrense</th>
-        <th>Vurdering</th>
-        <th>Søk</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><img src="img/bank-1.png"></td>
-        <td class="value">kr 15.000-350.000</td>
-        <td>Umiddelbart</td>
-        <td>18 år</td>
-        <td><img src="img/dice-4.png"></td>
-        <td><button class="btn btn-blue btn-complex">Søk nå</button></td>
-      </tr>
-      <tr>
-        <td><img src="img/bank-2.png"></td>
-        <td class="value">kr 25.000-350.000</td>
-        <td>Umiddelbart</td>
-        <td>18 år</td>
-        <td><img src="img/dice-6.png"></td>
-        <td><button class="btn btn-blue btn-complex">Søk nå</button></td>
-      </tr>
-      <tr>
-        <td><img src="img/bank-3.png"></td>
-        <td class="value">kr 5.000-350.000</td>
-        <td>Umiddelbart</td>
-        <td>18 år</td>
-        <td><img src="img/dice-6.png"></td>
-        <td><button class="btn btn-blue btn-complex">Søk nå</button></td>
-      </tr>
-    </tbody>
-    <tfoot>
-      <tr class="spacer"><td colspan="6"></td></tr>
-      <tr>
-        <td colspan="6"><a href="javascript:void(0);">Hent flere</a></td>
-      </tr>
-    </tfoot>
-  </table>
-</div>
-
-
-<div class="p-container campaign-block">
-  <h2>Forbrukslån</h2>
-  <table>
-    <thead>
-      <tr>
-        <th>Långiver</th>
-        <th>Beløp</th>
-        <th>Reponstid</th>
-        <th>Aldersgrense</th>
-        <th>Vurdering</th>
-        <th>Søk</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><img src="img/bank-1.png"></td>
-        <td class="value">kr 15.000-350.000</td>
-        <td>Umiddelbart</td>
-        <td>18 år</td>
-        <td><img src="img/dice-4.png"></td>
-        <td><button class="btn btn-blue btn-complex">Søk nå</button></td>
-      </tr>
-      <tr>
-        <td><img src="img/bank-2.png"></td>
-        <td class="value">kr 25.000-350.000</td>
-        <td>Umiddelbart</td>
-        <td>18 år</td>
-        <td><img src="img/dice-6.png"></td>
-        <td><button class="btn btn-blue btn-complex">Søk nå</button></td>
-      </tr>
-      <tr>
-        <td><img src="img/bank-3.png"></td>
-        <td class="value">kr 5.000-350.000</td>
-        <td>Umiddelbart</td>
-        <td>18 år</td>
-        <td><img src="img/dice-6.png"></td>
-        <td><button class="btn btn-blue btn-complex">Søk nå</button></td>
-      </tr>
-    </tbody>
-    <tfoot>
-      <tr class="spacer"><td colspan="6"></td></tr>
-      <tr>
-        <td colspan="6"><a href="javascript:void(0);">Hent flere</a></td>
-      </tr>
-    </tfoot>
-  </table>
-</div>
-
-<div class="p-container campaign-block">
-  <h2>Kredittkort</h2>
-  <table>
-    <thead>
-      <tr>
-        <th>Långiver</th>
-        <th>Beløp</th>
-        <th>Reponstid</th>
-        <th>Aldersgrense</th>
-        <th>Vurdering</th>
-        <th>Søk</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><img src="img/bank-1.png"></td>
-        <td class="value">kr 15.000-350.000</td>
-        <td>Umiddelbart</td>
-        <td>18 år</td>
-        <td><img src="img/dice-4.png"></td>
-        <td><button class="btn btn-blue btn-complex">Søk nå</button></td>
-      </tr>
-      <tr>
-        <td><img src="img/bank-2.png"></td>
-        <td class="value">kr 25.000-350.000</td>
-        <td>Umiddelbart</td>
-        <td>18 år</td>
-        <td><img src="img/dice-6.png"></td>
-        <td><button class="btn btn-blue btn-complex">Søk nå</button></td>
-      </tr>
-      <tr>
-        <td><img src="img/bank-3.png"></td>
-        <td class="value">kr 5.000-350.000</td>
-        <td>Umiddelbart</td>
-        <td>18 år</td>
-        <td><img src="img/dice-6.png"></td>
-        <td><button class="btn btn-blue btn-complex">Søk nå</button></td>
-      </tr>
-    </tbody>
-    <tfoot>
-      <tr class="spacer"><td colspan="6"></td></tr>
-      <tr>
-        <td colspan="6"><a href="javascript:void(0);">Hent flere</a></td>
-      </tr>
-    </tfoot>
-  </table>
-</div>
+<ul class="slide-list campaign-list">
+  <li slideid="0" class="active">
+    <header>
+      <h2>Brukerens favorittlån</h2>
+    </header>
+    <div class="slide-content p-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Långiver</th>
+            <th class="hidden-desktop"></th>
+            <th class="visible-desktop">Beløp</th>
+            <th class="visible-desktop">Reponstid</th>
+            <th class="visible-desktop">Aldersgrense</th>
+            <th class="visible-desktop">Vurdering</th>
+            <th>Søk</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><img src="img/bank-1.png"></td>
+            <td class="hidden-desktop">
+              <strong>kr 15.000-350.000</strong><br/>
+              Umiddelbart svar Aldersgrense 18 år<br/>
+              <small>65k o/5år, 19,74%  etb950, Tot:99348</small>
+            </td>
+            <td class="visible-desktop"><strong>kr 15.000-350.000</strong></td>
+            <td class="visible-desktop">Umiddelbart</td>
+            <td class="visible-desktop">18 år</td>
+            <td class="visible-desktop"><img src="img/dice-4.png"></td>
+            <td>
+              <button class="btn btn-blue btn-complex btn-resp">Søk nå</button><br/>
+              <small class="visible-desktop">65k o/5år, 19,74%  etb950, Tot:99348</small>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="img/bank-2.png"></td>
+            <td class="hidden-desktop">
+              <strong>kr 25.000-350.000</strong><br/>
+              Umiddelbart svar Aldersgrense 18 år<br/>
+              <small>65k o/5år, 19,74%  etb950, Tot:99348</small>
+            </td>
+            <td class="visible-desktop"><strong>kr 25.000-350.000</strong></td>
+            <td class="visible-desktop">Umiddelbart</td>
+            <td class="visible-desktop">18 år</td>
+            <td class="visible-desktop"><img src="img/dice-4.png"></td>
+            <td>
+              <button class="btn btn-blue btn-complex btn-resp">Søk nå</button><br/>
+              <small class="visible-desktop">65k o/5år, 19,74%  etb950, Tot:99348</small>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="img/bank-3.png"></td>
+            <td class="hidden-desktop">
+              <strong>kr 5.000-350.000</strong><br/>
+              Umiddelbart svar Aldersgrense 18 år<br/>
+              <small>65k o/5år, 19,74%  etb950, Tot:99348</small>
+            </td>
+            <td class="visible-desktop"><strong>kr 5.000-350.000</strong></td>
+            <td class="visible-desktop">Umiddelbart</td>
+            <td class="visible-desktop">18 år</td>
+            <td class="visible-desktop"><img src="img/dice-4.png"></td>
+            <td>
+              <button class="btn btn-blue btn-complex btn-resp">Søk nå</button><br/>
+              <small class="visible-desktop">65k o/5år, 19,74%  etb950, Tot:99348</small>
+            </td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr class="spacer"><td colspan="6"></td></tr>
+          <tr>
+            <td colspan="6"><a href="javascript:void(0);">Hent flere</a></td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </li>
+  <li slideid="1" class="active">
+    <header>
+      <h2>Forbrukslån</h2>
+    </header>
+    <div class="slide-content p-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Långiver</th>
+            <th class="hidden-desktop"></th>
+            <th class="visible-desktop">Beløp</th>
+            <th class="visible-desktop">Reponstid</th>
+            <th class="visible-desktop">Aldersgrense</th>
+            <th class="visible-desktop">Vurdering</th>
+            <th>Søk</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><img src="img/bank-2.png"></td>
+            <td class="hidden-desktop">
+              <strong>kr 25.000-350.000</strong><br/>
+              Umiddelbart svar Aldersgrense 18 år<br/>
+              <small>65k o/5år, 19,74%  etb950, Tot:99348</small>
+            </td>
+            <td class="visible-desktop"><strong>kr 25.000-350.000</strong></td>
+            <td class="visible-desktop">Umiddelbart</td>
+            <td class="visible-desktop">18 år</td>
+            <td class="visible-desktop"><img src="img/dice-4.png"></td>
+            <td>
+              <button class="btn btn-blue btn-complex btn-resp">Søk nå</button><br/>
+              <small>65k o/5år, 19,74%  etb950, Tot:99348</small>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="img/bank-3.png"></td>
+            <td class="hidden-desktop">
+              <strong>kr 5.000-350.000</strong><br/>
+              Umiddelbart svar Aldersgrense 18 år<br/>
+              <small>65k o/5år, 19,74%  etb950, Tot:99348</small>
+            </td>
+            <td class="visible-desktop"><strong>kr 5.000-350.000</strong></td>
+            <td class="visible-desktop">Umiddelbart</td>
+            <td class="visible-desktop">18 år</td>
+            <td class="visible-desktop"><img src="img/dice-4.png"></td>
+            <td>
+              <button class="btn btn-blue btn-complex btn-resp">Søk nå</button><br/>
+              <small>65k o/5år, 19,74%  etb950, Tot:99348</small>
+            </td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr class="spacer"><td colspan="6"></td></tr>
+          <tr>
+            <td colspan="6"><a href="javascript:void(0);">Hent flere</a></td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </li>
+  <li slideid="2" class="active">
+    <header>
+      <h2>Kredittkort</h2>
+    </header>
+    <div class="slide-content p-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Långiver</th>
+            <th class="hidden-desktop"></th>
+            <th class="visible-desktop">Beløp</th>
+            <th class="visible-desktop">Reponstid</th>
+            <th class="visible-desktop">Aldersgrense</th>
+            <th class="visible-desktop">Vurdering</th>
+            <th>Søk</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><img src="img/bank-1.png"></td>
+            <td class="hidden-desktop">
+              <strong>kr 15.000-350.000</strong><br/>
+              Umiddelbart svar Aldersgrense 18 år<br/>
+              <small>65k o/5år, 19,74%  etb950, Tot:99348</small>
+            </td>
+            <td class="visible-desktop"><strong>kr 15.000-350.000</strong></td>
+            <td class="visible-desktop">Umiddelbart</td>
+            <td class="visible-desktop">18 år</td>
+            <td class="visible-desktop"><img src="img/dice-4.png"></td>
+            <td>
+              <button class="btn btn-blue btn-complex btn-resp">Søk nå</button><br/>
+              <small>65k o/5år, 19,74%  etb950, Tot:99348</small>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="img/bank-3.png"></td>
+            <td class="hidden-desktop">
+              <strong>kr 5.000-350.000</strong><br/>
+              Umiddelbart svar Aldersgrense 18 år<br/>
+              <small>65k o/5år, 19,74%  etb950, Tot:99348</small>
+            </td>
+            <td class="visible-desktop"><strong>kr 5.000-350.000</strong></td>
+            <td class="visible-desktop">Umiddelbart</td>
+            <td class="visible-desktop">18 år</td>
+            <td class="visible-desktop"><img src="img/dice-4.png"></td>
+            <td>
+              <button class="btn btn-blue btn-complex btn-resp">Søk nå</button><br/>
+              <small>65k o/5år, 19,74%  etb950, Tot:99348</small>
+            </td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr class="spacer"><td colspan="6"></td></tr>
+          <tr>
+            <td colspan="6"><a href="javascript:void(0);">Hent flere</a></td>
+          </tr>
+        </tfoot>
+      </table>
+    </table>
+  </li>
+</ul>

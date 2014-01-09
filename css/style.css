@@ -79,41 +79,41 @@ body {
   padding: 0;
 }
 
-/* line 6, ../sass/partials/layout/_layout.scss */
-.p-container {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-/* line 10, ../sass/partials/layout/_layout.scss */
+/* line 7, ../sass/partials/layout/_layout.scss */
 .l-container, .p-container {
   position: relative;
   width: 100%;
   max-width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 14, ../sass/partials/layout/_layout.scss */
+.p-container {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 @media (min-width: 1200px) {
-  /* line 10, ../sass/partials/layout/_layout.scss */
-  .l-container, .p-container {
-    margin-left: auto;
-    margin-right: auto;
+  /* line 14, ../sass/partials/layout/_layout.scss */
+  .p-container {
     padding-left: 0;
     padding-right: 0;
   }
 }
 
 /* line 1, ../sass/partials/module/partials/_helpers.scss */
-.clearfix, .info-items, .topic-header-block nav {
+.clearfix, .info-items, .slide-header-block .slide-nav {
   *zoom: 1;
 }
 /* line 7, ../sass/partials/module/partials/_helpers.scss */
-.clearfix:before, .info-items:before, .topic-header-block nav:before, .clearfix:after, .info-items:after, .topic-header-block nav:after {
+.clearfix:before, .info-items:before, .slide-header-block .slide-nav:before, .clearfix:after, .info-items:after, .slide-header-block .slide-nav:after {
   content: " ";
   /* 1 */
   display: table;
   /* 2 */
 }
 /* line 12, ../sass/partials/module/partials/_helpers.scss */
-.clearfix:after, .info-items:after, .topic-header-block nav:after {
+.clearfix:after, .info-items:after, .slide-header-block .slide-nav:after {
   clear: both;
 }
 
@@ -310,6 +310,16 @@ a {
   padding-left: 15px;
   padding-right: 15px;
 }
+@media (min-width: 0) and (max-width: 959px) {
+  /* line 46, ../sass/partials/module/partials/_buttons.scss */
+  .btn.btn-complex.btn-resp {
+    padding-right: 5px;
+  }
+  /* line 49, ../sass/partials/module/partials/_buttons.scss */
+  .btn.btn-complex.btn-resp:before {
+    display: none;
+  }
+}
 
 /* line 1, ../sass/partials/module/partials/_header.scss */
 .header {
@@ -334,17 +344,17 @@ a {
   }
 }
 
-/* line 20, ../sass/partials/module/partials/_header.scss */
+/* line 19, ../sass/partials/module/partials/_header.scss */
 .light-blue-block {
   background-color: #deeced;
 }
 
-/* line 23, ../sass/partials/module/partials/_header.scss */
+/* line 22, ../sass/partials/module/partials/_header.scss */
 .dark-blue-block {
   background-color: #92d2d2;
 }
 
-/* line 26, ../sass/partials/module/partials/_header.scss */
+/* line 25, ../sass/partials/module/partials/_header.scss */
 .grey-block {
   background-color: #c9c5c2;
 }
@@ -680,12 +690,26 @@ a {
   color: #692f59;
 }
 
-/* line 3, ../sass/partials/module/partials/_content.scss */
+@media (min-width: 0) and (max-width: 959px) {
+  /* line 2, ../sass/partials/module/partials/_content.scss */
+  .visible-desktop {
+    display: none !important;
+  }
+}
+
+@media (min-width: 960px) {
+  /* line 7, ../sass/partials/module/partials/_content.scss */
+  .hidden-desktop {
+    display: none !important;
+  }
+}
+
+/* line 15, ../sass/partials/module/partials/_content.scss */
 .info-items {
   border-bottom: 8px solid #ededed;
 }
 @media (min-width: 720px) {
-  /* line 3, ../sass/partials/module/partials/_content.scss */
+  /* line 15, ../sass/partials/module/partials/_content.scss */
   .info-items {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -693,23 +717,23 @@ a {
   }
 }
 @media (min-width: 960px) {
-  /* line 3, ../sass/partials/module/partials/_content.scss */
+  /* line 15, ../sass/partials/module/partials/_content.scss */
   .info-items {
     padding-top: 40px;
     padding-bottom: 40px;
   }
 }
-/* line 17, ../sass/partials/module/partials/_content.scss */
+/* line 29, ../sass/partials/module/partials/_content.scss */
 .info-items header {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-/* line 21, ../sass/partials/module/partials/_content.scss */
+/* line 33, ../sass/partials/module/partials/_content.scss */
 .info-items header h2 {
   margin-bottom: 25px;
 }
 @media (min-width: 0) and (max-width: 719px) {
-  /* line 21, ../sass/partials/module/partials/_content.scss */
+  /* line 33, ../sass/partials/module/partials/_content.scss */
   .info-items header h2 {
     cursor: pointer;
     font-size: 1.25em;
@@ -717,7 +741,7 @@ a {
     font-weight: 600;
     margin-bottom: 0;
   }
-  /* line 29, ../sass/partials/module/partials/_content.scss */
+  /* line 41, ../sass/partials/module/partials/_content.scss */
   .info-items header h2:before {
     font-family: "forbrukerhjelpen" !important;
     content: "p";
@@ -727,7 +751,7 @@ a {
   }
 }
 @media (min-width: 720px) {
-  /* line 38, ../sass/partials/module/partials/_content.scss */
+  /* line 50, ../sass/partials/module/partials/_content.scss */
   .info-items header h2:before {
     content: "";
     width: 130px;
@@ -735,7 +759,7 @@ a {
     background: url(../img/info-item-left.png) center left no-repeat;
     display: inline-block;
   }
-  /* line 45, ../sass/partials/module/partials/_content.scss */
+  /* line 57, ../sass/partials/module/partials/_content.scss */
   .info-items header h2:after {
     content: "";
     width: 130px;
@@ -745,43 +769,43 @@ a {
   }
 }
 @media (min-width: 960px) {
-  /* line 17, ../sass/partials/module/partials/_content.scss */
+  /* line 29, ../sass/partials/module/partials/_content.scss */
   .info-items header {
     text-align: center;
   }
 }
-/* line 58, ../sass/partials/module/partials/_content.scss */
+/* line 70, ../sass/partials/module/partials/_content.scss */
 .info-items .info-item {
   margin-bottom: 25px;
   min-height: 105px;
   display: none;
 }
 @media (min-width: 720px) {
-  /* line 58, ../sass/partials/module/partials/_content.scss */
+  /* line 70, ../sass/partials/module/partials/_content.scss */
   .info-items .info-item {
     display: block;
     margin-bottom: 10px;
   }
 }
-/* line 66, ../sass/partials/module/partials/_content.scss */
+/* line 78, ../sass/partials/module/partials/_content.scss */
 .info-items .info-item p {
   margin-top: 20px;
   color: #787878;
   font-size: 1.125em;
 }
-/* line 71, ../sass/partials/module/partials/_content.scss */
+/* line 83, ../sass/partials/module/partials/_content.scss */
 .info-items .info-item p.recommend {
   color: black;
 }
 @media (min-width: 320px) and (max-width: 959px) {
-  /* line 76, ../sass/partials/module/partials/_content.scss */
+  /* line 88, ../sass/partials/module/partials/_content.scss */
   .info-items .info-item img {
     float: left;
     margin: 0 15px 0 0;
   }
 }
 @media (min-width: 960px) {
-  /* line 58, ../sass/partials/module/partials/_content.scss */
+  /* line 70, ../sass/partials/module/partials/_content.scss */
   .info-items .info-item {
     width: 29.41176%;
     clear: right;
@@ -790,37 +814,37 @@ a {
     margin-right: 5.88235%;
     text-align: center;
   }
-  /* line 83, ../sass/partials/module/partials/_content.scss */
+  /* line 95, ../sass/partials/module/partials/_content.scss */
   .info-items .info-item:nth-of-type(3n) {
     margin-right: 0;
   }
-  /* line 87, ../sass/partials/module/partials/_content.scss */
+  /* line 99, ../sass/partials/module/partials/_content.scss */
   .info-items .info-item img {
     margin-bottom: 24px;
   }
 }
 @media (min-width: 0) and (max-width: 719px) {
-  /* line 94, ../sass/partials/module/partials/_content.scss */
+  /* line 106, ../sass/partials/module/partials/_content.scss */
   .info-items .open .info-item {
     display: block;
   }
-  /* line 97, ../sass/partials/module/partials/_content.scss */
+  /* line 109, ../sass/partials/module/partials/_content.scss */
   .info-items .open h2:before {
     content: "q";
   }
 }
 
-/* line 105, ../sass/partials/module/partials/_content.scss */
+/* line 117, ../sass/partials/module/partials/_content.scss */
 table {
   width: 100%;
   border-spacing: 0px;
 }
-/* line 109, ../sass/partials/module/partials/_content.scss */
+/* line 121, ../sass/partials/module/partials/_content.scss */
 table thead th, table thead td, table tfoot th, table tfoot td {
   padding: 12px;
   background-color: #ededed;
 }
-/* line 113, ../sass/partials/module/partials/_content.scss */
+/* line 125, ../sass/partials/module/partials/_content.scss */
 table thead th, table tfoot th {
   font-size: 0.75em;
   font-weight: 300;
@@ -828,31 +852,36 @@ table thead th, table tfoot th {
   text-transform: uppercase;
   border-left: 1px solid #d5d5d5;
 }
-/* line 119, ../sass/partials/module/partials/_content.scss */
+/* line 131, ../sass/partials/module/partials/_content.scss */
 table thead th:first-child, table tfoot th:first-child {
   border-left: none;
 }
-/* line 123, ../sass/partials/module/partials/_content.scss */
+/* line 135, ../sass/partials/module/partials/_content.scss */
 table thead td, table tfoot td {
   font-size: 0.875em;
   text-align: center;
 }
-/* line 127, ../sass/partials/module/partials/_content.scss */
+/* line 139, ../sass/partials/module/partials/_content.scss */
 table thead .spacer td, table tfoot .spacer td {
   background: none;
   padding: 5px;
 }
-/* line 133, ../sass/partials/module/partials/_content.scss */
+/* line 145, ../sass/partials/module/partials/_content.scss */
 table tbody td {
   padding: 12px;
   font-size: 1.125em;
   text-align: left;
   border-bottom: 1px solid #d5d5d5;
 }
-/* line 139, ../sass/partials/module/partials/_content.scss */
-table tbody td.value {
+/* line 151, ../sass/partials/module/partials/_content.scss */
+table tbody td.value, table tbody td strong {
   font-weight: 600;
   color: #692f59;
+}
+/* line 155, ../sass/partials/module/partials/_content.scss */
+table tbody td small {
+  font-size: 0.7em;
+  color: #787878;
 }
 
 /* line 1, ../sass/partials/module/partials/_footer.scss */
@@ -1134,42 +1163,42 @@ table tbody td.value {
   cursor: pointer;
 }
 
-/* line 2, ../sass/partials/module/partials/_topic.scss */
-.topic-header-block {
+/* line 2, ../sass/partials/module/partials/_slides.scss */
+.slide-header-block {
   position: relative;
 }
-/* line 5, ../sass/partials/module/partials/_topic.scss */
-.topic-header-block > div {
+/* line 5, ../sass/partials/module/partials/_slides.scss */
+.slide-header-block > div {
   position: relative;
   overflow: hidden;
   height: 260px;
 }
 @media (min-width: 480px) {
-  /* line 5, ../sass/partials/module/partials/_topic.scss */
-  .topic-header-block > div {
+  /* line 5, ../sass/partials/module/partials/_slides.scss */
+  .slide-header-block > div {
     height: 345px;
   }
 }
-/* line 12, ../sass/partials/module/partials/_topic.scss */
-.topic-header-block > div .topic-img {
+/* line 12, ../sass/partials/module/partials/_slides.scss */
+.slide-header-block > div .back-img {
   position: absolute;
   z-index: 1;
   height: 100%;
   top: 0;
   display: none;
 }
-/* line 18, ../sass/partials/module/partials/_topic.scss */
-.topic-header-block > div .topic-img.right {
+/* line 18, ../sass/partials/module/partials/_slides.scss */
+.slide-header-block > div .back-img.right {
   right: 0;
 }
 @media (min-width: 720px) {
-  /* line 12, ../sass/partials/module/partials/_topic.scss */
-  .topic-header-block > div .topic-img {
+  /* line 12, ../sass/partials/module/partials/_slides.scss */
+  .slide-header-block > div .back-img {
     display: block;
   }
 }
-/* line 25, ../sass/partials/module/partials/_topic.scss */
-.topic-header-block > div header {
+/* line 25, ../sass/partials/module/partials/_slides.scss */
+.slide-header-block > div header {
   position: absolute;
   z-index: 3;
   margin-top: 50px;
@@ -1178,68 +1207,68 @@ table tbody td.value {
   color: white;
 }
 @media (min-width: 720px) {
-  /* line 25, ../sass/partials/module/partials/_topic.scss */
-  .topic-header-block > div header {
+  /* line 25, ../sass/partials/module/partials/_slides.scss */
+  .slide-header-block > div header {
     margin-top: 70px;
   }
 }
-/* line 36, ../sass/partials/module/partials/_topic.scss */
-.topic-header-block > div h1, .topic-header-block > div h2 {
+/* line 36, ../sass/partials/module/partials/_slides.scss */
+.slide-header-block > div h1, .slide-header-block > div h2 {
   text-transform: uppercase;
   color: white;
   font-size: 2.875em;
   margin-bottom: 0;
 }
 @media (min-width: 480px) {
-  /* line 36, ../sass/partials/module/partials/_topic.scss */
-  .topic-header-block > div h1, .topic-header-block > div h2 {
+  /* line 36, ../sass/partials/module/partials/_slides.scss */
+  .slide-header-block > div h1, .slide-header-block > div h2 {
     font-size: 4.25em;
   }
 }
-/* line 45, ../sass/partials/module/partials/_topic.scss */
-.topic-header-block > div h2 {
+/* line 45, ../sass/partials/module/partials/_slides.scss */
+.slide-header-block > div h2 {
   text-transform: uppercase;
   color: white;
-  font-size: 2.375em;
+  font-size: 2.25em;
+  line-height: 1.2em;
   margin-bottom: 0;
 }
 @media (min-width: 480px) {
-  /* line 45, ../sass/partials/module/partials/_topic.scss */
-  .topic-header-block > div h2 {
+  /* line 45, ../sass/partials/module/partials/_slides.scss */
+  .slide-header-block > div h2 {
     font-size: 3.375em;
-    line-height: 1.2em;
     margin-bottom: 0.2em;
   }
 }
-/* line 56, ../sass/partials/module/partials/_topic.scss */
-.topic-header-block > div span {
+/* line 56, ../sass/partials/module/partials/_slides.scss */
+.slide-header-block > div span {
   font-style: italic;
   font-size: 1.375em;
 }
-/* line 62, ../sass/partials/module/partials/_topic.scss */
-.topic-header-block nav {
+/* line 62, ../sass/partials/module/partials/_slides.scss */
+.slide-header-block .slide-nav {
   position: relative;
   height: 75px;
   display: none;
 }
 @media (min-width: 720px) {
-  /* line 62, ../sass/partials/module/partials/_topic.scss */
-  .topic-header-block nav {
+  /* line 62, ../sass/partials/module/partials/_slides.scss */
+  .slide-header-block .slide-nav {
     display: block;
   }
 }
-/* line 70, ../sass/partials/module/partials/_topic.scss */
-.topic-header-block nav ul {
+/* line 70, ../sass/partials/module/partials/_slides.scss */
+.slide-header-block .slide-nav ul {
   margin-top: 25px;
 }
-/* line 72, ../sass/partials/module/partials/_topic.scss */
-.topic-header-block nav ul li {
+/* line 72, ../sass/partials/module/partials/_slides.scss */
+.slide-header-block .slide-nav ul li {
   display: block;
   float: left;
   width: 12.5%;
 }
-/* line 76, ../sass/partials/module/partials/_topic.scss */
-.topic-header-block nav ul li a {
+/* line 76, ../sass/partials/module/partials/_slides.scss */
+.slide-header-block .slide-nav ul li a {
   display: block;
   border-left: 1px solid #ccc;
   text-align: center;
@@ -1250,42 +1279,34 @@ table tbody td.value {
   color: black;
   text-decoration: none;
 }
-/* line 87, ../sass/partials/module/partials/_topic.scss */
-.topic-header-block nav ul li:first-child a {
+/* line 87, ../sass/partials/module/partials/_slides.scss */
+.slide-header-block .slide-nav ul li:first-child a {
   border-left: none;
 }
-/* line 90, ../sass/partials/module/partials/_topic.scss */
-.topic-header-block nav ul li.active a, .topic-header-block nav ul li a:hover {
+/* line 90, ../sass/partials/module/partials/_slides.scss */
+.slide-header-block .slide-nav ul li.active a, .slide-header-block .slide-nav ul li a:hover {
   color: #692f59;
   text-decoration: underline;
 }
 
-/* line 100, ../sass/partials/module/partials/_topic.scss */
-.topic-header h2 {
+/* line 100, ../sass/partials/module/partials/_slides.scss */
+.slide-list li header h2 {
   position: relative;
   padding: 40px 20px 20px;
-  margin-bottom: 25px;
-  border-bottom: 2px solid #ededed;
   text-align: center;
 }
-/* line 106, ../sass/partials/module/partials/_topic.scss */
-.topic-header h2:after {
-  display: none;
-}
 @media (min-width: 0) and (max-width: 719px) {
-  /* line 100, ../sass/partials/module/partials/_topic.scss */
-  .topic-header h2 {
+  /* line 100, ../sass/partials/module/partials/_slides.scss */
+  .slide-list li header h2 {
     text-align: left;
     cursor: pointer;
     font-size: 1.25em;
     color: black;
     font-weight: 600;
     padding-top: 20px;
-    margin-bottom: 0;
-    border-bottom: none;
   }
-  /* line 118, ../sass/partials/module/partials/_topic.scss */
-  .topic-header h2:after {
+  /* line 111, ../sass/partials/module/partials/_slides.scss */
+  .slide-list li header h2:after {
     font-family: "forbrukerhjelpen" !important;
     content: "t";
     display: block;
@@ -1293,44 +1314,107 @@ table tbody td.value {
     vertical-align: middle;
     font-size: 1.625em;
     padding-left: 15px;
-    border-left: 1px solid #ccc;
+    border-left: 1px solid #d5d5d5;
     height: 35px;
     color: #d5d5d5;
   }
 }
 
-/* line 133, ../sass/partials/module/partials/_topic.scss */
-.topic-footer {
-  padding-top: 25px;
-  padding-bottom: 25px;
-  text-align: center;
+/* line 127, ../sass/partials/module/partials/_slides.scss */
+.slide-content {
   display: none;
 }
-/* line 137, ../sass/partials/module/partials/_topic.scss */
-.topic-footer span {
-  display: block;
-  margin-top: 30px;
-  margin-bottom: 20px;
-  font-size: 0.875em;
+
+/* line 130, ../sass/partials/module/partials/_slides.scss */
+.slide-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
-/* line 142, ../sass/partials/module/partials/_topic.scss */
-.topic-footer span img {
-  vertical-align: middle;
-  margin-right: 10px;
+/* line 134, ../sass/partials/module/partials/_slides.scss */
+.slide-list li {
+  list-style: none;
+  border-bottom: 8px solid #ededed;
 }
 @media (min-width: 720px) {
-  /* line 133, ../sass/partials/module/partials/_topic.scss */
-  .topic-footer {
+  /* line 134, ../sass/partials/module/partials/_slides.scss */
+  .slide-list li {
+    border-bottom: 2px solid #ededed;
+  }
+}
+@media (min-width: 0) and (max-width: 719px) {
+  /* line 134, ../sass/partials/module/partials/_slides.scss */
+  .slide-list li {
+    display: block;
+  }
+  /* line 143, ../sass/partials/module/partials/_slides.scss */
+  .slide-list li.open .slide-content {
+    display: block;
+  }
+  /* line 146, ../sass/partials/module/partials/_slides.scss */
+  .slide-list li.open header h2 {
+    background-color: #deeced;
+    color: #692f59;
+  }
+  /* line 149, ../sass/partials/module/partials/_slides.scss */
+  .slide-list li.open header h2:after {
+    content: "u";
+  }
+}
+@media (min-width: 720px) {
+  /* line 134, ../sass/partials/module/partials/_slides.scss */
+  .slide-list li {
+    display: none;
+  }
+  /* line 157, ../sass/partials/module/partials/_slides.scss */
+  .slide-list li.active {
+    display: block;
+  }
+  /* line 159, ../sass/partials/module/partials/_slides.scss */
+  .slide-list li.active .slide-content {
     display: block;
   }
 }
 
-/* line 152, ../sass/partials/module/partials/_topic.scss */
-.topic-content {
-  display: none;
+/* line 3, ../sass/partials/module/partials/_topic.scss */
+.campaign-list header h2 {
+  margin-bottom: 0;
 }
-/* line 153, ../sass/partials/module/partials/_topic.scss */
-.topic-content img {
+@media (min-width: 720px) {
+  /* line 2, ../sass/partials/module/partials/_topic.scss */
+  .campaign-list {
+    padding-bottom: 50px;
+  }
+  /* line 8, ../sass/partials/module/partials/_topic.scss */
+  .campaign-list header h2 {
+    padding-bottom: 15px;
+  }
+  /* line 11, ../sass/partials/module/partials/_topic.scss */
+  .campaign-list li {
+    border-bottom: none;
+  }
+}
+@media (min-width: 0) and (max-width: 719px) {
+  /* line 16, ../sass/partials/module/partials/_topic.scss */
+  .campaign-list thead, .campaign-list tfoot {
+    display: none;
+  }
+}
+
+/* line 23, ../sass/partials/module/partials/_topic.scss */
+.topic-list header h2 {
+  margin-bottom: 25px;
+  border-bottom: 2px solid #ededed;
+}
+@media (min-width: 0) and (max-width: 719px) {
+  /* line 23, ../sass/partials/module/partials/_topic.scss */
+  .topic-list header h2 {
+    margin-bottom: 0;
+    border-bottom: none;
+  }
+}
+/* line 33, ../sass/partials/module/partials/_topic.scss */
+.topic-list .slide-content img {
   margin-top: 25px;
   margin-right: 25px;
   margin-bottom: 15px;
@@ -1338,112 +1422,76 @@ table tbody td.value {
   float: left;
 }
 @media (min-width: 720px) {
-  /* line 153, ../sass/partials/module/partials/_topic.scss */
-  .topic-content img {
+  /* line 33, ../sass/partials/module/partials/_topic.scss */
+  .topic-list .slide-content img {
     display: block;
   }
 }
 @media (min-width: 960px) {
-  /* line 153, ../sass/partials/module/partials/_topic.scss */
-  .topic-content img {
+  /* line 33, ../sass/partials/module/partials/_topic.scss */
+  .topic-list .slide-content img {
     margin-left: 15px;
   }
 }
-/* line 166, ../sass/partials/module/partials/_topic.scss */
-.topic-content > div {
+/* line 46, ../sass/partials/module/partials/_topic.scss */
+.topic-list .slide-content > div {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 @media (min-width: 960px) {
-  /* line 166, ../sass/partials/module/partials/_topic.scss */
-  .topic-content > div {
+  /* line 46, ../sass/partials/module/partials/_topic.scss */
+  .topic-list .slide-content > div {
     overflow: hidden;
   }
 }
-/* line 173, ../sass/partials/module/partials/_topic.scss */
-.topic-content p {
+/* line 53, ../sass/partials/module/partials/_topic.scss */
+.topic-list .slide-content p {
   margin-bottom: 30px;
   color: #787878;
   font-size: 1em;
   line-height: 1.75em;
 }
 
-/* line 182, ../sass/partials/module/partials/_topic.scss */
-.topic-list {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
+/* line 62, ../sass/partials/module/partials/_topic.scss */
+.topic-footer {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+  display: none;
 }
-/* line 186, ../sass/partials/module/partials/_topic.scss */
-.topic-list li {
-  list-style: none;
-  border-bottom: 8px solid #ededed;
+/* line 66, ../sass/partials/module/partials/_topic.scss */
+.topic-footer span {
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 0.875em;
 }
-@media (min-width: 720px) {
-  /* line 186, ../sass/partials/module/partials/_topic.scss */
-  .topic-list li {
-    border-bottom: 2px solid #ededed;
-  }
-}
-@media (min-width: 0) and (max-width: 719px) {
-  /* line 186, ../sass/partials/module/partials/_topic.scss */
-  .topic-list li {
-    display: block;
-  }
-  /* line 195, ../sass/partials/module/partials/_topic.scss */
-  .topic-list li.open .topic-content {
-    display: block;
-  }
-  /* line 198, ../sass/partials/module/partials/_topic.scss */
-  .topic-list li.open header h2 {
-    background-color: #deeced;
-    color: #692f59;
-  }
-  /* line 201, ../sass/partials/module/partials/_topic.scss */
-  .topic-list li.open header h2:after {
-    content: "u";
-  }
+/* line 71, ../sass/partials/module/partials/_topic.scss */
+.topic-footer span img {
+  vertical-align: middle;
+  margin-right: 10px;
 }
 @media (min-width: 720px) {
-  /* line 186, ../sass/partials/module/partials/_topic.scss */
-  .topic-list li {
-    display: none;
-  }
-  /* line 209, ../sass/partials/module/partials/_topic.scss */
-  .topic-list li.active {
-    display: block;
-  }
-  /* line 211, ../sass/partials/module/partials/_topic.scss */
-  .topic-list li.active .topic-content {
+  /* line 62, ../sass/partials/module/partials/_topic.scss */
+  .topic-footer {
     display: block;
   }
 }
 
-/* line 219, ../sass/partials/module/partials/_topic.scss */
+/* line 82, ../sass/partials/module/partials/_topic.scss */
 .topic-infobox {
   background-color: #deeced;
   padding: 25px;
   text-align: center;
 }
-/* line 223, ../sass/partials/module/partials/_topic.scss */
+/* line 86, ../sass/partials/module/partials/_topic.scss */
 .topic-infobox h4 {
   margin-top: 0;
   margin-bottom: 5px;
 }
 @media (min-width: 720px) {
-  /* line 219, ../sass/partials/module/partials/_topic.scss */
+  /* line 82, ../sass/partials/module/partials/_topic.scss */
   .topic-infobox {
     display: none;
   }
-}
-
-/* line 2, ../sass/partials/module/partials/_campaign.scss */
-.campaign-block {
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-/* line 5, ../sass/partials/module/partials/_campaign.scss */
-.campaign-block h2 {
-  text-align: center;
-  margin-bottom: 0.5em;
 }
