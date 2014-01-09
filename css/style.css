@@ -216,7 +216,11 @@ a {
   padding: 0 !important;
   margin: -1px !important;
 }
-/* line 8, ../sass/partials/module/partials/_buttons.scss */
+/* line 7, ../sass/partials/module/partials/_buttons.scss */
+.btn.btn-blue.btn-complex:before {
+  border-color: #317a7a;
+}
+/* line 11, ../sass/partials/module/partials/_buttons.scss */
 .btn.btn-purple {
   font-size: 18px;
   padding: 0.5em 1.5em;
@@ -274,21 +278,37 @@ a {
   padding: 0 !important;
   margin: -1px !important;
 }
-/* line 13, ../sass/partials/module/partials/_buttons.scss */
-.btn.btn-complex {
-  padding-right: 16px !important;
+/* line 14, ../sass/partials/module/partials/_buttons.scss */
+.btn.btn-purple.btn-complex:before {
+  border-color: #d3bacd;
 }
-/* line 15, ../sass/partials/module/partials/_buttons.scss */
-.btn.btn-complex span {
-  display: inline-block;
-  margin: 5px 8px;
-  padding-right: 30px;
-  border-right: 1px solid #d9a2c9;
+/* line 19, ../sass/partials/module/partials/_buttons.scss */
+.btn.btn-complex {
+  position: relative;
+  width: 100%;
+  padding: 15px 55px 15px 5px;
+  text-align: center;
+  font-weight: normal;
+  font-size: 20px;
   -webkit-font-smoothing: antialiased;
 }
-/* line 22, ../sass/partials/module/partials/_buttons.scss */
-.btn.btn-complex i {
+/* line 28, ../sass/partials/module/partials/_buttons.scss */
+.btn.btn-complex:before {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  font-family: "forbrukerhjelpen" !important;
+  content: "k";
+  font-size: 20px;
+  font-style: normal;
   vertical-align: middle;
+  border-left-width: 1px;
+  border-left-style: solid;
+  margin-top: 4px;
+  margin-left: 35px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /* line 1, ../sass/partials/module/partials/_header.scss */

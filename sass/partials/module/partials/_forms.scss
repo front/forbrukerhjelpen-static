@@ -154,21 +154,4 @@
   label {
     cursor: pointer;
   }
-
-  button {
-    padding-right: 12px !important;
-    span {
-      display: inline-block;
-      border-right: 1px solid lighten(#672a55, 46);
-      margin: 5px 8px;
-      padding-right: 25px;
-      font-weight: normal;
-      font-size: em(17,16);
-      -webkit-font-smoothing: antialiased;
-    }
-    i {
-      line-height: 20px;
-      vertical-align: middle;
-    }
-  }
 }
