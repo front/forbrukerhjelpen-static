@@ -1,97 +1,99 @@
 
 .visible-desktop {
-	@include breakpoint(0 ($break-medium - 1px)) {
-		display: none !important;
-	}
+  @include breakpoint(0 ($break-medium - 1px)) {
+    display: none !important;
+  }
 }
 .hidden-desktop {
-	@include breakpoint($break-medium) {
-		display: none !important;
-	}
+  @include breakpoint($break-medium) {
+    display: none !important;
+  }
 }
 
+.content-block {
+  header h2 {
+    text-align: center;
+    padding: 40px 20px 10px;
+
+    @include breakpoint(0 ($break-small - 1px)) {
+      padding-top: 20px;
+      padding-bottom: 20px;
+
+      text-align: left;
+      cursor: pointer;
+      font-size: em(20,16);
+      color: $color-text-dark;
+      font-weight: 600;
+      margin-bottom: 0;
+    }
+  }
+}
 
 // Information items
 .info-items {
-	@extend .clearfix;
-	border-bottom: 8px solid $color-grey-light;
+  @extend .clearfix;
+  border-bottom: 8px solid $color-grey-light;
+  @include breakpoint($break-small) {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    border-bottom: 2px solid $color-grey-light;
+  }
+  header {
+    h2 {
+      @include breakpoint(0 ($break-small - 1px)) {
+        &:before {
+          font-family: "forbrukerhjelpen" !important;
+          content: "p";
+          vertical-align: middle;
+          margin-right: 15px;
+          margin-left: -20px;
+          color: $color-grey;
+        }
+      }
+      @include breakpoint($break-small) {
+        &:before {
+          content: "";
+          width: 130px;
+          height: 20px;
+          background: url(../img/info-item-left.png) center left no-repeat;
+          display: inline-block;
+        }
+        &:after {
+          content: "";
+          width: 130px;
+          height: 20px;
+          background: url(../img/info-item-right.png) center right no-repeat;
+          display: inline-block;
+        }
+      }
+    }
+  }
 
-	@include breakpoint($break-small) {
-		padding-top: 20px;
-		padding-bottom: 20px;
-		border-bottom: 2px solid $color-grey-light;
-	}
-	@include breakpoint($break-medium) {
-		padding-top: 40px;
-		padding-bottom: 40px;
-	}
-
-	header {
-		padding-top: 20px;
-		padding-bottom: 20px;
-
-		h2 {
-			margin-bottom: 25px;
-			@include breakpoint(0 ($break-small - 1px)) {
-				cursor: pointer;
-				font-size: em(20,16);
-				color: $color-text-dark;
-				font-weight: 600;
-				margin-bottom: 0;
-				&:before {
-        	font-family: "forbrukerhjelpen" !important;
-        	content: "p";
-					vertical-align: middle;
-					margin-right: 15px;
-					color: $color-grey;
-				}
-			}
-			@include breakpoint($break-small) {
-				&:before {
-					content: "";
-					width: 130px;
-					height: 20px;
-					background: url(../img/info-item-left.png) center left no-repeat;
-					display: inline-block;
-				}
-				&:after {
-					content: "";
-					width: 130px;
-					height: 20px;
-					background: url(../img/info-item-right.png) center right no-repeat;
-					display: inline-block;
-				}
-			}
-		}
-		@include breakpoint($break-medium) {
-			text-align: center;
-		}
-	}
-	.info-item {
-		margin-bottom: 25px;
-		min-height: 105px;
-		display: none;
-		@include breakpoint($break-small) {
-			display: block;
-			margin-bottom: 10px;
-		}
-		p {
-			margin-top: 20px;
-			color: $color-grey-dark;
-			font-size: em(18,16);
-			// word-break: break-all;
-			&.recommend {
-				color: $color-text-dark;
-			}
-		}
-		@include breakpoint($break-min ($break-medium - 1px)) {
-			img {
-				float: left;
-				margin: 0 15px 0 0;
-			}
-		}
-		@include breakpoint($break-medium) {
-			@include float-span(4);
+  .info-item {
+    margin-bottom: 25px;
+    min-height: 105px;
+    display: none;
+    @include breakpoint($break-small) {
+      display: block;
+      margin-bottom: 10px;
+    }
+    p {
+      margin-top: 20px;
+      color: $color-grey-dark;
+      font-size: em(18,16);
+      // word-break: break-all;
+      &.recommend {
+        color: $color-text-dark;
+      }
+    }
+    @include breakpoint($break-min ($break-medium - 1px)) {
+      img {
+        float: left;
+        margin: 0 15px 0 0;
+      }
+    }
+    @include breakpoint($break-medium) {
+      @include float-span(4);
       &:nth-of-type(3n) {
         margin-right: 0;
       }

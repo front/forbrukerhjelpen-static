@@ -96,19 +96,19 @@
   }
 }
 
-.slide-list li header {
-  h2 {
-    position: relative;
-    padding: 40px 20px 20px;
-    text-align: center;
+.slide-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  li {
+    list-style: none;
+    .slide-content {
+      display: none;
+    }
     @include breakpoint(0 ($break-small - 1px)) {
-      text-align: left;
-      cursor: pointer;
-      font-size: em(20,16);
-      color: $color-text-dark;
-      font-weight: 600;
-      padding-top: 20px;
-      &:after {
+      display: block;
+      border-bottom: 8px solid $color-grey-light;
+      header h2:after {
         font-family: "forbrukerhjelpen" !important;
         content: "t";
         display: block;
@@ -120,32 +120,12 @@
         height: 35px;
         color: $color-grey;
       }
-    }
-  }
-}
-
-.slide-content {
-  display: none;
-}
-.slide-list {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-  li {
-    list-style: none;
-    border-bottom: 8px solid $color-grey-light;
-    @include breakpoint($break-small) {
-      border-bottom: 2px solid $color-grey-light;
-    }
-    @include breakpoint(0 ($break-small - 1px)) {
-      display: block;
       &.open {
         .slide-content {
           display: block;
         }
         header h2 {
           background-color: $color-blue-light;
-          color: $color-purple;
           &:after {
             content: "u";
           }

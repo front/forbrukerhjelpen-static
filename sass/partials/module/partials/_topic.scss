@@ -1,36 +1,18 @@
 
-.campaign-list {
-  header h2 {
-    margin-bottom: 0;
-  }
-  @include breakpoint($break-small) {
-    padding-bottom: 50px;
-    header h2 {
-      padding-bottom: 15px;
-    }
-    li {
-      border-bottom: none;
-    }
-  }
-  @include breakpoint(0 ($break-small - 1px)) {
-    thead, tfoot {
-      display: none;
-    }
-  }
-}
-
 .topic-list {
-  header h2 {
-    margin-bottom: 25px;
-    border-bottom: 2px solid $color-grey-light;
-
-    @include breakpoint(0 ($break-small - 1px)) {
-      margin-bottom: 0;
-      border-bottom: none;
+  li {
+    @include breakpoint($break-small) {
+      border-bottom: 2px solid $color-grey-light;
+    }
+  }
+  header {
+    @include breakpoint($break-small) {
+      border-bottom: 2px solid $color-grey-light;
     }
   }
   .slide-content {
     img {
+      float: left;
       margin-top: 25px;
       margin-right: 25px;
       margin-bottom: 15px;
@@ -41,7 +23,6 @@
       @include breakpoint($break-medium) {
         margin-left: 15px;
       }
-      float: left;
     }
     &>div {
       padding-top: 30px;
@@ -89,6 +70,18 @@
   }
   @include breakpoint($break-small) {
     display: none;
+  }
+}
+
+
+.campaign-list {
+  @include breakpoint($break-small) {
+    padding-bottom: 50px;
+  }
+  @include breakpoint(0 ($break-small - 1px)) {
+    thead, tfoot {
+      display: none;
+    }
   }
 }
 
