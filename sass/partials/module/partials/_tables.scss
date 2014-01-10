@@ -1,0 +1,79 @@
+
+// Tables
+table {
+  width: 100%;
+  border-spacing: 0px;
+  thead, tfoot {
+    th, td {
+      padding: 12px;
+      background-color: $color-grey-light;
+    }
+    th {
+      font-size: em(12,16);
+      font-weight: 300;
+      text-align: left;
+      text-transform: uppercase;
+      border-left: 1px solid $color-grey;
+      &:first-child {
+        border-left: none;
+      }
+    }
+    td {
+      font-size: em(14,16);
+      text-align: center;
+    }
+    .spacer td {
+      background: none;
+      padding: 5px;
+    }
+  }
+  tbody {
+    td {
+      position: relative;
+      text-align: left;
+      border-bottom: 1px solid $color-grey;
+      padding: 12px;
+      font-size: em(18,16);
+
+      @include breakpoint(0 ($break-small - 1px)) {
+        padding: 8px;
+        font-size: em(15,16);
+
+        &.overflow {
+          width: 28%;
+          max-width: 28%;
+          overflow: hidden;
+          img {
+            width: auto;
+            max-width: auto;
+            height: 100%;
+            margin: auto;
+            // position: absolute;
+            // z-index: 1000;
+            // top: 20px;
+          }
+        }
+      }
+      @include breakpoint(0 ($break-medium - 1px)) {
+        &.overlay img {
+          position: absolute;
+          z-index: 10;
+          top: 7px;
+          left: 50%;
+          margin-left: -15px;
+          width: 30px;
+          height: 30px;
+        }
+      }
+
+      strong {
+        font-weight: 600;
+        color: $color-purple;
+      }
+      small {
+        font-size: 0.7em;
+        color: $color-grey-dark;
+      }
+    }
+  }
+}
