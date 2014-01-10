@@ -91,3 +91,44 @@
     display: none;
   }
 }
+
+.loans-block {
+  td {
+    vertical-align: top;
+    line-height: 1.5em;
+  }
+}
+.loans-footer {
+  text-align: center;
+  margin-bottom: 100px;
+  button, strong, a, span {
+    display: block;
+  }
+  strong {
+    margin-top: 20px;
+    font-size: em(18,16);
+    font-weight: 600;
+    color: $color-purple;
+  }
+  div {
+    margin-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid $color-grey;
+  }
+  a {
+    margin-top: 25px;
+    font-size: em(14,16);
+  }
+  button {
+    margin-top: 30px;
+    width: auto !important;
+    padding-left: 25px !important;
+    padding-right: 75px !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  span {
+    margin-top: 90px;
+    color: $color-grey;
+  }
+}
