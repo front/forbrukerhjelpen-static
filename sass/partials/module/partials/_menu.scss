@@ -2,7 +2,7 @@
 @include breakpoint(0 ($break-small - 1px)) {
 	.main-menu {
 		position: absolute;
-		top: 64px;
+		top: 55px;
 		left: 0;
 		width: 100%;
 		height: 1200px;
@@ -14,40 +14,43 @@
 			padding: 0px;
 			margin: -0px;
 			li {
+				display: block;
 				border-top: 1px solid $color-purple-light;
 				background-color: $color-purple;
-				display: none;
-				&.mobile {
+				&.muted {
+					display: none;
+				}
+				a {
 					display: block;
-					a {
-						display: block;
-						padding: 30px;
-						font-size: em(20,16);
-						color: #fff;
-						text-decoration: none;
+					padding: 30px;
+					font-size: em(20,16);
+					color: #fff;
+					text-decoration: none;
 
-						&:after {
-							display: block;
-							float: right;
-							vertical-align: middle;
-		        	font-family: "forbrukerhjelpen" !important;
-		        	content: "v";
-							margin-top: -5px;
-							font-size: em(26,16);
-							color: $color-purple-light;
-						}
-						background-repeat: no-repeat;
-						background-position: right 80px center;
+					&:after {
+						display: block;
+						float: right;
+						vertical-align: middle;
+	        	font-family: "forbrukerhjelpen" !important;
+	        	content: "v";
+						margin-top: -5px;
+						margin-right: -10px;
+						font-size: em(26,16);
+						color: $color-purple-light;
 					}
-					&:nth-child(1) a {
-						background-image: url(../img/menu-icon-1.png);
-					}
-					&:nth-child(2) a {
-						background-image: url(../img/menu-icon-2.png);
-					}
-					&:nth-child(3)  a{
-						background-image: url(../img/menu-icon-3.png);
-					}
+
+					background-repeat: no-repeat;
+					background-position: right 60px center;
+					background-size: 65px 54px /* 86px 72px; */
+				}
+				&:nth-child(1) a {
+					background-image: url(../img/menu-icon-1.png);
+				}
+				&:nth-child(2) a {
+					background-image: url(../img/menu-icon-2.png);
+				}
+				&:nth-child(3)  a{
+					background-image: url(../img/menu-icon-3.png);
 				}
 			}
 		}
@@ -62,8 +65,9 @@
 
 @include breakpoint($break-small) {
 	.main-menu {
-		float: right;
-		margin: 5px 0 0;
+		position: absolute;
+		z-index: 2;
+		right: 0;
 		ul {
 			list-style: none;
 			padding: 0px;
@@ -71,14 +75,20 @@
 			li {
 				display: block;
 				float: left;
-				padding: 0px 8px;
 				a {
+					position: relative;
+					display: inline-block;
+					width: 100px;
+
 					text-decoration: none;
 					color: $color-text-dark;
 					font-size: em(14,16);
+					line-height: 1.1em;
+					text-align: center;
 				}
-				&.mobile img, &.mobile i{
-					display: none;
+				&.active a, a:hover {
+					color: $color-purple;
+					text-decoration: underline;
 				}
 				.submenu {
 					position: absolute;
@@ -87,6 +97,10 @@
 					li {
 						float: none;
 						padding: 4px 0px 2px;
+						a {
+							padding-top: 0;
+							background: none;
+						}
 					}
 				}
 				&:hover .submenu {
@@ -94,7 +108,30 @@
 				}
 			}
 		}
-
+		&.with-icons {
+			top: -20px;
+			li {
+				a {
+					padding-top: 36px;
+					background-repeat: no-repeat;
+					background-position: center top;
+					background-size: 32px 32px;
+				}
+				&:nth-child(1) a {
+					background-image: url(../img/menu-icon-1.png);
+				}
+				&:nth-child(2) a {
+					background-image: url(../img/menu-icon-2.png);
+				}
+				&:nth-child(3)  a{
+					background-image: url(../img/menu-icon-3.png);
+				}
+				.submenu a {
+					padding-top: 0;
+					background: none;
+				}
+			}
+		}
 	}
 }
 
@@ -120,7 +157,7 @@
 		padding: 5px 0;
 		height: 25px;
 	}
-	&> div {
+	&>div {
 		display: block;
 		float: right;
 		border-left: 1px solid #ccc;
@@ -138,7 +175,7 @@
 	}
 }
 
-.menu-toggle:hover, .menu-open .menu-toggle {
+.menu-open .menu-toggle {
 	border-color: $color-purple;
 	&> span {
 		color: $color-purple

@@ -5,8 +5,8 @@
     background-color: $color-blue-light;
   }
   .menu-block {
-    padding-top: 15px;
-    padding-bottom: 10px;
+    height: 40px;
+    padding-top: 12px;
     display: none;
     @include breakpoint($break-small) {
       display: block;
