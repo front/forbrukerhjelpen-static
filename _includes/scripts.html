@@ -1,8 +1,7 @@
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script>
-
- (function () {
+(function () {
 
   /* Menu */
    $('a.menu-toggle').click(function () {
@@ -14,17 +13,9 @@
     $(this).parent().toggleClass('open');
   });
 
+  /* Slides */
 
-  /* Topics */
-  $('.slide-list li header').click(function () {
-    var isOpen = $(this).parent().hasClass('open');
-    $('.slide-list li').removeClass('open');
-    if(!isOpen) {
-      $(this).parent().addClass('open');
-    }
-  });
-
-  window.fhSlides = {
+  var fhSlides = {
     active: 0,
     count: 8,
     next: function () {
@@ -50,6 +41,23 @@
     }
   };
 
-})();
+  $('.slide-nav li a').click(function (e){
+    e.preventDefault();
+    fhSlides.show( +$(this).parent().attr('slideid') );
+  });
+  $('.btn.prev-slide').click(function () {
+    fhSlides.prev();
+  });
+  $('.btn.next-slide').click(function () {
+    fhSlides.next();
+  });
+  $('.slide-list li header').click(function () {
+    var isOpen = $(this).parent().hasClass('open');
+    $('.slide-list li').removeClass('open');
+    if(!isOpen) {
+      $(this).parent().addClass('open');
+    }
+  });
 
+})();
 </script>
