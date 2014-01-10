@@ -143,12 +143,44 @@ table {
 	}
 	tbody {
 		td {
-			padding: 12px;
-			font-size: em(18,16);
+			position: relative;
 			text-align: left;
 			border-bottom: 1px solid $color-grey;
+			padding: 12px;
+			font-size: em(18,16);
 
-			&.value, strong {
+			@include breakpoint(0 ($break-small - 1px)) {
+				padding: 8px;
+				font-size: em(15,16);
+
+				&.overflow {
+					width: 28%;
+					max-width: 28%;
+					overflow: hidden;
+					img {
+						width: auto;
+						max-width: auto;
+						height: 100%;
+						margin: auto;
+						// position: absolute;
+						// z-index: 1000;
+						// top: 20px;
+					}
+				}
+			}
+			@include breakpoint(0 ($break-medium - 1px)) {
+				&.overlay img {
+					position: absolute;
+					z-index: 10;
+					top: 7px;
+					left: 50%;
+					margin-left: -15px;
+					width: 30px;
+					height: 30px;
+				}
+			}
+
+			strong {
 				font-weight: 600;
 				color: $color-purple;
 			}

@@ -19,7 +19,7 @@
 	&.btn-complex {
     position: relative;
     width: 100%;
-    padding: 15px 55px 15px 5px;
+    padding: 15px 60px 15px 10px;
     text-align: center;
     font-weight: normal;
     font-size: 20px;
@@ -45,7 +45,7 @@
     }
     &.btn-resp {
       @include breakpoint(0 ($break-medium - 1px)) {
-        padding-right: 5px;
+        padding-right: 10px;
         &:before {
           display: none;
         }

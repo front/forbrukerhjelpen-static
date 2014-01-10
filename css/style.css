@@ -286,7 +286,7 @@ a {
 .btn.btn-complex {
   position: relative;
   width: 100%;
-  padding: 15px 55px 15px 5px;
+  padding: 15px 60px 15px 10px;
   text-align: center;
   font-weight: normal;
   font-size: 20px;
@@ -313,7 +313,7 @@ a {
 @media (min-width: 0) and (max-width: 959px) {
   /* line 46, ../sass/partials/module/partials/_buttons.scss */
   .btn.btn-complex.btn-resp {
-    padding-right: 5px;
+    padding-right: 10px;
   }
   /* line 49, ../sass/partials/module/partials/_buttons.scss */
   .btn.btn-complex.btn-resp:before {
@@ -868,17 +868,50 @@ table thead .spacer td, table tfoot .spacer td {
 }
 /* line 145, ../sass/partials/module/partials/_content.scss */
 table tbody td {
-  padding: 12px;
-  font-size: 1.125em;
+  position: relative;
   text-align: left;
   border-bottom: 1px solid #d5d5d5;
+  padding: 12px;
+  font-size: 1.125em;
 }
-/* line 151, ../sass/partials/module/partials/_content.scss */
-table tbody td.value, table tbody td strong {
+@media (min-width: 0) and (max-width: 719px) {
+  /* line 145, ../sass/partials/module/partials/_content.scss */
+  table tbody td {
+    padding: 8px;
+    font-size: 0.9375em;
+  }
+  /* line 156, ../sass/partials/module/partials/_content.scss */
+  table tbody td.overflow {
+    width: 28%;
+    max-width: 28%;
+    overflow: hidden;
+  }
+  /* line 160, ../sass/partials/module/partials/_content.scss */
+  table tbody td.overflow img {
+    width: auto;
+    max-width: auto;
+    height: 100%;
+    margin: auto;
+  }
+}
+@media (min-width: 0) and (max-width: 959px) {
+  /* line 172, ../sass/partials/module/partials/_content.scss */
+  table tbody td.overlay img {
+    position: absolute;
+    z-index: 10;
+    top: 7px;
+    left: 50%;
+    margin-left: -15px;
+    width: 30px;
+    height: 30px;
+  }
+}
+/* line 183, ../sass/partials/module/partials/_content.scss */
+table tbody td strong {
   font-weight: 600;
   color: #692f59;
 }
-/* line 155, ../sass/partials/module/partials/_content.scss */
+/* line 187, ../sass/partials/module/partials/_content.scss */
 table tbody td small {
   font-size: 0.7em;
   color: #787878;
