@@ -1,10 +1,12 @@
 body {
   margin: 0;
   padding: 0;
+  &.login {
+    background-color: $color-blue-light;
+  }
 }
 
-
-.l-container, .p-container {
+.l-container, .p-container, .s-container {
   position: relative;
   width: 100%;
   max-width: $break-large;
@@ -18,4 +20,7 @@ body {
     padding-left: 0;
     padding-right: 0;
   }
+}
+.s-container {
+  max-width: $break-medium;
 }

@@ -1,0 +1,146 @@
+
+.login-block {
+  .content {
+    background-color: #fff;
+    @include breakpoint($break-medium) {
+      margin-top: 140px;
+      padding: 20px;
+      -webkit-box-shadow: 4px 4px 20px 1px #ccc;
+      box-shadow: 4px 4px 20px 1px #ccc;
+    }
+
+    &>div {
+      position: relative;
+      overflow: hidden;
+      height: 500px;
+      background: $color-blue;
+      @include breakpoint($break-small) {
+        height: 400px;
+
+        background: -moz-linear-gradient(left, $color-blue 50%, $color-blue-medium 50%);
+        background: -webkit-gradient(linear, left top, right top, color-stop(50%,$color-blue), color-stop(50%,$color-blue-medium));
+        background: -webkit-linear-gradient(left, $color-blue 50%,$color-blue-medium 50%);
+        background: -o-linear-gradient(left, $color-blue 50%,$color-blue-medium 50%);
+        background: -ms-linear-gradient(left, $color-blue 50%,$color-blue-medium 50%);
+        background: linear-gradient(to right, $color-blue 50%,$color-blue-medium 50%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-blue', endColorstr='$color-blue-medium',GradientType=1 );
+      }
+    }
+    .back-img {
+      position: absolute;
+      z-index: 1;
+      top: -45px;
+      left: -215px;
+      height: 455px;
+      display: none;
+      @include breakpoint($break-small) {
+        display: block;
+      }
+    }
+    header {
+      position: absolute;
+      z-index: 2;
+      text-align: center;
+      width: 100%;
+      top: 40px;
+      @include breakpoint($break-small) {
+        width: 50%;
+        top: 85px;
+      }
+      h1 {
+        text-transform: uppercase;
+        color: #fff;
+        font-size: em(46,16);
+        @include breakpoint($break-small) {
+          font-size: em(56,16);
+        }
+      }
+    }
+    form {
+      position: absolute;
+      z-index: 3;
+      top: 190px;
+      left: 50%;
+      width: 90%;
+      margin-left: -45%;
+      @include breakpoint($break-small) {
+        top: 70px;
+        left: 75%;
+        width: 280px;
+        margin-left: -140px;
+      }
+      div.input {
+        padding: 12px 10px 20px 10px;
+        margin-bottom: 10px;
+        background-color: #fff;
+        i {
+          position: absolute;
+          font-size: 30px;
+        }
+      }
+      input[type="text"] {
+        border: none;
+        margin: 5px 0 0 36px;
+        width: 180px;
+        background: none;
+        &:focus {
+          outline: none;
+        }
+      }
+
+      .arrow-box {
+        position: relative;
+        height: 50px;
+        padding: 12px 15px;
+        margin-bottom: 10px;
+        color: #fff;
+        background-color: #242d2d;
+        font-size: 18px;
+        text-align: center;
+        &:after {
+          position: absolute;
+          pointer-events: none;
+          top: 100%;
+          left: 50%;
+          border: solid transparent;
+          content: " ";
+          height: 0;
+          width: 0;
+          border-top-color: #242d2d;
+          border-width: 10px;
+          margin-left: -10px;
+        }
+      }
+      span {
+        display: block;
+        margin-top: 10px;
+        text-align: right;
+        font-size: em(14,16);
+        i {
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+  .copyright, .help {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-top: 20px;
+    font-size: em(14,16);
+    text-align: center;
+    color: $color-grey-dark;
+
+    @include breakpoint($break-medium) {
+      padding-right: 0px;
+      padding-left: 0px;
+    }
+  }
+  @include breakpoint($break-small) {
+    .copyright {
+      float: left;
+    }
+    .help {
+      float: right;
+    }
+  }
+}

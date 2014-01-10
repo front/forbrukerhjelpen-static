@@ -1,6 +1,10 @@
 .header {
-  margin-top: 35px;
-  margin-bottom: 30px;
+  @extend .clearfix;
+  background-color: $color-webpage-bg;
+  &>div {
+    margin-top: 35px;
+    margin-bottom: 30px;
+  }
 }
 
 .main-logo {
