@@ -17,35 +17,23 @@
   // big hero unit image
   position: relative;
   overflow: hidden;
+  background-image: url(../img/home-women-bg.png);
+  background-repeat: no-repeat;
+  background-position: bottom 100px right 0;
+  background-size: 60% auto;
+  @include breakpoint($break-xsmall) {
+    background-position: top 30px right 0;
+  }
   @include breakpoint($break-small) {
     height: 425px;
+    background-position: top 0 right 0;
+    background-size: 450px 425px;
   }
   @include breakpoint($break-medium) {
     height: 650px;
+    background-position: top 0 right 0;
+    background-size: 689px 650px;
   }
-
-  img {
-    position: absolute;
-    z-index: 1;
-    right: 0;
-    width: 60%;
-    bottom: 100px;
-    @include breakpoint($break-xsmall) {
-      top: 30px;
-      bottom: auto;
-    }
-    @include breakpoint($break-small) {
-      width: auto;
-      height: 425px;
-      top: 0;
-    }
-    @include breakpoint($break-medium) {
-      height: 650px;
-      top: auto;
-      bottom: 0;
-    }
-  }
-
   // teaser text
   .teaser {
     position: relative;

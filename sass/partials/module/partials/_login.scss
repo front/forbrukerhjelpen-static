@@ -20,24 +20,6 @@
       background: $color-blue-medium;
       @include breakpoint($break-small) {
         height: 400px;
-        background: -moz-linear-gradient(left, $color-blue 50%, $color-blue-medium 50%);
-        background: -webkit-gradient(linear, left top, right top, color-stop(50%,$color-blue), color-stop(50%,$color-blue-medium));
-        background: -webkit-linear-gradient(left, $color-blue 50%,$color-blue-medium 50%);
-        background: -o-linear-gradient(left, $color-blue 50%,$color-blue-medium 50%);
-        background: -ms-linear-gradient(left, $color-blue 50%,$color-blue-medium 50%);
-        background: linear-gradient(to right, $color-blue 50%,$color-blue-medium 50%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-blue', endColorstr='$color-blue-medium',GradientType=1 );
-      }
-    }
-    .back-img {
-      position: absolute;
-      z-index: 1;
-      top: -45px;
-      left: -215px;
-      height: 455px;
-      display: none;
-      @include breakpoint($break-small) {
-        display: block;
       }
     }
     header {
@@ -51,8 +33,12 @@
 
       @include breakpoint($break-small) {
         width: 50%;
+        height: 530px;
         padding-top: 85px;
-        background: none;
+        background-image: url(../img/home-women-bg.png);
+        background-repeat: no-repeat;
+        background-size: 482px 455px;
+        background-position: left -215px top -45px;
       }
       h1 {
         text-transform: uppercase;

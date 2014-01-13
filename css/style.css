@@ -607,103 +607,86 @@ a {
 .hero {
   position: relative;
   overflow: hidden;
-}
-@media (min-width: 720px) {
-  /* line 16, ../sass/partials/module/partials/_hero.scss */
-  .hero {
-    height: 425px;
-  }
-}
-@media (min-width: 960px) {
-  /* line 16, ../sass/partials/module/partials/_hero.scss */
-  .hero {
-    height: 650px;
-  }
-}
-/* line 27, ../sass/partials/module/partials/_hero.scss */
-.hero img {
-  position: absolute;
-  z-index: 1;
-  right: 0;
-  width: 60%;
-  bottom: 100px;
+  background-image: url(../img/home-women-bg.png);
+  background-repeat: no-repeat;
+  background-position: bottom 100px right 0;
+  background-size: 60% auto;
 }
 @media (min-width: 480px) {
-  /* line 27, ../sass/partials/module/partials/_hero.scss */
-  .hero img {
-    top: 30px;
-    bottom: auto;
+  /* line 16, ../sass/partials/module/partials/_hero.scss */
+  .hero {
+    background-position: top 30px right 0;
   }
 }
 @media (min-width: 720px) {
-  /* line 27, ../sass/partials/module/partials/_hero.scss */
-  .hero img {
-    width: auto;
+  /* line 16, ../sass/partials/module/partials/_hero.scss */
+  .hero {
     height: 425px;
-    top: 0;
+    background-position: top 0 right 0;
+    background-size: 450px 425px;
   }
 }
 @media (min-width: 960px) {
-  /* line 27, ../sass/partials/module/partials/_hero.scss */
-  .hero img {
+  /* line 16, ../sass/partials/module/partials/_hero.scss */
+  .hero {
     height: 650px;
-    top: auto;
-    bottom: 0;
+    background-position: top 0 right 0;
+    background-size: 689px 650px;
   }
 }
-/* line 50, ../sass/partials/module/partials/_hero.scss */
+/* line 38, ../sass/partials/module/partials/_hero.scss */
 .hero .teaser {
   position: relative;
   padding-top: 40px;
   z-index: 2;
 }
 @media (min-width: 720px) {
-  /* line 50, ../sass/partials/module/partials/_hero.scss */
+  /* line 38, ../sass/partials/module/partials/_hero.scss */
   .hero .teaser {
     max-width: 50%;
     padding-top: 55px;
   }
 }
 @media (min-width: 960px) {
-  /* line 50, ../sass/partials/module/partials/_hero.scss */
+  /* line 38, ../sass/partials/module/partials/_hero.scss */
   .hero .teaser {
     padding-top: 70px;
     padding-bottom: 70px;
   }
 }
-/* line 64, ../sass/partials/module/partials/_hero.scss */
+/* line 52, ../sass/partials/module/partials/_hero.scss */
 .hero .teaser h1, .hero .teaser h2 {
   font-size: 2em !important;
 }
 @media (min-width: 960px) {
-  /* line 64, ../sass/partials/module/partials/_hero.scss */
+  /* line 52, ../sass/partials/module/partials/_hero.scss */
   .hero .teaser h1, .hero .teaser h2 {
     font-size: 2.25em !important;
   }
 }
-/* line 70, ../sass/partials/module/partials/_hero.scss */
+/* line 58, ../sass/partials/module/partials/_hero.scss */
 .hero .teaser ul {
   padding-left: 0;
 }
-/* line 72, ../sass/partials/module/partials/_hero.scss */
+/* line 60, ../sass/partials/module/partials/_hero.scss */
 .hero .teaser ul li {
   list-style: none;
   font-size: 1.125em;
   width: 50%;
 }
 @media (min-width: 720px) {
-  /* line 72, ../sass/partials/module/partials/_hero.scss */
+  /* line 60, ../sass/partials/module/partials/_hero.scss */
   .hero .teaser ul li {
     width: auto;
   }
 }
 @media (min-width: 960px) {
-  /* line 72, ../sass/partials/module/partials/_hero.scss */
+  /* line 60, ../sass/partials/module/partials/_hero.scss */
   .hero .teaser ul li {
     font-size: 1.375em;
   }
 }
-/* line 82, ../sass/partials/module/partials/_hero.scss */
+/* line 70, ../sass/partials/module/partials/_hero.scss */
 .hero .teaser ul li:before {
   display: inline-block;
   width: 30px;
@@ -711,7 +694,7 @@ a {
   font-family: "forbrukerhjelpen";
   font-size: 0.875em;
 }
-/* line 91, ../sass/partials/module/partials/_hero.scss */
+/* line 79, ../sass/partials/module/partials/_hero.scss */
 .hero .teaser p {
   margin-left: -20px;
   margin-right: -20px;
@@ -725,7 +708,7 @@ a {
   background-color: rgba(255, 255, 255, 0.8);
 }
 @media (min-width: 720px) {
-  /* line 91, ../sass/partials/module/partials/_hero.scss */
+  /* line 79, ../sass/partials/module/partials/_hero.scss */
   .hero .teaser p {
     margin-left: 0;
     margin-right: 0;
@@ -737,7 +720,7 @@ a {
     background: none;
   }
 }
-/* line 107, ../sass/partials/module/partials/_hero.scss */
+/* line 95, ../sass/partials/module/partials/_hero.scss */
 .hero .teaser p span {
   font-weight: 600;
   font-size: 1.57143em;
@@ -1656,31 +1639,9 @@ table tbody td small {
   /* line 16, ../sass/partials/module/partials/_login.scss */
   .login-block .content > div {
     height: 400px;
-    background: -moz-linear-gradient(left, #92d2d2 50%, #a7d9da 50%);
-    background: -webkit-gradient(linear, left top, right top, color-stop(50%, #92d2d2), color-stop(50%, #a7d9da));
-    background: -webkit-linear-gradient(left, #92d2d2 50%, #a7d9da 50%);
-    background: -o-linear-gradient(left, #92d2d2 50%, #a7d9da 50%);
-    background: -ms-linear-gradient(left, #92d2d2 50%, #a7d9da 50%);
-    background: linear-gradient(to right, #92d2d2 50%, #a7d9da 50%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$color-blue', endColorstr='$color-blue-medium',GradientType=1 );
   }
 }
-/* line 32, ../sass/partials/module/partials/_login.scss */
-.login-block .content .back-img {
-  position: absolute;
-  z-index: 1;
-  top: -45px;
-  left: -215px;
-  height: 455px;
-  display: none;
-}
-@media (min-width: 720px) {
-  /* line 32, ../sass/partials/module/partials/_login.scss */
-  .login-block .content .back-img {
-    display: block;
-  }
-}
-/* line 43, ../sass/partials/module/partials/_login.scss */
+/* line 25, ../sass/partials/module/partials/_login.scss */
 .login-block .content header {
   position: absolute;
   z-index: 2;
@@ -1691,26 +1652,30 @@ table tbody td small {
   background-color: #92d2d2;
 }
 @media (min-width: 720px) {
-  /* line 43, ../sass/partials/module/partials/_login.scss */
+  /* line 25, ../sass/partials/module/partials/_login.scss */
   .login-block .content header {
     width: 50%;
+    height: 530px;
     padding-top: 85px;
-    background: none;
+    background-image: url(../img/home-women-bg.png);
+    background-repeat: no-repeat;
+    background-size: 482px 455px;
+    background-position: left -215px top -45px;
   }
 }
-/* line 57, ../sass/partials/module/partials/_login.scss */
+/* line 43, ../sass/partials/module/partials/_login.scss */
 .login-block .content header h1, .login-block .content header h2 {
   text-transform: uppercase;
   color: #fff;
   font-size: 2.625em;
 }
 @media (min-width: 720px) {
-  /* line 57, ../sass/partials/module/partials/_login.scss */
+  /* line 43, ../sass/partials/module/partials/_login.scss */
   .login-block .content header h1, .login-block .content header h2 {
     font-size: 3.5em;
   }
 }
-/* line 66, ../sass/partials/module/partials/_login.scss */
+/* line 52, ../sass/partials/module/partials/_login.scss */
 .login-block .content form {
   position: absolute;
   z-index: 3;
@@ -1720,7 +1685,7 @@ table tbody td small {
   margin-left: -45%;
 }
 @media (min-width: 720px) {
-  /* line 66, ../sass/partials/module/partials/_login.scss */
+  /* line 52, ../sass/partials/module/partials/_login.scss */
   .login-block .content form {
     top: 70px;
     left: 75%;
@@ -1728,18 +1693,18 @@ table tbody td small {
     margin-left: -140px;
   }
 }
-/* line 79, ../sass/partials/module/partials/_login.scss */
+/* line 65, ../sass/partials/module/partials/_login.scss */
 .login-block .content form span {
   display: block;
   margin-top: 10px;
   text-align: right;
   font-size: 0.875em;
 }
-/* line 84, ../sass/partials/module/partials/_login.scss */
+/* line 70, ../sass/partials/module/partials/_login.scss */
 .login-block .content form span i {
   vertical-align: middle;
 }
-/* line 90, ../sass/partials/module/partials/_login.scss */
+/* line 76, ../sass/partials/module/partials/_login.scss */
 .login-block .copyright, .login-block .help {
   padding-right: 10px;
   padding-left: 10px;
@@ -1749,18 +1714,18 @@ table tbody td small {
   color: #787878;
 }
 @media (min-width: 960px) {
-  /* line 90, ../sass/partials/module/partials/_login.scss */
+  /* line 76, ../sass/partials/module/partials/_login.scss */
   .login-block .copyright, .login-block .help {
     padding-right: 0px;
     padding-left: 0px;
   }
 }
 @media (min-width: 720px) {
-  /* line 103, ../sass/partials/module/partials/_login.scss */
+  /* line 89, ../sass/partials/module/partials/_login.scss */
   .login-block .copyright {
     float: left;
   }
-  /* line 106, ../sass/partials/module/partials/_login.scss */
+  /* line 92, ../sass/partials/module/partials/_login.scss */
   .login-block .help {
     float: right;
   }
