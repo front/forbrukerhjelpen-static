@@ -1649,8 +1649,8 @@ table tbody td small {
 .login-block .content > div {
   position: relative;
   overflow: hidden;
-  height: 500px;
-  background: #92d2d2;
+  height: 530px;
+  background: #a7d9da;
 }
 @media (min-width: 720px) {
   /* line 16, ../sass/partials/module/partials/_login.scss */
@@ -1686,38 +1686,41 @@ table tbody td small {
   z-index: 2;
   text-align: center;
   width: 100%;
-  top: 40px;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  background-color: #92d2d2;
 }
 @media (min-width: 720px) {
   /* line 43, ../sass/partials/module/partials/_login.scss */
   .login-block .content header {
     width: 50%;
-    top: 85px;
+    padding-top: 85px;
+    background: none;
   }
 }
-/* line 53, ../sass/partials/module/partials/_login.scss */
+/* line 57, ../sass/partials/module/partials/_login.scss */
 .login-block .content header h1, .login-block .content header h2 {
   text-transform: uppercase;
   color: #fff;
-  font-size: 2.875em;
+  font-size: 2.625em;
 }
 @media (min-width: 720px) {
-  /* line 53, ../sass/partials/module/partials/_login.scss */
+  /* line 57, ../sass/partials/module/partials/_login.scss */
   .login-block .content header h1, .login-block .content header h2 {
     font-size: 3.5em;
   }
 }
-/* line 62, ../sass/partials/module/partials/_login.scss */
+/* line 66, ../sass/partials/module/partials/_login.scss */
 .login-block .content form {
   position: absolute;
   z-index: 3;
-  top: 190px;
+  top: 220px;
   left: 50%;
   width: 90%;
   margin-left: -45%;
 }
 @media (min-width: 720px) {
-  /* line 62, ../sass/partials/module/partials/_login.scss */
+  /* line 66, ../sass/partials/module/partials/_login.scss */
   .login-block .content form {
     top: 70px;
     left: 75%;
@@ -1725,18 +1728,18 @@ table tbody td small {
     margin-left: -140px;
   }
 }
-/* line 75, ../sass/partials/module/partials/_login.scss */
+/* line 79, ../sass/partials/module/partials/_login.scss */
 .login-block .content form span {
   display: block;
   margin-top: 10px;
   text-align: right;
   font-size: 0.875em;
 }
-/* line 80, ../sass/partials/module/partials/_login.scss */
+/* line 84, ../sass/partials/module/partials/_login.scss */
 .login-block .content form span i {
   vertical-align: middle;
 }
-/* line 86, ../sass/partials/module/partials/_login.scss */
+/* line 90, ../sass/partials/module/partials/_login.scss */
 .login-block .copyright, .login-block .help {
   padding-right: 10px;
   padding-left: 10px;
@@ -1746,18 +1749,18 @@ table tbody td small {
   color: #787878;
 }
 @media (min-width: 960px) {
-  /* line 86, ../sass/partials/module/partials/_login.scss */
+  /* line 90, ../sass/partials/module/partials/_login.scss */
   .login-block .copyright, .login-block .help {
     padding-right: 0px;
     padding-left: 0px;
   }
 }
 @media (min-width: 720px) {
-  /* line 99, ../sass/partials/module/partials/_login.scss */
+  /* line 103, ../sass/partials/module/partials/_login.scss */
   .login-block .copyright {
     float: left;
   }
-  /* line 102, ../sass/partials/module/partials/_login.scss */
+  /* line 106, ../sass/partials/module/partials/_login.scss */
   .login-block .help {
     float: right;
   }

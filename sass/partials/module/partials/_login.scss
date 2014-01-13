@@ -16,8 +16,8 @@
     &>div {
       position: relative;
       overflow: hidden;
-      height: 500px;
-      background: $color-blue;
+      height: 530px;
+      background: $color-blue-medium;
       @include breakpoint($break-small) {
         height: 400px;
         background: -moz-linear-gradient(left, $color-blue 50%, $color-blue-medium 50%);
@@ -45,15 +45,19 @@
       z-index: 2;
       text-align: center;
       width: 100%;
-      top: 40px;
+      padding-top: 40px;
+      padding-bottom: 10px;
+      background-color: $color-blue;
+
       @include breakpoint($break-small) {
         width: 50%;
-        top: 85px;
+        padding-top: 85px;
+        background: none;
       }
       h1 {
         text-transform: uppercase;
         color: #fff;
-        font-size: em(46,16);
+        font-size: em(42,16);
         @include breakpoint($break-small) {
           font-size: em(56,16);
         }
@@ -62,7 +66,7 @@
     form {
       position: absolute;
       z-index: 3;
-      top: 190px;
+      top: 220px;
       left: 50%;
       width: 90%;
       margin-left: -45%;
