@@ -219,9 +219,11 @@ form.styled {
         float: left;
       }
       @include breakpoint(0 ($break-small - 1px)) {
-        font-size: em(14,16);
         width: 50%;
         float: left;
+      }
+      @include breakpoint(0 ($break-xsmall - 1px)) {
+        font-size: em(14,16);
       }
     }
   }

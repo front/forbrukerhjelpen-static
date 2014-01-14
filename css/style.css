@@ -1227,12 +1227,17 @@ form.styled input[type="checkbox"] + label, form.styled input[type="radio"] + la
 @media (min-width: 0) and (max-width: 719px) {
   /* line 215, ../sass/partials/module/partials/_forms.scss */
   .loan-form-table > div .radio-group {
-    font-size: 0.875em;
     width: 50%;
     float: left;
   }
 }
-/* line 228, ../sass/partials/module/partials/_forms.scss */
+@media (min-width: 0) and (max-width: 479px) {
+  /* line 215, ../sass/partials/module/partials/_forms.scss */
+  .loan-form-table > div .radio-group {
+    font-size: 0.875em;
+  }
+}
+/* line 230, ../sass/partials/module/partials/_forms.scss */
 .loan-form-table header {
   padding: 12px;
   background-color: #ededed;
@@ -1242,7 +1247,7 @@ form.styled input[type="checkbox"] + label, form.styled input[type="radio"] + la
   font-weight: 600;
 }
 @media (min-width: 720px) {
-  /* line 228, ../sass/partials/module/partials/_forms.scss */
+  /* line 230, ../sass/partials/module/partials/_forms.scss */
   .loan-form-table header {
     font-size: 0.875em;
     font-weight: 300;
