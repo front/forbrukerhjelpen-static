@@ -1215,7 +1215,7 @@ form.styled input[type="checkbox"] + label, form.styled input[type="radio"] + la
 }
 /* line 215, ../sass/partials/module/partials/_forms.scss */
 .loan-form-table > div .radio-group {
-  padding: 0px 0;
+  padding: 0px;
 }
 @media (min-width: 960px) {
   /* line 215, ../sass/partials/module/partials/_forms.scss */
@@ -1235,9 +1235,10 @@ form.styled input[type="checkbox"] + label, form.styled input[type="radio"] + la
   /* line 215, ../sass/partials/module/partials/_forms.scss */
   .loan-form-table > div .radio-group {
     font-size: 0.875em;
+    padding: 1px 0;
   }
 }
-/* line 230, ../sass/partials/module/partials/_forms.scss */
+/* line 231, ../sass/partials/module/partials/_forms.scss */
 .loan-form-table header {
   padding: 12px;
   background-color: #ededed;
@@ -1247,7 +1248,7 @@ form.styled input[type="checkbox"] + label, form.styled input[type="radio"] + la
   font-weight: 600;
 }
 @media (min-width: 720px) {
-  /* line 230, ../sass/partials/module/partials/_forms.scss */
+  /* line 231, ../sass/partials/module/partials/_forms.scss */
   .loan-form-table header {
     font-size: 0.875em;
     font-weight: 300;

@@ -213,7 +213,7 @@ form.styled {
       }
     }
     .radio-group {
-      padding: 0px 0;
+      padding: 0px;
       @include breakpoint($break-medium) {
         width: 50%;
         float: left;
@@ -224,6 +224,7 @@ form.styled {
       }
       @include breakpoint(0 ($break-xsmall - 1px)) {
         font-size: em(14,16);
+        padding: 1px 0;
       }
     }
   }
