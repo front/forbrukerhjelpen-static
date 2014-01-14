@@ -122,6 +122,7 @@
     padding: 12px;
     @include breakpoint(0 ($break-small - 1px)) {
       text-align: left;
+      font-size: em(14,16);
     }
     @include breakpoint($break-small) {
       border-bottom: 1px solid $color-grey;

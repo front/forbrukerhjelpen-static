@@ -1204,41 +1204,35 @@ form.styled input[type="checkbox"] + label, form.styled input[type="radio"] + la
 }
 /* line 208, ../sass/partials/module/partials/_forms.scss */
 .loan-form-table > div div {
-  padding: 12px;
-  font-size: 1em;
+  padding: 12px 0 12px 12px;
+  font-size: 1.0625em;
 }
-@media (min-width: 960px) {
-  /* line 208, ../sass/partials/module/partials/_forms.scss */
-  .loan-form-table > div div {
-    font-size: 1.125em;
-  }
-}
-/* line 215, ../sass/partials/module/partials/_forms.scss */
-.loan-form-table > div .radio-group {
+/* line 212, ../sass/partials/module/partials/_forms.scss */
+.loan-form-table > div .input-group {
   padding: 0px;
 }
+@media (min-width: 0) and (max-width: 479px) {
+  /* line 212, ../sass/partials/module/partials/_forms.scss */
+  .loan-form-table > div .input-group {
+    font-size: 0.8125em;
+    padding: 1px 0;
+  }
+}
 @media (min-width: 960px) {
-  /* line 215, ../sass/partials/module/partials/_forms.scss */
-  .loan-form-table > div .radio-group {
+  /* line 219, ../sass/partials/module/partials/_forms.scss */
+  .loan-form-table > div.double .input-group {
     width: 50%;
     float: left;
   }
 }
 @media (min-width: 0) and (max-width: 719px) {
-  /* line 215, ../sass/partials/module/partials/_forms.scss */
-  .loan-form-table > div .radio-group {
+  /* line 219, ../sass/partials/module/partials/_forms.scss */
+  .loan-form-table > div.double .input-group {
     width: 50%;
     float: left;
   }
 }
-@media (min-width: 0) and (max-width: 479px) {
-  /* line 215, ../sass/partials/module/partials/_forms.scss */
-  .loan-form-table > div .radio-group {
-    font-size: 0.875em;
-    padding: 1px 0;
-  }
-}
-/* line 231, ../sass/partials/module/partials/_forms.scss */
+/* line 230, ../sass/partials/module/partials/_forms.scss */
 .loan-form-table header {
   padding: 12px;
   background-color: #ededed;
@@ -1248,7 +1242,7 @@ form.styled input[type="checkbox"] + label, form.styled input[type="radio"] + la
   font-weight: 600;
 }
 @media (min-width: 720px) {
-  /* line 231, ../sass/partials/module/partials/_forms.scss */
+  /* line 230, ../sass/partials/module/partials/_forms.scss */
   .loan-form-table header {
     font-size: 0.875em;
     font-weight: 300;
@@ -1686,6 +1680,7 @@ table tbody td small {
   /* line 121, ../sass/partials/module/partials/_topic.scss */
   .loans-footer div {
     text-align: left;
+    font-size: 0.875em;
   }
 }
 @media (min-width: 720px) {
@@ -1695,18 +1690,18 @@ table tbody td small {
     padding-bottom: 20px;
   }
 }
-/* line 131, ../sass/partials/module/partials/_topic.scss */
+/* line 132, ../sass/partials/module/partials/_topic.scss */
 .loans-footer a {
   margin-top: 25px;
   font-size: 0.875em;
 }
 @media (min-width: 0) and (max-width: 719px) {
-  /* line 131, ../sass/partials/module/partials/_topic.scss */
+  /* line 132, ../sass/partials/module/partials/_topic.scss */
   .loans-footer a {
     display: none;
   }
 }
-/* line 138, ../sass/partials/module/partials/_topic.scss */
+/* line 139, ../sass/partials/module/partials/_topic.scss */
 .loans-footer button {
   width: auto !important;
   padding-left: 25px !important;
@@ -1716,18 +1711,18 @@ table tbody td small {
   margin-top: 10px;
 }
 @media (min-width: 720px) {
-  /* line 138, ../sass/partials/module/partials/_topic.scss */
+  /* line 139, ../sass/partials/module/partials/_topic.scss */
   .loans-footer button {
     margin-top: 30px;
   }
 }
-/* line 149, ../sass/partials/module/partials/_topic.scss */
+/* line 150, ../sass/partials/module/partials/_topic.scss */
 .loans-footer span {
   margin-top: 90px;
   color: #d5d5d5;
 }
 @media (min-width: 0) and (max-width: 719px) {
-  /* line 149, ../sass/partials/module/partials/_topic.scss */
+  /* line 150, ../sass/partials/module/partials/_topic.scss */
   .loans-footer span {
     display: none;
   }

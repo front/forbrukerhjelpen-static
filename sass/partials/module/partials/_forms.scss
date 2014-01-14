@@ -206,14 +206,17 @@ form.styled {
       }
     }
     div {
-      padding: 12px;
-      font-size: em(16,16);
-      @include breakpoint($break-medium) {
-        font-size: em(18,16);
+      padding: 12px 0 12px 12px;
+      font-size: em(17,16);
+    }
+    .input-group {
+      padding: 0px;
+      @include breakpoint(0 ($break-xsmall - 1px)) {
+        font-size: em(13,16);
+        padding: 1px 0;
       }
     }
-    .radio-group {
-      padding: 0px;
+    &.double .input-group {
       @include breakpoint($break-medium) {
         width: 50%;
         float: left;
@@ -221,10 +224,6 @@ form.styled {
       @include breakpoint(0 ($break-small - 1px)) {
         width: 50%;
         float: left;
-      }
-      @include breakpoint(0 ($break-xsmall - 1px)) {
-        font-size: em(14,16);
-        padding: 1px 0;
       }
     }
   }
