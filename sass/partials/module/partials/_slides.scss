@@ -36,7 +36,7 @@
     h1 {
       text-transform: uppercase;
       color: $color-text-light;
-      font-size: em(46,16);
+      font-size: em(42,16);
       @include breakpoint($break-xsmall) {
         font-size: em(68,16);
       }

@@ -85,43 +85,72 @@
   }
 }
 
+
 .loans-block {
-  td {
-    vertical-align: top;
-    line-height: 1.5em;
+  &>header {
+    @include breakpoint(0 ($break-small - 1px)) {
+      display: none;
+    }
   }
 }
 .loans-footer {
+  margin-bottom: 20px;
   text-align: center;
-  margin-bottom: 100px;
+  @include breakpoint($break-small) {
+
+    margin-bottom: 100px;
+  }
   button, strong, a, span {
     display: block;
   }
   strong {
-    margin-top: 20px;
-    font-size: em(18,16);
-    font-weight: 600;
+    padding: 12px;
     color: $color-purple;
+    font-weight: 600;
+    @include breakpoint(0 ($break-small - 1px)) {
+      font-size: em(16,16);
+      background-color: $color-grey-light;
+      text-align: left;
+    }
+    @include breakpoint($break-small) {
+      padding-top: 20px;
+      font-size: em(18,16);
+      color: $color-purple;
+    }
   }
   div {
-    margin-top: 15px;
-    padding-bottom: 15px;
-    border-bottom: 1px solid $color-grey;
+    padding: 12px;
+    @include breakpoint(0 ($break-small - 1px)) {
+      text-align: left;
+    }
+    @include breakpoint($break-small) {
+      border-bottom: 1px solid $color-grey;
+      padding-bottom: 20px;
+    }
   }
   a {
     margin-top: 25px;
     font-size: em(14,16);
+    @include breakpoint(0 ($break-small - 1px)) {
+      display: none;
+    }
   }
   button {
-    margin-top: 30px;
     width: auto !important;
     padding-left: 25px !important;
     padding-right: 75px !important;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 10px;
+    @include breakpoint($break-small) {
+      margin-top: 30px;
+    }
   }
   span {
     margin-top: 90px;
     color: $color-grey;
+    @include breakpoint(0 ($break-small - 1px)) {
+      display: none;
+    }
   }
 }

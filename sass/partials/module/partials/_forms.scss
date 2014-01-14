@@ -186,3 +186,56 @@ form.styled {
     margin-right: 15px;
   }
 }
+
+
+.loan-form-table {
+  @extend .clearfix;
+  @include breakpoint($break-small) {
+    border-bottom: 1px solid #d5d5d5;
+  }
+
+  &>div {
+    @include breakpoint($break-small) {
+      float: left;
+      width: 25%;
+    }
+    @include breakpoint($break-medium) {
+      width: 20%;
+      &.double {
+        width: 40%;
+      }
+    }
+    div {
+      padding: 12px;
+      font-size: em(16,16);
+      @include breakpoint($break-medium) {
+        font-size: em(18,16);
+      }
+    }
+    .radio-group {
+      padding: 0px 0;
+      @include breakpoint($break-medium) {
+        width: 50%;
+        float: left;
+      }
+      @include breakpoint(0 ($break-small - 1px)) {
+        font-size: em(14,16);
+        width: 50%;
+        float: left;
+      }
+    }
+  }
+  header {
+    padding: 12px;
+    background-color: $color-grey-light;
+    border-left: 1px solid $color-grey;
+    color: $color-purple;
+    font-size: em(16,16);
+    font-weight: 600;
+    @include breakpoint($break-small) {
+      font-size: em(14,16);
+      font-weight: 300;
+      text-transform: uppercase;
+    }
+  }
+}
