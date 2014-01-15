@@ -90,7 +90,7 @@
 					color: $color-purple;
 					text-decoration: underline;
 				}
-				.submenu {
+				.sub-menu {
 					position: absolute;
 					z-index: 9;
 					display: none;
@@ -103,7 +103,7 @@
 						}
 					}
 				}
-				&:hover .submenu {
+				&:hover .sub-menu {
 					display: block;
 				}
 			}
@@ -117,16 +117,7 @@
 					background-position: center top;
 					background-size: 32px 32px;
 				}
-				&:nth-child(1) a {
-					background-image: url(../img/menu-icon-1.png);
-				}
-				&:nth-child(2) a {
-					background-image: url(../img/menu-icon-2.png);
-				}
-				&:nth-child(3)  a{
-					background-image: url(../img/menu-icon-3.png);
-				}
-				.submenu a {
+				.sub-menu a {
 					padding-top: 0;
 					background: none;
 				}
@@ -183,4 +174,15 @@
 	&> div span {
 		background-color: $color-purple;
 	}
+}
+
+// menu icons
+.laneguiden a {
+	background-image: url(../img/menu-icon-1.png);
+}
+.banker a {
+	background-image: url(../img/menu-icon-2.png);
+}
+.lanevelgeren a {
+	background-image: url(../img/menu-icon-3.png);
 }
