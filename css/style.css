@@ -1640,27 +1640,21 @@ table tbody td small {
 
 /* line 96, ../sass/partials/module/partials/_topic.scss */
 .loans-footer {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   text-align: center;
 }
-@media (min-width: 720px) {
-  /* line 96, ../sass/partials/module/partials/_topic.scss */
-  .loans-footer {
-    margin-bottom: 100px;
-  }
-}
-/* line 103, ../sass/partials/module/partials/_topic.scss */
+/* line 99, ../sass/partials/module/partials/_topic.scss */
 .loans-footer button, .loans-footer strong, .loans-footer a, .loans-footer span {
   display: block;
 }
-/* line 106, ../sass/partials/module/partials/_topic.scss */
+/* line 102, ../sass/partials/module/partials/_topic.scss */
 .loans-footer strong {
   padding: 12px;
   color: #692f59;
   font-weight: 600;
 }
 @media (min-width: 0) and (max-width: 719px) {
-  /* line 106, ../sass/partials/module/partials/_topic.scss */
+  /* line 102, ../sass/partials/module/partials/_topic.scss */
   .loans-footer strong {
     font-size: 1em;
     background-color: #ededed;
@@ -1668,43 +1662,44 @@ table tbody td small {
   }
 }
 @media (min-width: 720px) {
-  /* line 106, ../sass/partials/module/partials/_topic.scss */
+  /* line 102, ../sass/partials/module/partials/_topic.scss */
   .loans-footer strong {
     padding-top: 20px;
+    padding-bottom: 0px;
     font-size: 1.125em;
     color: #692f59;
   }
 }
-/* line 121, ../sass/partials/module/partials/_topic.scss */
+/* line 118, ../sass/partials/module/partials/_topic.scss */
 .loans-footer div {
   padding: 12px;
 }
 @media (min-width: 0) and (max-width: 719px) {
-  /* line 121, ../sass/partials/module/partials/_topic.scss */
+  /* line 118, ../sass/partials/module/partials/_topic.scss */
   .loans-footer div {
     text-align: left;
     font-size: 0.875em;
   }
 }
 @media (min-width: 720px) {
-  /* line 121, ../sass/partials/module/partials/_topic.scss */
+  /* line 118, ../sass/partials/module/partials/_topic.scss */
   .loans-footer div {
     border-bottom: 1px solid #d5d5d5;
     padding-bottom: 20px;
   }
 }
-/* line 132, ../sass/partials/module/partials/_topic.scss */
+/* line 129, ../sass/partials/module/partials/_topic.scss */
 .loans-footer a {
   margin-top: 25px;
   font-size: 0.875em;
 }
 @media (min-width: 0) and (max-width: 719px) {
-  /* line 132, ../sass/partials/module/partials/_topic.scss */
+  /* line 129, ../sass/partials/module/partials/_topic.scss */
   .loans-footer a {
     display: none;
   }
 }
-/* line 139, ../sass/partials/module/partials/_topic.scss */
+/* line 136, ../sass/partials/module/partials/_topic.scss */
 .loans-footer button {
   width: auto !important;
   padding-left: 25px !important;
@@ -1714,21 +1709,29 @@ table tbody td small {
   margin-top: 10px;
 }
 @media (min-width: 720px) {
-  /* line 139, ../sass/partials/module/partials/_topic.scss */
+  /* line 136, ../sass/partials/module/partials/_topic.scss */
   .loans-footer button {
     margin-top: 30px;
   }
 }
-/* line 150, ../sass/partials/module/partials/_topic.scss */
-.loans-footer span {
-  margin-top: 90px;
+
+/* line 148, ../sass/partials/module/partials/_topic.scss */
+.loans-results-placeholder {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 40px;
   color: #d5d5d5;
 }
 @media (min-width: 0) and (max-width: 719px) {
-  /* line 150, ../sass/partials/module/partials/_topic.scss */
-  .loans-footer span {
+  /* line 148, ../sass/partials/module/partials/_topic.scss */
+  .loans-results-placeholder {
     display: none;
   }
+}
+
+/* line 157, ../sass/partials/module/partials/_topic.scss */
+.loans-results {
+  margin-bottom: 50px;
 }
 
 /* line 2, ../sass/partials/module/partials/_login.scss */

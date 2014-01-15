@@ -94,12 +94,8 @@
   }
 }
 .loans-footer {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   text-align: center;
-  @include breakpoint($break-small) {
-
-    margin-bottom: 100px;
-  }
   button, strong, a, span {
     display: block;
   }
@@ -114,6 +110,7 @@
     }
     @include breakpoint($break-small) {
       padding-top: 20px;
+      padding-bottom: 0px;
       font-size: em(18,16);
       color: $color-purple;
     }
@@ -147,11 +144,16 @@
       margin-top: 30px;
     }
   }
-  span {
-    margin-top: 90px;
-    color: $color-grey;
-    @include breakpoint(0 ($break-small - 1px)) {
-      display: none;
-    }
+}
+.loans-results-placeholder {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  color: $color-grey;
+  @include breakpoint(0 ($break-small - 1px)) {
+    display: none;
   }
+}
+.loans-results {
+  margin-bottom: 50px;
 }
