@@ -65,7 +65,7 @@
 
 @include breakpoint($break-small) {
 	.main-menu {
-		position: absolute;
+		float: right;
 		z-index: 2;
 		right: 0;
 		ul {
@@ -109,7 +109,7 @@
 			}
 		}
 		&.with-icons {
-			top: -20px;
+			margin-top: -20px;
 			li {
 				a {
 					padding-top: 36px;
@@ -177,12 +177,12 @@
 }
 
 // menu icons
-.laneguiden a {
+.menu-icon-laneguiden a {
 	background-image: url(../img/menu-icon-1.png);
 }
-.banker a {
+.menu-icon-banker a {
 	background-image: url(../img/menu-icon-2.png);
 }
-.lanevelgeren a {
+.menu-icon-lanevelgeren a {
 	background-image: url(../img/menu-icon-3.png);
 }
