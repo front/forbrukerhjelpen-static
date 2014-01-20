@@ -85,6 +85,33 @@
   }
 }
 
+.comparison-list {
+  position: relative;
+  button {
+    width: 100%;
+  }
+  td:last-child {
+    vertical-align: top;
+    @include breakpoint(0 ($break-medium - 1px)) {
+      padding-top: 26px;
+    }
+  }
+  @include breakpoint($break-medium) {
+    li {
+      float: left;
+      width: 48.5%;
+      margin-right: 3%;
+      &:nth-of-type(2n) {
+        margin-right: 0;
+      }
+    }
+    td:first-child {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+
 
 .loans-block {
   &>header {
