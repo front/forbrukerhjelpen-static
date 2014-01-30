@@ -17,12 +17,12 @@
     border-top: 1px solid $color-blue;
     &> div {
       position: relative;
-      padding-top: 50px;
+      padding-top: 100px;
       padding-bottom: 30px;
     }
     @include breakpoint($break-small) {
       border-bottom: 1px solid $color-blue;
-      margin-bottom: 36px;
+      margin-bottom: 54px;
       &> div {
         padding-bottom: 50px;
       }
@@ -51,7 +51,7 @@
     color: darken($color-grey,30);
     @include breakpoint($break-small) {
       top: auto;
-      bottom: -32px;
+      bottom: -55px;
       font-size: em(14,16);
     }
   }
