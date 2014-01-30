@@ -1517,7 +1517,7 @@ table tbody td small {
 
 @media (min-width: 720px) {
   /* line 3, ../sass/partials/module/partials/_topic.scss */
-  .topic-list li {
+  .topic-list .content-block {
     border-bottom: 2px solid #ededed;
   }
 }

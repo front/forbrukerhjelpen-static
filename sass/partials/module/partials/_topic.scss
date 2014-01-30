@@ -1,6 +1,6 @@
 
 .topic-list {
-  li {
+  .content-block {
     @include breakpoint($break-small) {
       border-bottom: 2px solid $color-grey-light;
     }
