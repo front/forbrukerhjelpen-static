@@ -5,6 +5,7 @@ Required gems for development
 - singularitygs
 - sassy-buttons
 - jekyll
+- compass-normalize
 
 To see the site
 =======================
