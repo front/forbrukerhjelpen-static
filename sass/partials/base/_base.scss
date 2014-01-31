@@ -50,3 +50,8 @@ input[type="submit"] {
 input[type="search"] {
   -webkit-appearance: textfield;
 }
+
+// Remove border on images in ie9 and ie10
+a img {
+  border: none;
+}

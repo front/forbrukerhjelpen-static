@@ -73,6 +73,11 @@ input[type="search"] {
   -webkit-appearance: textfield;
 }
 
+/* line 55, ../sass/partials/base/_base.scss */
+a img {
+  border: none;
+}
+
 /* line 1, ../sass/partials/layout/_layout.scss */
 body {
   margin: 0;
