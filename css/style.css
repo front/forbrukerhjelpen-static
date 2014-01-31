@@ -746,24 +746,24 @@ a {
 @media (min-width: 0) and (max-width: 719px) {
   /* line 14, ../sass/partials/module/partials/_content.scss */
   .content-block header h2 {
-    padding: 20px 64px 20px 20px;
-    font-size: 1.1em;
-    padding: relative;
     text-align: left;
     cursor: pointer;
     font-size: 1.25em;
     color: black;
     font-weight: 600;
     margin-bottom: 0;
+    padding: 20px 64px 20px 20px;
+    font-size: 1.1em;
+    position: relative;
   }
 }
 
-/* line 34, ../sass/partials/module/partials/_content.scss */
+/* line 33, ../sass/partials/module/partials/_content.scss */
 .info-items {
   border-bottom: 8px solid #ededed;
 }
 @media (min-width: 720px) {
-  /* line 34, ../sass/partials/module/partials/_content.scss */
+  /* line 33, ../sass/partials/module/partials/_content.scss */
   .info-items {
     padding-top: 20px;
     padding-bottom: 40px;
@@ -771,7 +771,7 @@ a {
   }
 }
 @media (min-width: 0) and (max-width: 719px) {
-  /* line 45, ../sass/partials/module/partials/_content.scss */
+  /* line 44, ../sass/partials/module/partials/_content.scss */
   .info-items header h2:before {
     font-family: "forbrukerhjelpen" !important;
     content: "p";
@@ -782,7 +782,7 @@ a {
   }
 }
 @media (min-width: 720px) {
-  /* line 55, ../sass/partials/module/partials/_content.scss */
+  /* line 54, ../sass/partials/module/partials/_content.scss */
   .info-items header h2:before {
     content: "";
     width: 130px;
@@ -790,7 +790,7 @@ a {
     background: url(../img/info-item-left.png) center left no-repeat;
     display: inline-block;
   }
-  /* line 62, ../sass/partials/module/partials/_content.scss */
+  /* line 61, ../sass/partials/module/partials/_content.scss */
   .info-items header h2:after {
     content: "";
     width: 130px;
@@ -799,38 +799,38 @@ a {
     display: inline-block;
   }
 }
-/* line 73, ../sass/partials/module/partials/_content.scss */
+/* line 72, ../sass/partials/module/partials/_content.scss */
 .info-items .info-item {
   margin-bottom: 25px;
   min-height: 105px;
   display: none;
 }
 @media (min-width: 720px) {
-  /* line 73, ../sass/partials/module/partials/_content.scss */
+  /* line 72, ../sass/partials/module/partials/_content.scss */
   .info-items .info-item {
     display: block;
     margin-bottom: 10px;
   }
 }
-/* line 81, ../sass/partials/module/partials/_content.scss */
+/* line 80, ../sass/partials/module/partials/_content.scss */
 .info-items .info-item p {
   margin-top: 20px;
   color: #787878;
   font-size: 1.125em;
 }
-/* line 86, ../sass/partials/module/partials/_content.scss */
+/* line 85, ../sass/partials/module/partials/_content.scss */
 .info-items .info-item p.recommend {
   color: black;
 }
 @media (min-width: 320px) and (max-width: 959px) {
-  /* line 91, ../sass/partials/module/partials/_content.scss */
+  /* line 90, ../sass/partials/module/partials/_content.scss */
   .info-items .info-item img {
     float: left;
     margin: 0 15px 0 0;
   }
 }
 @media (min-width: 960px) {
-  /* line 73, ../sass/partials/module/partials/_content.scss */
+  /* line 72, ../sass/partials/module/partials/_content.scss */
   .info-items .info-item {
     width: 29.41176%;
     clear: right;
@@ -839,21 +839,21 @@ a {
     margin-right: 5.88235%;
     text-align: center;
   }
-  /* line 98, ../sass/partials/module/partials/_content.scss */
+  /* line 97, ../sass/partials/module/partials/_content.scss */
   .info-items .info-item:nth-of-type(3n) {
     margin-right: 0;
   }
-  /* line 102, ../sass/partials/module/partials/_content.scss */
+  /* line 101, ../sass/partials/module/partials/_content.scss */
   .info-items .info-item img {
     margin-bottom: 24px;
   }
 }
 @media (min-width: 0) and (max-width: 719px) {
-  /* line 109, ../sass/partials/module/partials/_content.scss */
+  /* line 108, ../sass/partials/module/partials/_content.scss */
   .info-items .open .info-item {
     display: block;
   }
-  /* line 112, ../sass/partials/module/partials/_content.scss */
+  /* line 111, ../sass/partials/module/partials/_content.scss */
   .info-items .open h2:before {
     content: "q";
   }
