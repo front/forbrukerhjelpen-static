@@ -626,63 +626,64 @@ a {
   /* line 16, ../sass/partials/module/partials/_hero.scss */
   .hero {
     height: 650px;
+    background-position: right 0;
     background-position: top 0 right 0;
     background-size: 689px 650px;
   }
 }
-/* line 38, ../sass/partials/module/partials/_hero.scss */
+/* line 39, ../sass/partials/module/partials/_hero.scss */
 .hero .teaser {
   position: relative;
   padding-top: 40px;
   z-index: 2;
 }
 @media (min-width: 720px) {
-  /* line 38, ../sass/partials/module/partials/_hero.scss */
+  /* line 39, ../sass/partials/module/partials/_hero.scss */
   .hero .teaser {
     max-width: 50%;
     padding-top: 55px;
   }
 }
 @media (min-width: 960px) {
-  /* line 38, ../sass/partials/module/partials/_hero.scss */
+  /* line 39, ../sass/partials/module/partials/_hero.scss */
   .hero .teaser {
     padding-top: 70px;
     padding-bottom: 70px;
   }
 }
-/* line 52, ../sass/partials/module/partials/_hero.scss */
+/* line 53, ../sass/partials/module/partials/_hero.scss */
 .hero .teaser h1, .hero .teaser h2 {
   font-size: 2em !important;
 }
 @media (min-width: 960px) {
-  /* line 52, ../sass/partials/module/partials/_hero.scss */
+  /* line 53, ../sass/partials/module/partials/_hero.scss */
   .hero .teaser h1, .hero .teaser h2 {
     font-size: 2.25em !important;
   }
 }
-/* line 58, ../sass/partials/module/partials/_hero.scss */
+/* line 59, ../sass/partials/module/partials/_hero.scss */
 .hero .teaser ul {
   padding-left: 0;
 }
-/* line 60, ../sass/partials/module/partials/_hero.scss */
+/* line 61, ../sass/partials/module/partials/_hero.scss */
 .hero .teaser ul li {
   list-style: none;
   font-size: 1.125em;
   width: 50%;
 }
 @media (min-width: 720px) {
-  /* line 60, ../sass/partials/module/partials/_hero.scss */
+  /* line 61, ../sass/partials/module/partials/_hero.scss */
   .hero .teaser ul li {
     width: auto;
   }
 }
 @media (min-width: 960px) {
-  /* line 60, ../sass/partials/module/partials/_hero.scss */
+  /* line 61, ../sass/partials/module/partials/_hero.scss */
   .hero .teaser ul li {
     font-size: 1.375em;
   }
 }
-/* line 70, ../sass/partials/module/partials/_hero.scss */
+/* line 71, ../sass/partials/module/partials/_hero.scss */
 .hero .teaser ul li:before {
   display: inline-block;
   width: 30px;
@@ -690,7 +691,7 @@ a {
   font-family: "forbrukerhjelpen";
   font-size: 0.875em;
 }
-/* line 79, ../sass/partials/module/partials/_hero.scss */
+/* line 80, ../sass/partials/module/partials/_hero.scss */
 .hero .teaser p {
   margin-left: -20px;
   margin-right: -20px;
@@ -704,7 +705,7 @@ a {
   background-color: rgba(255, 255, 255, 0.8);
 }
 @media (min-width: 720px) {
-  /* line 79, ../sass/partials/module/partials/_hero.scss */
+  /* line 80, ../sass/partials/module/partials/_hero.scss */
   .hero .teaser p {
     margin-left: 0;
     margin-right: 0;
@@ -716,7 +717,7 @@ a {
     background: none;
   }
 }
-/* line 95, ../sass/partials/module/partials/_hero.scss */
+/* line 96, ../sass/partials/module/partials/_hero.scss */
 .hero .teaser p span {
   font-weight: 600;
   font-size: 1.57143em;
