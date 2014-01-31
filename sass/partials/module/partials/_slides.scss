@@ -112,13 +112,16 @@
         font-family: "forbrukerhjelpen" !important;
         content: "t";
         display: block;
-        float: right;
+        // float: right;
         vertical-align: middle;
         font-size: em(26,16);
         padding-left: 15px;
         border-left: 1px solid $color-grey;
-        height: 35px;
+        // height: 35px;
         color: $color-grey;
+        position: absolute;
+        top: 25%;
+        right: 15px;
       }
       &.open {
         .slide-content {
