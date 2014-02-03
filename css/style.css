@@ -174,8 +174,8 @@ a {
   color: #692f59;
 }
 
-/* line 32, ../sass/partials/module/partials/_typography.scss */
-ul, li {
+/* line 33, ../sass/partials/module/partials/_typography.scss */
+.p-container ul, .p-container li {
   margin: 1.5em 0;
 }
 
