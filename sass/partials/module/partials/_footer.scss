@@ -43,6 +43,9 @@
     @include breakpoint($break-small) {
       display: block;
     }
+    p {
+      margin-bottom: 0;
+    }
   }
   .copyright {
     position: absolute;
