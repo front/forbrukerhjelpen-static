@@ -1,5 +1,6 @@
 .footer {
   position: relative;
+  color: $color-text-dark;
   @include breakpoint($break-small) {
     border-top: 10px solid $color-blue;
     background-color: $color-blue-light;
