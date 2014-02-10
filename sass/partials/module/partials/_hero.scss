@@ -53,21 +53,23 @@
     }
 
     h1 {
-      font-size: em(32,16) !important;
-      @include breakpoint($break-medium) {
+      font-size: em(18,16) !important;
+      font-weight: 400;
+      @include breakpoint($break-xsmall) {
         font-size: em(36,16) !important;
+        font-weight: 300;
       }
     }
     ul {
       padding-left: 0;
       li {
         list-style: none;
-        font-size: em(18,16);
+        font-size: em(15,16);
         width: 50%;
         @include breakpoint($break-small) {
           width: auto;
         }
-        @include breakpoint($break-medium) {
+        @include breakpoint($break-xsmall) {
           font-size: em(22,16);
         }
         &:before {
