@@ -76,12 +76,14 @@
       li {
         list-style: none;
         font-size: em(15,16);
+        @include breakpoint($break-xsmall) {
+          width: 50%;
+        }
         @include breakpoint($break-small) {
           width: auto;
         }
-        @include breakpoint($break-xsmall) {
+        @include breakpoint($break-medium) {
           font-size: em(22,16);
-          width: 50%;
         }
         &:before {
           display: inline-block;
