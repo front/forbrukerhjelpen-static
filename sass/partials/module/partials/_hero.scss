@@ -18,13 +18,14 @@
   // big hero unit image
   position: relative;
   overflow: hidden;
-  background-image: url(../img/home-women-bg.png);
+  color: $color-text-dark;
   background-repeat: no-repeat;
   background-position: bottom 100px right 0;
   background-size: 60% auto;
-  color: $color-text-dark;
+
   @include breakpoint($break-xsmall) {
     background-position: top 30px right 0;
+    background-image: url(../img/home-women-bg.png);
   }
   @include breakpoint($break-small) {
     height: 425px;
@@ -75,12 +76,12 @@
       li {
         list-style: none;
         font-size: em(15,16);
-        width: 50%;
         @include breakpoint($break-small) {
           width: auto;
         }
         @include breakpoint($break-xsmall) {
           font-size: em(22,16);
+          width: 50%;
         }
         &:before {
           display: inline-block;
