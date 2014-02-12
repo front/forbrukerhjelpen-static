@@ -183,8 +183,9 @@ a {
 .btn {
   font-weight: 400;
   font-style: italic;
+  text-decoration: none;
 }
-/* line 4, ../sass/partials/module/partials/_buttons.scss */
+/* line 5, ../sass/partials/module/partials/_buttons.scss */
 .btn.btn-blue {
   font-size: 18px;
   padding: 0.5em 1.5em;
@@ -242,11 +243,11 @@ a {
   padding: 0 !important;
   margin: -1px !important;
 }
-/* line 7, ../sass/partials/module/partials/_buttons.scss */
+/* line 8, ../sass/partials/module/partials/_buttons.scss */
 .btn.btn-blue.btn-complex:before {
   border-color: #317a7a;
 }
-/* line 11, ../sass/partials/module/partials/_buttons.scss */
+/* line 12, ../sass/partials/module/partials/_buttons.scss */
 .btn.btn-purple {
   font-size: 18px;
   padding: 0.5em 1.5em;
@@ -304,11 +305,11 @@ a {
   padding: 0 !important;
   margin: -1px !important;
 }
-/* line 14, ../sass/partials/module/partials/_buttons.scss */
+/* line 15, ../sass/partials/module/partials/_buttons.scss */
 .btn.btn-purple.btn-complex:before {
   border-color: #d3bacd;
 }
-/* line 19, ../sass/partials/module/partials/_buttons.scss */
+/* line 20, ../sass/partials/module/partials/_buttons.scss */
 .btn.btn-complex {
   position: relative;
   width: 100%;
@@ -318,7 +319,7 @@ a {
   font-size: 20px;
   -webkit-font-smoothing: antialiased;
 }
-/* line 28, ../sass/partials/module/partials/_buttons.scss */
+/* line 29, ../sass/partials/module/partials/_buttons.scss */
 .btn.btn-complex:before {
   display: block;
   position: absolute;
@@ -337,11 +338,11 @@ a {
   padding-right: 15px;
 }
 @media (min-width: 0) and (max-width: 959px) {
-  /* line 46, ../sass/partials/module/partials/_buttons.scss */
+  /* line 47, ../sass/partials/module/partials/_buttons.scss */
   .btn.btn-complex.btn-resp {
     padding-right: 10px;
   }
-  /* line 49, ../sass/partials/module/partials/_buttons.scss */
+  /* line 50, ../sass/partials/module/partials/_buttons.scss */
   .btn.btn-complex.btn-resp:before {
     display: none;
   }

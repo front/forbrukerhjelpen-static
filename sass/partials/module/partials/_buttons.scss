@@ -1,6 +1,7 @@
 .btn {
 	font-weight: 400;
 	font-style: italic;
+  text-decoration: none;
 	&.btn-blue {
 		@include sassy-button("matte", 0, 18px, #9fd8d8, #92d2d2, $color-text-dark, "false");
 		border: 1px solid #5db3b3;
