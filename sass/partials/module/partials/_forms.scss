@@ -43,8 +43,23 @@
   }
 }
 
+.input-normal {
+  padding: 16px;
+  border: 1px solid #6b928f;
+  text-align: center;
+}
+
 .input-block-error {
   background-color: #ffe1e1;
+}
+
+.input-block-read {
+  background: #c0eae8;
+  color: #689290;
+  border: 1px solid #6cb5b2;
+  input {
+    color: #689290;
+  }
 }
 
 .form-block {
@@ -145,6 +160,60 @@
     display: block;
     font-size: em(14,16);
     cursor: pointer;
+  }
+}
+
+.subscribe-form-alt {
+  div {
+    position: relative;
+    margin-bottom: 5px;
+    &.code-input input {
+      width: 100%;
+    }
+    @include breakpoint($break-small) {
+      float: left;
+      height: 58px;
+      width: 23%;
+      margin-right: 2%;
+      margin-bottom: 10px;
+    }
+    @include breakpoint($break-medium) {
+      width: 19%;
+      margin-right: 2%;
+      &.code-input {
+        width: 12%;
+      }
+      &.code-submit {
+        width: 20%;
+      }
+    }
+    @include breakpoint($break-large) {
+      width: 18%;
+      margin-right: 2%;
+    }
+    &.large {
+      margin-right: 0;
+      height: 121px;
+      @include breakpoint($break-medium) {
+        width: 36%;
+        height: 58px;
+      }
+      @include breakpoint($break-large) {
+        width: 40%;
+      }
+      div {
+        margin-bottom: 5px;
+        @include breakpoint($break-small) {
+          width: 95%;
+          margin-right: 5%;
+        }
+        @include breakpoint($break-medium) {
+          width: 46%;
+          margin-right: 3%;
+          margin-bottom: 10px;
+        }
+      }
+    }
   }
 }
 
