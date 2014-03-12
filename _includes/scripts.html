@@ -4,6 +4,19 @@
 <script>
 (function () {
 
+  /* Slide Menu */
+  $('#s2On').click(function() {
+    if($(this).is(':checked')) {
+      $('.slide-nav').show();
+    }
+  });
+
+  $('#s2Off').click(function() {
+    if($(this).is(':checked')) {
+      $('.slide-nav').hide();
+    }
+  });
+
   /* Menu */
    $('a.menu-toggle').click(function () {
     $('body').toggleClass('menu-open');
