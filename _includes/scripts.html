@@ -4,6 +4,16 @@
 <script>
 (function () {
 
+  // Custom equalheights function.
+  $.fn.equalize = function() {
+    var maxHeight = 0;
+
+    return this.each(function() {
+        var $this = $(this);
+        if ($this.height() > maxHeight) { maxHeight = $this.height(); }
+    }).height(maxHeight);
+  };
+
   /* Slide Menu */
   $('#s2On').click(function() {
     if($(this).is(':checked')) {
@@ -75,6 +85,11 @@
 
   // jQuery placeholder
   $('input, textarea').placeholder();
+
+  // Banks Listing equalize height
+  $('.banks-list li').equalize();
+
+
 
 })();
 </script>

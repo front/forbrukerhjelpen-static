@@ -1,0 +1,117 @@
+.banks-list {
+  @include breakpoint($break-small) {
+    padding-bottom: 50px;
+  }
+  @include breakpoint(0 ($break-small - 1px)) {
+    thead, tfoot {
+      display: none;
+    }
+  }
+
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  .content-block {
+    list-style: none;
+    .slide-content {
+      display: none;
+    }
+    @include breakpoint(0 ($break-small - 1px)) {
+      display: block;
+      border-bottom: 8px solid $color-grey-light;
+      header h2:after {
+        font-family: "forbrukerhjelpen" !important;
+        content: "t";
+        display: block;
+        // float: right;
+        vertical-align: middle;
+        font-size: em(26,16);
+        padding-left: 15px;
+        border-left: 1px solid $color-grey;
+        // height: 35px;
+        color: $color-grey;
+        position: absolute;
+        top: 25%;
+        right: 15px;
+      }
+      &.open {
+        .slide-content {
+          display: block;
+        }
+        header h2 {
+          background-color: $color-blue-light;
+          &:after {
+            content: "u";
+          }
+        }
+      }
+    }
+    @include breakpoint($break-small) {
+      display: none;
+      &.active {
+        display: block;
+        .slide-content {
+          display: block;
+        }
+      }
+    }
+
+    @include breakpoint($break-large) {
+      float: left;
+      max-width: 50%;
+
+      table {
+        width: auto;
+        border-spacing: 0px;
+        padding: 5px;
+        thead, tfoot {
+          margin: 10px;
+          th, td {
+            padding: 5px;
+            background-color: $color-grey-light;
+          }
+          th {
+            font-size: em(12,16);
+            font-weight: 300;
+            text-align: left;
+            text-transform: uppercase;
+            border-left: 1px solid $color-grey;
+            &:first-child {
+              border-left: none;
+            }
+          }
+          td {
+            font-size: em(12,16);
+            text-align: center;
+          }
+          .spacer td {
+            background: none;
+            padding: 5px;
+          }
+        }
+        tbody {
+          td {
+            position: relative;
+            text-align: left;
+            border-bottom: 1px solid $color-grey;
+            padding: 5px;
+            font-size: em(14,16);
+
+            strong {
+              font-weight: 600;
+              color: $color-purple;
+            }
+            small {
+              font-size: 0.7em;
+              color: $color-grey-dark;
+            }
+          }
+        }
+      }
+
+    }
+  }
+}
+
+
+
