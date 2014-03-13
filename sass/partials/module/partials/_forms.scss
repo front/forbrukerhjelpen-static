@@ -24,9 +24,9 @@
 }
 
 .input-block {
-  height: 58px;
+
   padding: 12px 10px 12px 10px;
-  margin-bottom: 10px;
+  margin-bottom: 10px !important;
   background-color: #fff;
   i {
     position: absolute;
@@ -47,10 +47,6 @@
   padding: 16px;
   border: 1px solid #6b928f;
   text-align: center;
-}
-
-.input-block-error {
-  background-color: #ffe1e1;
 }
 
 .input-block-read {
@@ -94,12 +90,13 @@
 .subscribe-form {
   padding-top: 25px;
   padding-bottom: 15px;
+  margin-bottom: 0;
   div {
     position: relative;
     margin-bottom: 5px;
     @include breakpoint($break-small) {
       float: left;
-      height: 58px;
+      height: auto;
       width: 31%;
       margin-right: 2%;
       margin-bottom: 10px;
@@ -114,13 +111,10 @@
     }
     &.large {
       margin-right: 0;
-      height: 121px;
+      height: auto;
       @include breakpoint($break-medium) {
         width: 50%;
-        height: 58px;
-      }
-      @include breakpoint($break-large) {
-        width: 40%;
+        height: auto;
       }
       div {
         margin-bottom: 5px;
@@ -303,6 +297,168 @@ form.styled {
       font-size: em(14,16);
       font-weight: 300;
       text-transform: uppercase;
+    }
+  }
+}
+
+.input-block-error {
+  padding: 10px 8px 10px 8px;
+  border: 2px solid #fa0037;
+  @include breakpoint($break-min ($break-small - 1px)) {
+    padding: 0;
+    margin-top: 26px !important;
+    &:before {
+      position: absolute;
+      top: 44px;
+      left: 0px;
+      content: ' ';
+      width: 100%;
+      height: 2px;
+      background-color: #fa0037;
+    }
+    input {
+      padding: 6px 14px 14px 46px !important;
+    }
+    i {
+      padding-left: 8px;
+    }
+  }
+}
+
+.error-box {
+  position: absolute !important;
+  cursor: pointer;
+  z-index: 4;
+  width: 13em !important;
+  height: 50px !important;
+  margin: 0;
+  padding: 12px 15px;
+  color: #fff;
+  background-color: #fa0037;
+  font-size: 16px;
+  text-align: center;
+  @include breakpoint($break-min) {
+    position: relative !important;
+    width: 100% !important;
+  }
+  @include breakpoint($break-small) {
+    position: absolute !important;
+    top: 2px;
+    left: 107%;
+    width: 13em !important;
+  }
+  @include breakpoint($break-medium) {
+    width: 100% !important;
+    top: -77px;
+    left: 0;
+  }
+  @include breakpoint($break-min ($break-small - 1px)) {
+    top: -21px;
+    padding: 0;
+    &:before {
+      display: block;
+      width: 100%;
+      height: 68px;
+      content: ' ';
+      position: absolute;
+      z-index: -1;
+      background-color: #92d2d2;
+      margin-top: -3px;
+      margin-left: -2px;
+      box-sizing: content-box;
+      border-left: 2px solid #92d2d2;
+      border-right: 2px solid #92d2d2;
+    }
+    span {
+      display: block;
+      width: 100%;
+      padding: 12px 0px;
+      background-color: #fa0037;
+      margin-left: -2px;
+      box-sizing: content-box;
+      border-left: 2px solid #fa0037;
+      border-right: 2px solid #fa0037;
+    }
+  }
+  &:after {
+    position: absolute;
+    pointer-events: none;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    margin-left: 0 !important;
+    top: 100%;
+    left: 50%;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #fa0037;
+    margin-left: -10px;
+    @include breakpoint($break-min ($break-small - 1px)) {
+      top: 92%;
+    }
+    @include breakpoint($break-small) {
+      top: 30%;
+      left: -20px;
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      border-right: 10px solid #fa0037;
+    }
+    @include breakpoint($break-medium) {
+      top: 100%;
+      left: 46%;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 10px solid #fa0037;
+      margin-left: -10px;
+    }
+  }
+}
+
+.error-checkbox-label:before {
+  border: 2px solid #fa0037 !important;
+}
+
+.error-box-checkbox {
+  margin-left: -48%;
+  @include breakpoint($break-min) {
+    position: relative !important;
+    top: -10px;
+    left: 48%;
+    width: 100% !important;
+  }
+  @include breakpoint($break-small) {
+    position: absolute !important;
+    top: -75px;
+    left: 48%;
+    width: 13em !important;
+  }
+  &:after {
+    @include breakpoint($break-min) {
+      top: 92%;
+      left: 5px;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 10px solid #fa0037;
+      margin-left: -10px;
+    }
+    @include breakpoint($break-small) {
+      top: 100%;
+      left: 5px;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 10px solid #fa0037;
+      margin-left: -10px;
+    }
+  }
+  @include breakpoint($break-min ($break-small - 1px)) {
+    margin-top: 7px;
+    span {
+      margin-left: 0;
+      border: 0;
+    }
+    &:before {
+      height: 55px;
     }
   }
 }
