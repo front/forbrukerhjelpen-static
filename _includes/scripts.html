@@ -27,6 +27,15 @@
     }
   });
 
+  $('a.bank-menu-toggle.campaigns').click(function () {
+    if ($('.slide-nav').is(':visible')) {
+      $('.slide-nav').hide();
+    }
+    else {
+      $('.slide-nav').show();
+    }
+  });
+
   /* Menu */
    $('a.menu-toggle').click(function () {
     $('body').toggleClass('menu-open');
