@@ -54,6 +54,7 @@
     }
     @include breakpoint($break-small) {
       display: none;
+      height: auto;
       &.active {
         display: block;
         .slide-content {

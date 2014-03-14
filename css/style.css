@@ -2343,12 +2343,13 @@ table tbody td small {
   /* line 15, ../sass/partials/module/partials/_banks.scss */
   .banks-list .content-block {
     display: none;
+    height: auto;
   }
-  /* line 57, ../sass/partials/module/partials/_banks.scss */
+  /* line 58, ../sass/partials/module/partials/_banks.scss */
   .banks-list .content-block.active {
     display: block;
   }
-  /* line 59, ../sass/partials/module/partials/_banks.scss */
+  /* line 60, ../sass/partials/module/partials/_banks.scss */
   .banks-list .content-block.active .slide-content {
     display: block;
   }
@@ -2359,22 +2360,22 @@ table tbody td small {
     float: left;
     max-width: 50%;
   }
-  /* line 69, ../sass/partials/module/partials/_banks.scss */
+  /* line 70, ../sass/partials/module/partials/_banks.scss */
   .banks-list .content-block table {
     width: auto;
     border-spacing: 0px;
     padding: 5px;
   }
-  /* line 73, ../sass/partials/module/partials/_banks.scss */
+  /* line 74, ../sass/partials/module/partials/_banks.scss */
   .banks-list .content-block table thead, .banks-list .content-block table tfoot {
     margin: 10px;
   }
-  /* line 75, ../sass/partials/module/partials/_banks.scss */
+  /* line 76, ../sass/partials/module/partials/_banks.scss */
   .banks-list .content-block table thead th, .banks-list .content-block table thead td, .banks-list .content-block table tfoot th, .banks-list .content-block table tfoot td {
     padding: 5px;
     background-color: #ededed;
   }
-  /* line 79, ../sass/partials/module/partials/_banks.scss */
+  /* line 80, ../sass/partials/module/partials/_banks.scss */
   .banks-list .content-block table thead th, .banks-list .content-block table tfoot th {
     font-size: 0.75em;
     font-weight: 300;
@@ -2382,21 +2383,21 @@ table tbody td small {
     text-transform: uppercase;
     border-left: 1px solid #d5d5d5;
   }
-  /* line 85, ../sass/partials/module/partials/_banks.scss */
+  /* line 86, ../sass/partials/module/partials/_banks.scss */
   .banks-list .content-block table thead th:first-child, .banks-list .content-block table tfoot th:first-child {
     border-left: none;
   }
-  /* line 89, ../sass/partials/module/partials/_banks.scss */
+  /* line 90, ../sass/partials/module/partials/_banks.scss */
   .banks-list .content-block table thead td, .banks-list .content-block table tfoot td {
     font-size: 0.75em;
     text-align: center;
   }
-  /* line 93, ../sass/partials/module/partials/_banks.scss */
+  /* line 94, ../sass/partials/module/partials/_banks.scss */
   .banks-list .content-block table thead .spacer td, .banks-list .content-block table tfoot .spacer td {
     background: none;
     padding: 5px;
   }
-  /* line 99, ../sass/partials/module/partials/_banks.scss */
+  /* line 100, ../sass/partials/module/partials/_banks.scss */
   .banks-list .content-block table tbody td {
     position: relative;
     text-align: left;
@@ -2404,12 +2405,12 @@ table tbody td small {
     padding: 5px;
     font-size: 0.875em;
   }
-  /* line 106, ../sass/partials/module/partials/_banks.scss */
+  /* line 107, ../sass/partials/module/partials/_banks.scss */
   .banks-list .content-block table tbody td strong {
     font-weight: 600;
     color: #692f59;
   }
-  /* line 110, ../sass/partials/module/partials/_banks.scss */
+  /* line 111, ../sass/partials/module/partials/_banks.scss */
   .banks-list .content-block table tbody td small {
     font-size: 0.7em;
     color: #787878;
