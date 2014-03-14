@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300,300italic");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:600,600italic,700,700italic");
-/* line 36, ../../../.rvm/gems/ruby-1.9.3-p448/gems/toolkit-1.3.8/stylesheets/toolkit/_box-sizing.scss */
+/* line 36, ../../../.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/toolkit-1.3.8/stylesheets/toolkit/_box-sizing.scss */
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -8,7 +8,7 @@
   *behavior: url('/css/../behaviors/box-sizing/boxsizing.php');
 }
 
-/* line 4, ../../../.rvm/gems/ruby-1.9.3-p448/gems/toolkit-1.3.8/stylesheets/toolkit/_fluid-media.scss */
+/* line 4, ../../../.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/toolkit-1.3.8/stylesheets/toolkit/_fluid-media.scss */
 img, video {
   max-width: 100%;
   height: auto;
@@ -209,11 +209,11 @@ a {
   color: black;
   border: 1px solid #5db3b3;
 }
-/* line 15, ../../../.rvm/gems/ruby-1.9.3-p448/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+/* line 15, ../../../.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
 .btn.btn-blue:hover {
   text-decoration: none;
 }
-/* line 18, ../../../.rvm/gems/ruby-1.9.3-p448/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+/* line 18, ../../../.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
 .btn.btn-blue:hover {
   background-color: #80cbcb;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(3%, #8dd1d1), color-stop(75%, #80cbcb));
@@ -222,13 +222,13 @@ a {
   background: -o-linear-gradient(#8dd1d1 3%, #80cbcb 75%);
   background: linear-gradient(#8dd1d1 3%, #80cbcb 75%);
 }
-/* line 21, ../../../.rvm/gems/ruby-1.9.3-p448/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+/* line 21, ../../../.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
 .btn.btn-blue:active {
   -webkit-box-shadow: #75c6c6 0 1px 2px inset;
   -moz-box-shadow: #75c6c6 0 1px 2px inset;
   box-shadow: #75c6c6 0 1px 2px inset;
 }
-/* line 6, ../../../.rvm/gems/ruby-1.9.3-p448/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+/* line 6, ../../../.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
 .btn.btn-blue.disabled, .btn.btn-blue[disabled] {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
   opacity: 0.6;
@@ -238,7 +238,7 @@ a {
   -moz-box-shadow: none;
   box-shadow: none;
 }
-/* line 74, ../../../.rvm/gems/ruby-1.9.3-p448/gems/sassy-buttons-0.2.6/stylesheets/_sassy-buttons.sass */
+/* line 74, ../../../.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/sassy-buttons-0.2.6/stylesheets/_sassy-buttons.sass */
 .btn.btn-blue::-moz-focus-inner {
   padding: 0 !important;
   margin: -1px !important;
@@ -271,11 +271,11 @@ a {
   color: white;
   border: 1px solid #3a2a46;
 }
-/* line 15, ../../../.rvm/gems/ruby-1.9.3-p448/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+/* line 15, ../../../.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
 .btn.btn-purple:hover {
   text-decoration: none;
 }
-/* line 18, ../../../.rvm/gems/ruby-1.9.3-p448/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+/* line 18, ../../../.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
 .btn.btn-purple:hover {
   background-color: #552346;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(3%, #66425e), color-stop(75%, #552346));
@@ -284,13 +284,13 @@ a {
   background: -o-linear-gradient(#66425e 3%, #552346 75%);
   background: linear-gradient(#66425e 3%, #552346 75%);
 }
-/* line 21, ../../../.rvm/gems/ruby-1.9.3-p448/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+/* line 21, ../../../.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
 .btn.btn-purple:active {
   -webkit-box-shadow: #4a1e3d 0 1px 2px inset;
   -moz-box-shadow: #4a1e3d 0 1px 2px inset;
   box-shadow: #4a1e3d 0 1px 2px inset;
 }
-/* line 6, ../../../.rvm/gems/ruby-1.9.3-p448/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+/* line 6, ../../../.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
 .btn.btn-purple.disabled, .btn.btn-purple[disabled] {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
   opacity: 0.6;
@@ -300,7 +300,7 @@ a {
   -moz-box-shadow: none;
   box-shadow: none;
 }
-/* line 74, ../../../.rvm/gems/ruby-1.9.3-p448/gems/sassy-buttons-0.2.6/stylesheets/_sassy-buttons.sass */
+/* line 74, ../../../.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/sassy-buttons-0.2.6/stylesheets/_sassy-buttons.sass */
 .btn.btn-purple::-moz-focus-inner {
   padding: 0 !important;
   margin: -1px !important;
@@ -1860,6 +1860,10 @@ table tbody td small {
   height: 75px;
   display: none;
 }
+/* line 115, ../sass/partials/module/partials/_slides.scss */
+.slide-header-block .slide-nav.campaigns.closed {
+  display: none;
+}
 @media (min-width: 720px) {
   /* line 110, ../sass/partials/module/partials/_slides.scss */
   .slide-header-block .slide-nav {
@@ -1867,7 +1871,7 @@ table tbody td small {
   }
 }
 @media (min-width: 0) and (max-width: 719px) {
-  /* line 120, ../sass/partials/module/partials/_slides.scss */
+  /* line 123, ../sass/partials/module/partials/_slides.scss */
   .slide-header-block .slide-nav.campaigns {
     position: absolute;
     left: 0;
@@ -1877,13 +1881,13 @@ table tbody td small {
     z-index: 100;
     display: none;
   }
-  /* line 129, ../sass/partials/module/partials/_slides.scss */
+  /* line 132, ../sass/partials/module/partials/_slides.scss */
   .slide-header-block .slide-nav.campaigns ul {
     list-style: none;
     padding: 0px;
     margin: -0px;
   }
-  /* line 133, ../sass/partials/module/partials/_slides.scss */
+  /* line 136, ../sass/partials/module/partials/_slides.scss */
   .slide-header-block .slide-nav.campaigns ul li {
     display: block;
     float: none;
@@ -1891,11 +1895,11 @@ table tbody td small {
     border-top: 1px solid #7b4970;
     background-color: #692f59;
   }
-  /* line 139, ../sass/partials/module/partials/_slides.scss */
+  /* line 142, ../sass/partials/module/partials/_slides.scss */
   .slide-header-block .slide-nav.campaigns ul li.muted {
     display: none;
   }
-  /* line 142, ../sass/partials/module/partials/_slides.scss */
+  /* line 145, ../sass/partials/module/partials/_slides.scss */
   .slide-header-block .slide-nav.campaigns ul li a {
     display: block;
     padding: 30px;
@@ -1907,7 +1911,7 @@ table tbody td small {
     background-position: right 60px center;
     background-size: 65px 54px;
   }
-  /* line 150, ../sass/partials/module/partials/_slides.scss */
+  /* line 153, ../sass/partials/module/partials/_slides.scss */
   .slide-header-block .slide-nav.campaigns ul li a:after {
     display: block;
     float: right;
@@ -1919,26 +1923,26 @@ table tbody td small {
     font-size: 1.625em;
     color: #7b4970;
   }
-  /* line 169, ../sass/partials/module/partials/_slides.scss */
+  /* line 172, ../sass/partials/module/partials/_slides.scss */
   .slide-header-block .slide-nav .menu-open .main-menu {
     display: block;
   }
-  /* line 172, ../sass/partials/module/partials/_slides.scss */
+  /* line 175, ../sass/partials/module/partials/_slides.scss */
   .slide-header-block .slide-nav .footer .main-menu {
     display: none;
   }
 }
-/* line 178, ../sass/partials/module/partials/_slides.scss */
+/* line 181, ../sass/partials/module/partials/_slides.scss */
 .slide-header-block ul {
   margin-top: 25px;
 }
-/* line 180, ../sass/partials/module/partials/_slides.scss */
+/* line 183, ../sass/partials/module/partials/_slides.scss */
 .slide-header-block ul li {
   display: block;
   float: left;
   width: 12.5%;
 }
-/* line 184, ../sass/partials/module/partials/_slides.scss */
+/* line 187, ../sass/partials/module/partials/_slides.scss */
 .slide-header-block ul li a {
   display: block;
   border-left: 1px solid #ccc;
@@ -1950,37 +1954,37 @@ table tbody td small {
   color: black;
   text-decoration: none;
 }
-/* line 195, ../sass/partials/module/partials/_slides.scss */
+/* line 198, ../sass/partials/module/partials/_slides.scss */
 .slide-header-block ul li:first-child a {
   border-left: none;
 }
-/* line 198, ../sass/partials/module/partials/_slides.scss */
+/* line 201, ../sass/partials/module/partials/_slides.scss */
 .slide-header-block ul li.active a, .slide-header-block ul li a:hover {
   color: #692f59;
   text-decoration: underline;
 }
 
-/* line 207, ../sass/partials/module/partials/_slides.scss */
+/* line 210, ../sass/partials/module/partials/_slides.scss */
 .slide-list {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
 }
-/* line 211, ../sass/partials/module/partials/_slides.scss */
+/* line 214, ../sass/partials/module/partials/_slides.scss */
 .slide-list .content-block {
   list-style: none;
 }
-/* line 213, ../sass/partials/module/partials/_slides.scss */
+/* line 216, ../sass/partials/module/partials/_slides.scss */
 .slide-list .content-block .slide-content {
   display: none;
 }
 @media (min-width: 0) and (max-width: 719px) {
-  /* line 211, ../sass/partials/module/partials/_slides.scss */
+  /* line 214, ../sass/partials/module/partials/_slides.scss */
   .slide-list .content-block {
     display: block;
     border-bottom: 8px solid #ededed;
   }
-  /* line 219, ../sass/partials/module/partials/_slides.scss */
+  /* line 222, ../sass/partials/module/partials/_slides.scss */
   .slide-list .content-block header h2:after {
     font-family: "forbrukerhjelpen" !important;
     content: "t";
@@ -1994,29 +1998,29 @@ table tbody td small {
     top: 25%;
     right: 15px;
   }
-  /* line 235, ../sass/partials/module/partials/_slides.scss */
+  /* line 238, ../sass/partials/module/partials/_slides.scss */
   .slide-list .content-block.open .slide-content {
     display: block;
   }
-  /* line 238, ../sass/partials/module/partials/_slides.scss */
+  /* line 241, ../sass/partials/module/partials/_slides.scss */
   .slide-list .content-block.open header h2 {
     background-color: #deeced;
   }
-  /* line 240, ../sass/partials/module/partials/_slides.scss */
+  /* line 243, ../sass/partials/module/partials/_slides.scss */
   .slide-list .content-block.open header h2:after {
     content: "u";
   }
 }
 @media (min-width: 720px) {
-  /* line 211, ../sass/partials/module/partials/_slides.scss */
+  /* line 214, ../sass/partials/module/partials/_slides.scss */
   .slide-list .content-block {
     display: none;
   }
-  /* line 248, ../sass/partials/module/partials/_slides.scss */
+  /* line 251, ../sass/partials/module/partials/_slides.scss */
   .slide-list .content-block.active {
     display: block;
   }
-  /* line 250, ../sass/partials/module/partials/_slides.scss */
+  /* line 253, ../sass/partials/module/partials/_slides.scss */
   .slide-list .content-block.active .slide-content {
     display: block;
   }
@@ -2275,26 +2279,36 @@ table tbody td small {
   }
 }
 @media (min-width: 0) and (max-width: 719px) {
+  /* line 1, ../sass/partials/module/partials/_banks.scss */
+  .banks-list {
+    padding-right: 0;
+  }
   /* line 6, ../sass/partials/module/partials/_banks.scss */
   .banks-list thead, .banks-list tfoot {
     display: none;
   }
 }
-/* line 14, ../sass/partials/module/partials/_banks.scss */
+/* line 15, ../sass/partials/module/partials/_banks.scss */
 .banks-list .content-block {
   list-style: none;
 }
-/* line 16, ../sass/partials/module/partials/_banks.scss */
+@media (min-width: 0) and (max-width: 719px) {
+  /* line 15, ../sass/partials/module/partials/_banks.scss */
+  .banks-list .content-block {
+    height: auto !important;
+  }
+}
+/* line 20, ../sass/partials/module/partials/_banks.scss */
 .banks-list .content-block .slide-content {
   display: none;
 }
 @media (min-width: 0) and (max-width: 719px) {
-  /* line 14, ../sass/partials/module/partials/_banks.scss */
+  /* line 15, ../sass/partials/module/partials/_banks.scss */
   .banks-list .content-block {
     display: block;
     border-bottom: 8px solid #ededed;
   }
-  /* line 22, ../sass/partials/module/partials/_banks.scss */
+  /* line 26, ../sass/partials/module/partials/_banks.scss */
   .banks-list .content-block header h2:after {
     font-family: "forbrukerhjelpen" !important;
     content: "t";
@@ -2308,55 +2322,59 @@ table tbody td small {
     top: 25%;
     right: 15px;
   }
-  /* line 38, ../sass/partials/module/partials/_banks.scss */
+  /* line 40, ../sass/partials/module/partials/_banks.scss */
+  .banks-list .content-block .slide-content {
+    display: none;
+  }
+  /* line 44, ../sass/partials/module/partials/_banks.scss */
   .banks-list .content-block.open .slide-content {
     display: block;
   }
-  /* line 41, ../sass/partials/module/partials/_banks.scss */
+  /* line 47, ../sass/partials/module/partials/_banks.scss */
   .banks-list .content-block.open header h2 {
     background-color: #deeced;
   }
-  /* line 43, ../sass/partials/module/partials/_banks.scss */
+  /* line 49, ../sass/partials/module/partials/_banks.scss */
   .banks-list .content-block.open header h2:after {
     content: "u";
   }
 }
 @media (min-width: 720px) {
-  /* line 14, ../sass/partials/module/partials/_banks.scss */
+  /* line 15, ../sass/partials/module/partials/_banks.scss */
   .banks-list .content-block {
     display: none;
   }
-  /* line 51, ../sass/partials/module/partials/_banks.scss */
+  /* line 57, ../sass/partials/module/partials/_banks.scss */
   .banks-list .content-block.active {
     display: block;
   }
-  /* line 53, ../sass/partials/module/partials/_banks.scss */
+  /* line 59, ../sass/partials/module/partials/_banks.scss */
   .banks-list .content-block.active .slide-content {
     display: block;
   }
 }
 @media (min-width: 1160px) {
-  /* line 14, ../sass/partials/module/partials/_banks.scss */
+  /* line 15, ../sass/partials/module/partials/_banks.scss */
   .banks-list .content-block {
     float: left;
     max-width: 50%;
   }
-  /* line 63, ../sass/partials/module/partials/_banks.scss */
+  /* line 69, ../sass/partials/module/partials/_banks.scss */
   .banks-list .content-block table {
     width: auto;
     border-spacing: 0px;
     padding: 5px;
   }
-  /* line 67, ../sass/partials/module/partials/_banks.scss */
+  /* line 73, ../sass/partials/module/partials/_banks.scss */
   .banks-list .content-block table thead, .banks-list .content-block table tfoot {
     margin: 10px;
   }
-  /* line 69, ../sass/partials/module/partials/_banks.scss */
+  /* line 75, ../sass/partials/module/partials/_banks.scss */
   .banks-list .content-block table thead th, .banks-list .content-block table thead td, .banks-list .content-block table tfoot th, .banks-list .content-block table tfoot td {
     padding: 5px;
     background-color: #ededed;
   }
-  /* line 73, ../sass/partials/module/partials/_banks.scss */
+  /* line 79, ../sass/partials/module/partials/_banks.scss */
   .banks-list .content-block table thead th, .banks-list .content-block table tfoot th {
     font-size: 0.75em;
     font-weight: 300;
@@ -2364,21 +2382,21 @@ table tbody td small {
     text-transform: uppercase;
     border-left: 1px solid #d5d5d5;
   }
-  /* line 79, ../sass/partials/module/partials/_banks.scss */
+  /* line 85, ../sass/partials/module/partials/_banks.scss */
   .banks-list .content-block table thead th:first-child, .banks-list .content-block table tfoot th:first-child {
     border-left: none;
   }
-  /* line 83, ../sass/partials/module/partials/_banks.scss */
+  /* line 89, ../sass/partials/module/partials/_banks.scss */
   .banks-list .content-block table thead td, .banks-list .content-block table tfoot td {
     font-size: 0.75em;
     text-align: center;
   }
-  /* line 87, ../sass/partials/module/partials/_banks.scss */
+  /* line 93, ../sass/partials/module/partials/_banks.scss */
   .banks-list .content-block table thead .spacer td, .banks-list .content-block table tfoot .spacer td {
     background: none;
     padding: 5px;
   }
-  /* line 93, ../sass/partials/module/partials/_banks.scss */
+  /* line 99, ../sass/partials/module/partials/_banks.scss */
   .banks-list .content-block table tbody td {
     position: relative;
     text-align: left;
@@ -2386,12 +2404,12 @@ table tbody td small {
     padding: 5px;
     font-size: 0.875em;
   }
-  /* line 100, ../sass/partials/module/partials/_banks.scss */
+  /* line 106, ../sass/partials/module/partials/_banks.scss */
   .banks-list .content-block table tbody td strong {
     font-weight: 600;
     color: #692f59;
   }
-  /* line 104, ../sass/partials/module/partials/_banks.scss */
+  /* line 110, ../sass/partials/module/partials/_banks.scss */
   .banks-list .content-block table tbody td small {
     font-size: 0.7em;
     color: #787878;
