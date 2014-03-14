@@ -112,6 +112,9 @@
     position: relative;
     height: 75px;
     display: none;
+    &.campaigns.closed {
+      display: none;
+    }
     @include breakpoint($break-small) {
       display: block;
     }

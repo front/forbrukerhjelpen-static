@@ -17,13 +17,13 @@
   /* Slide Menu */
   $('#s2On').click(function() {
     if($(this).is(':checked')) {
-      $('.slide-nav').show();
+      $('.slide-nav').removeClass('closed');
     }
   });
 
   $('#s2Off').click(function() {
     if($(this).is(':checked')) {
-      $('.slide-nav').hide();
+      $('.slide-nav').addClass('closed');
     }
   });
 
@@ -62,11 +62,14 @@
       this.active = index;
 
       $('.slide-list li').removeClass('active');
+      $('.banks-list li').removeClass('active');
       if(index < 0) {
         $('.slide-list li').addClass('active');
+        $('.banks-list li').addClass('active');
       }
       else {
         $('.slide-list li[slideid="' + index + '"]').addClass('active');
+        $('.banks-list li[slideid="' + index + '"]').addClass('active');
       }
 
       $('nav.slide-nav li').removeClass('active');
@@ -89,6 +92,16 @@
     $('.slide-list li').removeClass('open');
     if(!isOpen) {
       $(this).parent().addClass('open');
+    }
+  });
+  $('.banks-list li header').click(function () {
+    var isOpen = $(this).parent().hasClass('open');
+    $('.slide-list li').removeClass('open');
+    if(!isOpen) {
+      $(this).parent().addClass('open');
+    }
+    else {
+      $(this).parent().removeClass('open');
     }
   });
 
