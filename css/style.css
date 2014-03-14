@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300,300italic");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:600,600italic,700,700italic");
-/* line 36, ../../../.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/toolkit-1.3.8/stylesheets/toolkit/_box-sizing.scss */
+/* line 36, ../../../.rvm/gems/ruby-1.9.3-p448/gems/toolkit-1.3.8/stylesheets/toolkit/_box-sizing.scss */
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -8,7 +8,7 @@
   *behavior: url('/css/../behaviors/box-sizing/boxsizing.php');
 }
 
-/* line 4, ../../../.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/toolkit-1.3.8/stylesheets/toolkit/_fluid-media.scss */
+/* line 4, ../../../.rvm/gems/ruby-1.9.3-p448/gems/toolkit-1.3.8/stylesheets/toolkit/_fluid-media.scss */
 img, video {
   max-width: 100%;
   height: auto;
@@ -209,11 +209,11 @@ a {
   color: black;
   border: 1px solid #5db3b3;
 }
-/* line 15, ../../../.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+/* line 15, ../../../.rvm/gems/ruby-1.9.3-p448/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
 .btn.btn-blue:hover {
   text-decoration: none;
 }
-/* line 18, ../../../.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+/* line 18, ../../../.rvm/gems/ruby-1.9.3-p448/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
 .btn.btn-blue:hover {
   background-color: #80cbcb;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(3%, #8dd1d1), color-stop(75%, #80cbcb));
@@ -222,13 +222,13 @@ a {
   background: -o-linear-gradient(#8dd1d1 3%, #80cbcb 75%);
   background: linear-gradient(#8dd1d1 3%, #80cbcb 75%);
 }
-/* line 21, ../../../.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+/* line 21, ../../../.rvm/gems/ruby-1.9.3-p448/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
 .btn.btn-blue:active {
   -webkit-box-shadow: #75c6c6 0 1px 2px inset;
   -moz-box-shadow: #75c6c6 0 1px 2px inset;
   box-shadow: #75c6c6 0 1px 2px inset;
 }
-/* line 6, ../../../.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+/* line 6, ../../../.rvm/gems/ruby-1.9.3-p448/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
 .btn.btn-blue.disabled, .btn.btn-blue[disabled] {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
   opacity: 0.6;
@@ -238,7 +238,7 @@ a {
   -moz-box-shadow: none;
   box-shadow: none;
 }
-/* line 74, ../../../.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/sassy-buttons-0.2.6/stylesheets/_sassy-buttons.sass */
+/* line 74, ../../../.rvm/gems/ruby-1.9.3-p448/gems/sassy-buttons-0.2.6/stylesheets/_sassy-buttons.sass */
 .btn.btn-blue::-moz-focus-inner {
   padding: 0 !important;
   margin: -1px !important;
@@ -271,11 +271,11 @@ a {
   color: white;
   border: 1px solid #3a2a46;
 }
-/* line 15, ../../../.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+/* line 15, ../../../.rvm/gems/ruby-1.9.3-p448/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
 .btn.btn-purple:hover {
   text-decoration: none;
 }
-/* line 18, ../../../.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+/* line 18, ../../../.rvm/gems/ruby-1.9.3-p448/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
 .btn.btn-purple:hover {
   background-color: #552346;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(3%, #66425e), color-stop(75%, #552346));
@@ -284,13 +284,13 @@ a {
   background: -o-linear-gradient(#66425e 3%, #552346 75%);
   background: linear-gradient(#66425e 3%, #552346 75%);
 }
-/* line 21, ../../../.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+/* line 21, ../../../.rvm/gems/ruby-1.9.3-p448/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
 .btn.btn-purple:active {
   -webkit-box-shadow: #4a1e3d 0 1px 2px inset;
   -moz-box-shadow: #4a1e3d 0 1px 2px inset;
   box-shadow: #4a1e3d 0 1px 2px inset;
 }
-/* line 6, ../../../.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+/* line 6, ../../../.rvm/gems/ruby-1.9.3-p448/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
 .btn.btn-purple.disabled, .btn.btn-purple[disabled] {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
   opacity: 0.6;
@@ -300,7 +300,7 @@ a {
   -moz-box-shadow: none;
   box-shadow: none;
 }
-/* line 74, ../../../.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/sassy-buttons-0.2.6/stylesheets/_sassy-buttons.sass */
+/* line 74, ../../../.rvm/gems/ruby-1.9.3-p448/gems/sassy-buttons-0.2.6/stylesheets/_sassy-buttons.sass */
 .btn.btn-purple::-moz-focus-inner {
   padding: 0 !important;
   margin: -1px !important;
@@ -1039,9 +1039,8 @@ a {
 
 /* line 26, ../sass/partials/module/partials/_forms.scss */
 .input-block {
-  height: 58px;
   padding: 12px 10px 12px 10px;
-  margin-bottom: 10px;
+  margin-bottom: 10px !important;
   background-color: #fff;
 }
 /* line 31, ../sass/partials/module/partials/_forms.scss */
@@ -1069,22 +1068,17 @@ a {
 }
 
 /* line 52, ../sass/partials/module/partials/_forms.scss */
-.input-block-error {
-  background-color: #ffe1e1;
-}
-
-/* line 56, ../sass/partials/module/partials/_forms.scss */
 .input-block-read {
   background: #c0eae8;
   color: #689290;
   border: 1px solid #6cb5b2;
 }
-/* line 60, ../sass/partials/module/partials/_forms.scss */
+/* line 56, ../sass/partials/module/partials/_forms.scss */
 .input-block-read input {
   color: #689290;
 }
 
-/* line 66, ../sass/partials/module/partials/_forms.scss */
+/* line 62, ../sass/partials/module/partials/_forms.scss */
 .form-block .arrow-box {
   position: absolute;
   z-index: 4;
@@ -1094,7 +1088,7 @@ a {
   margin-left: -85%;
 }
 @media (min-width: 720px) {
-  /* line 66, ../sass/partials/module/partials/_forms.scss */
+  /* line 62, ../sass/partials/module/partials/_forms.scss */
   .form-block .arrow-box {
     float: left;
     width: auto;
@@ -1102,7 +1096,7 @@ a {
     margin-left: 0;
   }
 }
-/* line 80, ../sass/partials/module/partials/_forms.scss */
+/* line 76, ../sass/partials/module/partials/_forms.scss */
 .form-block .extra-info {
   margin-left: -20px;
   margin-right: -20px;
@@ -1114,7 +1108,7 @@ a {
   font-size: 0.875em;
 }
 @media (min-width: 960px) {
-  /* line 80, ../sass/partials/module/partials/_forms.scss */
+  /* line 76, ../sass/partials/module/partials/_forms.scss */
   .form-block .extra-info {
     position: absolute;
     bottom: -50px;
@@ -1122,82 +1116,77 @@ a {
   }
 }
 
-/* line 94, ../sass/partials/module/partials/_forms.scss */
+/* line 90, ../sass/partials/module/partials/_forms.scss */
 .subscribe-form {
   padding-top: 25px;
   padding-bottom: 15px;
+  margin-bottom: 0;
 }
-/* line 97, ../sass/partials/module/partials/_forms.scss */
+/* line 94, ../sass/partials/module/partials/_forms.scss */
 .subscribe-form div {
   position: relative;
   margin-bottom: 5px;
 }
 @media (min-width: 720px) {
-  /* line 97, ../sass/partials/module/partials/_forms.scss */
+  /* line 94, ../sass/partials/module/partials/_forms.scss */
   .subscribe-form div {
     float: left;
-    height: 58px;
+    height: auto;
     width: 31%;
     margin-right: 2%;
     margin-bottom: 10px;
   }
 }
 @media (min-width: 960px) {
-  /* line 97, ../sass/partials/module/partials/_forms.scss */
+  /* line 94, ../sass/partials/module/partials/_forms.scss */
   .subscribe-form div {
     width: 23%;
     margin-right: 2%;
   }
 }
 @media (min-width: 1160px) {
-  /* line 97, ../sass/partials/module/partials/_forms.scss */
+  /* line 94, ../sass/partials/module/partials/_forms.scss */
   .subscribe-form div {
     width: 20%;
     margin-right: 2%;
   }
 }
-/* line 115, ../sass/partials/module/partials/_forms.scss */
+/* line 112, ../sass/partials/module/partials/_forms.scss */
 .subscribe-form div.large {
   margin-right: 0;
-  height: 121px;
+  height: auto;
 }
 @media (min-width: 960px) {
-  /* line 115, ../sass/partials/module/partials/_forms.scss */
+  /* line 112, ../sass/partials/module/partials/_forms.scss */
   .subscribe-form div.large {
     width: 50%;
-    height: 58px;
+    height: auto;
   }
 }
-@media (min-width: 1160px) {
-  /* line 115, ../sass/partials/module/partials/_forms.scss */
-  .subscribe-form div.large {
-    width: 40%;
-  }
-}
-/* line 125, ../sass/partials/module/partials/_forms.scss */
+/* line 119, ../sass/partials/module/partials/_forms.scss */
 .subscribe-form div.large div {
   margin-bottom: 5px;
 }
 @media (min-width: 720px) {
-  /* line 125, ../sass/partials/module/partials/_forms.scss */
+  /* line 119, ../sass/partials/module/partials/_forms.scss */
   .subscribe-form div.large div {
     width: 95%;
     margin-right: 5%;
   }
 }
 @media (min-width: 960px) {
-  /* line 125, ../sass/partials/module/partials/_forms.scss */
+  /* line 119, ../sass/partials/module/partials/_forms.scss */
   .subscribe-form div.large div {
     width: 47%;
     margin-right: 3%;
     margin-bottom: 10px;
   }
 }
-/* line 139, ../sass/partials/module/partials/_forms.scss */
+/* line 133, ../sass/partials/module/partials/_forms.scss */
 .subscribe-form input[type="checkbox"] {
   display: none;
 }
-/* line 141, ../sass/partials/module/partials/_forms.scss */
+/* line 135, ../sass/partials/module/partials/_forms.scss */
 .subscribe-form input[type="checkbox"] + label:before {
   display: block;
   float: left;
@@ -1212,28 +1201,28 @@ a {
   font-family: "forbrukerhjelpen";
   content: " ";
 }
-/* line 155, ../sass/partials/module/partials/_forms.scss */
+/* line 149, ../sass/partials/module/partials/_forms.scss */
 .subscribe-form input[type="checkbox"]:checked + label:before {
   content: "g";
 }
-/* line 159, ../sass/partials/module/partials/_forms.scss */
+/* line 153, ../sass/partials/module/partials/_forms.scss */
 .subscribe-form label {
   display: block;
   font-size: 0.875em;
   cursor: pointer;
 }
 
-/* line 167, ../sass/partials/module/partials/_forms.scss */
+/* line 161, ../sass/partials/module/partials/_forms.scss */
 .subscribe-form-alt div {
   position: relative;
   margin-bottom: 5px;
 }
-/* line 170, ../sass/partials/module/partials/_forms.scss */
+/* line 164, ../sass/partials/module/partials/_forms.scss */
 .subscribe-form-alt div.code-input input {
   width: 100%;
 }
 @media (min-width: 720px) {
-  /* line 167, ../sass/partials/module/partials/_forms.scss */
+  /* line 161, ../sass/partials/module/partials/_forms.scss */
   .subscribe-form-alt div {
     float: left;
     height: 58px;
@@ -1243,58 +1232,58 @@ a {
   }
 }
 @media (min-width: 960px) {
-  /* line 167, ../sass/partials/module/partials/_forms.scss */
+  /* line 161, ../sass/partials/module/partials/_forms.scss */
   .subscribe-form-alt div {
     width: 19%;
     margin-right: 2%;
   }
-  /* line 183, ../sass/partials/module/partials/_forms.scss */
+  /* line 177, ../sass/partials/module/partials/_forms.scss */
   .subscribe-form-alt div.code-input {
     width: 12%;
   }
-  /* line 186, ../sass/partials/module/partials/_forms.scss */
+  /* line 180, ../sass/partials/module/partials/_forms.scss */
   .subscribe-form-alt div.code-submit {
     width: 20%;
   }
 }
 @media (min-width: 1160px) {
-  /* line 167, ../sass/partials/module/partials/_forms.scss */
+  /* line 161, ../sass/partials/module/partials/_forms.scss */
   .subscribe-form-alt div {
     width: 18%;
     margin-right: 2%;
   }
 }
-/* line 194, ../sass/partials/module/partials/_forms.scss */
+/* line 188, ../sass/partials/module/partials/_forms.scss */
 .subscribe-form-alt div.large {
   margin-right: 0;
   height: 121px;
 }
 @media (min-width: 960px) {
-  /* line 194, ../sass/partials/module/partials/_forms.scss */
+  /* line 188, ../sass/partials/module/partials/_forms.scss */
   .subscribe-form-alt div.large {
     width: 36%;
     height: 58px;
   }
 }
 @media (min-width: 1160px) {
-  /* line 194, ../sass/partials/module/partials/_forms.scss */
+  /* line 188, ../sass/partials/module/partials/_forms.scss */
   .subscribe-form-alt div.large {
     width: 40%;
   }
 }
-/* line 204, ../sass/partials/module/partials/_forms.scss */
+/* line 198, ../sass/partials/module/partials/_forms.scss */
 .subscribe-form-alt div.large div {
   margin-bottom: 5px;
 }
 @media (min-width: 720px) {
-  /* line 204, ../sass/partials/module/partials/_forms.scss */
+  /* line 198, ../sass/partials/module/partials/_forms.scss */
   .subscribe-form-alt div.large div {
     width: 95%;
     margin-right: 5%;
   }
 }
 @media (min-width: 960px) {
-  /* line 204, ../sass/partials/module/partials/_forms.scss */
+  /* line 198, ../sass/partials/module/partials/_forms.scss */
   .subscribe-form-alt div.large div {
     width: 46%;
     margin-right: 3%;
@@ -1302,17 +1291,17 @@ a {
   }
 }
 
-/* line 221, ../sass/partials/module/partials/_forms.scss */
+/* line 215, ../sass/partials/module/partials/_forms.scss */
 form.styled input[type="checkbox"], form.styled input[type="radio"] {
   display: none;
 }
-/* line 223, ../sass/partials/module/partials/_forms.scss */
+/* line 217, ../sass/partials/module/partials/_forms.scss */
 form.styled input[type="checkbox"] + label, form.styled input[type="radio"] + label {
   display: inline-block;
   cursor: pointer;
   margin-right: 15px;
 }
-/* line 227, ../sass/partials/module/partials/_forms.scss */
+/* line 221, ../sass/partials/module/partials/_forms.scss */
 form.styled input[type="checkbox"] + label:before, form.styled input[type="radio"] + label:before {
   display: block;
   float: left;
@@ -1321,77 +1310,77 @@ form.styled input[type="checkbox"] + label:before, form.styled input[type="radio
   font-size: 21px;
   font-family: "forbrukerhjelpen";
 }
-/* line 238, ../sass/partials/module/partials/_forms.scss */
+/* line 232, ../sass/partials/module/partials/_forms.scss */
 form.styled input[type="checkbox"] + label:before {
   content: "l";
 }
-/* line 241, ../sass/partials/module/partials/_forms.scss */
+/* line 235, ../sass/partials/module/partials/_forms.scss */
 form.styled input[type="checkbox"]:checked + label:before {
   content: "m";
 }
-/* line 246, ../sass/partials/module/partials/_forms.scss */
+/* line 240, ../sass/partials/module/partials/_forms.scss */
 form.styled input[type="radio"] + label:before {
   content: "n";
 }
-/* line 249, ../sass/partials/module/partials/_forms.scss */
+/* line 243, ../sass/partials/module/partials/_forms.scss */
 form.styled input[type="radio"]:checked + label:before {
   content: "o";
 }
 
 @media (min-width: 720px) {
-  /* line 256, ../sass/partials/module/partials/_forms.scss */
+  /* line 250, ../sass/partials/module/partials/_forms.scss */
   .loan-form-table {
     border-bottom: 1px solid #d5d5d5;
   }
 }
 @media (min-width: 720px) {
-  /* line 262, ../sass/partials/module/partials/_forms.scss */
+  /* line 256, ../sass/partials/module/partials/_forms.scss */
   .loan-form-table > div {
     float: left;
     width: 25%;
   }
 }
 @media (min-width: 960px) {
-  /* line 262, ../sass/partials/module/partials/_forms.scss */
+  /* line 256, ../sass/partials/module/partials/_forms.scss */
   .loan-form-table > div {
     width: 20%;
   }
-  /* line 269, ../sass/partials/module/partials/_forms.scss */
+  /* line 263, ../sass/partials/module/partials/_forms.scss */
   .loan-form-table > div.double {
     width: 40%;
   }
 }
-/* line 273, ../sass/partials/module/partials/_forms.scss */
+/* line 267, ../sass/partials/module/partials/_forms.scss */
 .loan-form-table > div div {
   padding: 12px 0 12px 12px;
   font-size: 1.0625em;
 }
-/* line 277, ../sass/partials/module/partials/_forms.scss */
+/* line 271, ../sass/partials/module/partials/_forms.scss */
 .loan-form-table > div .input-group {
   padding: 0px;
 }
 @media (min-width: 0) and (max-width: 479px) {
-  /* line 277, ../sass/partials/module/partials/_forms.scss */
+  /* line 271, ../sass/partials/module/partials/_forms.scss */
   .loan-form-table > div .input-group {
     font-size: 0.8125em;
     padding: 1px 0;
   }
 }
 @media (min-width: 960px) {
-  /* line 284, ../sass/partials/module/partials/_forms.scss */
+  /* line 278, ../sass/partials/module/partials/_forms.scss */
   .loan-form-table > div.double .input-group {
     width: 50%;
     float: left;
   }
 }
 @media (min-width: 0) and (max-width: 719px) {
-  /* line 284, ../sass/partials/module/partials/_forms.scss */
+  /* line 278, ../sass/partials/module/partials/_forms.scss */
   .loan-form-table > div.double .input-group {
     width: 50%;
     float: left;
   }
 }
-/* line 295, ../sass/partials/module/partials/_forms.scss */
+/* line 289, ../sass/partials/module/partials/_forms.scss */
 .loan-form-table header {
   padding: 12px;
   background-color: #ededed;
@@ -1401,11 +1390,234 @@ form.styled input[type="radio"]:checked + label:before {
   font-weight: 600;
 }
 @media (min-width: 720px) {
-  /* line 295, ../sass/partials/module/partials/_forms.scss */
+  /* line 289, ../sass/partials/module/partials/_forms.scss */
   .loan-form-table header {
     font-size: 0.875em;
     font-weight: 300;
     text-transform: uppercase;
+  }
+}
+
+/* line 304, ../sass/partials/module/partials/_forms.scss */
+.input-block-error {
+  padding: 10px 8px 10px 8px;
+  border: 2px solid #fa0037;
+}
+@media (min-width: 320px) and (max-width: 719px) {
+  /* line 304, ../sass/partials/module/partials/_forms.scss */
+  .input-block-error {
+    padding: 0;
+    margin-top: 26px !important;
+  }
+  /* line 310, ../sass/partials/module/partials/_forms.scss */
+  .input-block-error:before {
+    position: absolute;
+    top: 44px;
+    left: 0px;
+    content: ' ';
+    width: 100%;
+    height: 2px;
+    background-color: #fa0037;
+  }
+  /* line 319, ../sass/partials/module/partials/_forms.scss */
+  .input-block-error input {
+    padding: 6px 14px 14px 46px !important;
+  }
+  /* line 322, ../sass/partials/module/partials/_forms.scss */
+  .input-block-error i {
+    padding-left: 8px;
+  }
+}
+
+/* line 328, ../sass/partials/module/partials/_forms.scss */
+.error-box {
+  position: absolute !important;
+  cursor: pointer;
+  z-index: 4;
+  width: 14em !important;
+  height: 50px !important;
+  margin: 0;
+  padding: 12px 15px;
+  color: #fff;
+  background-color: #fa0037;
+  font-size: 16px;
+  text-align: center;
+}
+@media (min-width: 320px) {
+  /* line 328, ../sass/partials/module/partials/_forms.scss */
+  .error-box {
+    position: relative !important;
+    width: 100% !important;
+  }
+}
+@media (min-width: 720px) {
+  /* line 328, ../sass/partials/module/partials/_forms.scss */
+  .error-box {
+    position: absolute !important;
+    top: 1px;
+    left: 107%;
+    width: 14em !important;
+  }
+}
+@media (min-width: 960px) {
+  /* line 328, ../sass/partials/module/partials/_forms.scss */
+  .error-box {
+    width: 100% !important;
+    height: auto !important;
+    margin-left: -2px;
+    padding: 14px 0;
+    top: -77px;
+    left: 0;
+    box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    border-left: 2px solid #fa0037;
+    border-right: 2px solid #fa0037;
+  }
+}
+@media (min-width: 320px) and (max-width: 719px) {
+  /* line 328, ../sass/partials/module/partials/_forms.scss */
+  .error-box {
+    top: -21px;
+    padding: 0;
+  }
+  /* line 366, ../sass/partials/module/partials/_forms.scss */
+  .error-box:before {
+    display: block;
+    width: 100%;
+    height: 68px;
+    content: ' ';
+    position: absolute;
+    z-index: -1;
+    background-color: #92d2d2;
+    margin-top: -3px;
+    margin-left: -2px;
+    box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    border-left: 2px solid #92d2d2;
+    border-right: 2px solid #92d2d2;
+  }
+  /* line 382, ../sass/partials/module/partials/_forms.scss */
+  .error-box span {
+    display: block;
+    width: 100%;
+    padding: 12px 0px;
+    background-color: #fa0037;
+    margin-left: -2px;
+    box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    border-left: 2px solid #fa0037;
+    border-right: 2px solid #fa0037;
+  }
+}
+/* line 395, ../sass/partials/module/partials/_forms.scss */
+.error-box:after {
+  position: absolute;
+  pointer-events: none;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  margin-left: 0 !important;
+  top: 100%;
+  left: 50%;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #fa0037;
+  margin-left: -10px;
+}
+@media (min-width: 320px) and (max-width: 719px) {
+  /* line 395, ../sass/partials/module/partials/_forms.scss */
+  .error-box:after {
+    top: 92%;
+  }
+}
+@media (min-width: 720px) {
+  /* line 395, ../sass/partials/module/partials/_forms.scss */
+  .error-box:after {
+    top: 30%;
+    left: -20px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #fa0037;
+  }
+}
+@media (min-width: 960px) {
+  /* line 395, ../sass/partials/module/partials/_forms.scss */
+  .error-box:after {
+    top: 100%;
+    left: 46%;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #fa0037;
+    margin-left: -10px;
+  }
+}
+
+/* line 430, ../sass/partials/module/partials/_forms.scss */
+.error-checkbox-label:before {
+  border: 2px solid #fa0037 !important;
+}
+
+/* line 434, ../sass/partials/module/partials/_forms.scss */
+.error-box-checkbox {
+  margin-left: -48%;
+}
+@media (min-width: 320px) {
+  /* line 434, ../sass/partials/module/partials/_forms.scss */
+  .error-box-checkbox {
+    position: relative !important;
+    top: -10px;
+    left: 48%;
+    width: 100% !important;
+  }
+}
+@media (min-width: 720px) {
+  /* line 434, ../sass/partials/module/partials/_forms.scss */
+  .error-box-checkbox {
+    position: absolute !important;
+    top: -75px;
+    left: 48%;
+    width: 14em !important;
+  }
+}
+@media (min-width: 320px) {
+  /* line 448, ../sass/partials/module/partials/_forms.scss */
+  .error-box-checkbox:after {
+    top: 92%;
+    left: 5px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #fa0037;
+    margin-left: -10px;
+  }
+}
+@media (min-width: 720px) {
+  /* line 448, ../sass/partials/module/partials/_forms.scss */
+  .error-box-checkbox:after {
+    top: 100%;
+    left: 5px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #fa0037;
+    margin-left: -10px;
+  }
+}
+@media (min-width: 320px) and (max-width: 719px) {
+  /* line 434, ../sass/partials/module/partials/_forms.scss */
+  .error-box-checkbox {
+    margin-top: 7px;
+  }
+  /* line 468, ../sass/partials/module/partials/_forms.scss */
+  .error-box-checkbox span {
+    margin-left: 0;
+    border: 0;
+  }
+  /* line 472, ../sass/partials/module/partials/_forms.scss */
+  .error-box-checkbox:before {
+    height: 55px;
   }
 }
 
