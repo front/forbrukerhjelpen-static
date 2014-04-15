@@ -1677,7 +1677,7 @@ table tbody td {
   table tbody td.overflow img {
     width: auto;
     max-width: auto;
-    height: 100%;
+    height: auto;
     margin: auto;
   }
 }
@@ -2300,33 +2300,19 @@ table tbody td small {
     border-bottom: 8px solid #ededed;
   }
   /* line 26, ../sass/partials/module/partials/_banks.scss */
-  .banks-list .content-block header h2:after {
-    font-family: "forbrukerhjelpen" !important;
-    content: "t";
-    display: block;
-    vertical-align: middle;
-    font-size: 1.625em;
-    padding-left: 15px;
-    border-left: 1px solid #d5d5d5;
-    color: #d5d5d5;
-    position: absolute;
-    top: 25%;
-    right: 15px;
-  }
-  /* line 40, ../sass/partials/module/partials/_banks.scss */
   .banks-list .content-block .slide-content {
     display: none;
   }
-  /* line 44, ../sass/partials/module/partials/_banks.scss */
-  .banks-list .content-block.open .slide-content {
+  /* line 30, ../sass/partials/module/partials/_banks.scss */
+  .banks-list .content-block .slide-content {
     display: block;
   }
-  /* line 47, ../sass/partials/module/partials/_banks.scss */
-  .banks-list .content-block.open header h2 {
+  /* line 33, ../sass/partials/module/partials/_banks.scss */
+  .banks-list .content-block header h2 {
     background-color: #deeced;
   }
-  /* line 49, ../sass/partials/module/partials/_banks.scss */
-  .banks-list .content-block.open header h2:after {
+  /* line 35, ../sass/partials/module/partials/_banks.scss */
+  .banks-list .content-block header h2:after {
     content: "u";
   }
 }
@@ -2336,11 +2322,11 @@ table tbody td small {
     display: none;
     height: auto;
   }
-  /* line 58, ../sass/partials/module/partials/_banks.scss */
+  /* line 44, ../sass/partials/module/partials/_banks.scss */
   .banks-list .content-block.active {
     display: block;
   }
-  /* line 60, ../sass/partials/module/partials/_banks.scss */
+  /* line 46, ../sass/partials/module/partials/_banks.scss */
   .banks-list .content-block.active .slide-content {
     display: block;
   }
@@ -2351,22 +2337,22 @@ table tbody td small {
     float: left;
     max-width: 50%;
   }
-  /* line 70, ../sass/partials/module/partials/_banks.scss */
+  /* line 56, ../sass/partials/module/partials/_banks.scss */
   .banks-list .content-block table {
     width: auto;
     border-spacing: 0px;
     padding: 5px;
   }
-  /* line 74, ../sass/partials/module/partials/_banks.scss */
+  /* line 60, ../sass/partials/module/partials/_banks.scss */
   .banks-list .content-block table thead, .banks-list .content-block table tfoot {
     margin: 10px;
   }
-  /* line 76, ../sass/partials/module/partials/_banks.scss */
+  /* line 62, ../sass/partials/module/partials/_banks.scss */
   .banks-list .content-block table thead th, .banks-list .content-block table thead td, .banks-list .content-block table tfoot th, .banks-list .content-block table tfoot td {
     padding: 5px;
     background-color: #ededed;
   }
-  /* line 80, ../sass/partials/module/partials/_banks.scss */
+  /* line 66, ../sass/partials/module/partials/_banks.scss */
   .banks-list .content-block table thead th, .banks-list .content-block table tfoot th {
     font-size: 0.75em;
     font-weight: 300;
@@ -2374,21 +2360,21 @@ table tbody td small {
     text-transform: uppercase;
     border-left: 1px solid #d5d5d5;
   }
-  /* line 86, ../sass/partials/module/partials/_banks.scss */
+  /* line 72, ../sass/partials/module/partials/_banks.scss */
   .banks-list .content-block table thead th:first-child, .banks-list .content-block table tfoot th:first-child {
     border-left: none;
   }
-  /* line 90, ../sass/partials/module/partials/_banks.scss */
+  /* line 76, ../sass/partials/module/partials/_banks.scss */
   .banks-list .content-block table thead td, .banks-list .content-block table tfoot td {
     font-size: 0.75em;
     text-align: center;
   }
-  /* line 94, ../sass/partials/module/partials/_banks.scss */
+  /* line 80, ../sass/partials/module/partials/_banks.scss */
   .banks-list .content-block table thead .spacer td, .banks-list .content-block table tfoot .spacer td {
     background: none;
     padding: 5px;
   }
-  /* line 100, ../sass/partials/module/partials/_banks.scss */
+  /* line 86, ../sass/partials/module/partials/_banks.scss */
   .banks-list .content-block table tbody td {
     position: relative;
     text-align: left;
@@ -2396,15 +2382,63 @@ table tbody td small {
     padding: 5px;
     font-size: 0.875em;
   }
-  /* line 107, ../sass/partials/module/partials/_banks.scss */
+  /* line 93, ../sass/partials/module/partials/_banks.scss */
   .banks-list .content-block table tbody td strong {
     font-weight: 600;
     color: #692f59;
   }
-  /* line 111, ../sass/partials/module/partials/_banks.scss */
+  /* line 97, ../sass/partials/module/partials/_banks.scss */
   .banks-list .content-block table tbody td small {
     font-size: 0.7em;
     color: #787878;
+  }
+}
+
+/* line 1, ../sass/partials/module/partials/_campaigns.scss */
+.slide-list.campaign-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+/* line 5, ../sass/partials/module/partials/_campaigns.scss */
+.slide-list.campaign-list .content-block {
+  list-style: none;
+}
+/* line 7, ../sass/partials/module/partials/_campaigns.scss */
+.slide-list.campaign-list .content-block .slide-content {
+  display: none;
+}
+@media (min-width: 0) and (max-width: 719px) {
+  /* line 5, ../sass/partials/module/partials/_campaigns.scss */
+  .slide-list.campaign-list .content-block {
+    display: block;
+    border-bottom: 8px solid #ededed;
+  }
+  /* line 14, ../sass/partials/module/partials/_campaigns.scss */
+  .slide-list.campaign-list .content-block .slide-content {
+    display: block;
+  }
+  /* line 17, ../sass/partials/module/partials/_campaigns.scss */
+  .slide-list.campaign-list .content-block header h2 {
+    background-color: #deeced;
+  }
+  /* line 19, ../sass/partials/module/partials/_campaigns.scss */
+  .slide-list.campaign-list .content-block header h2:after {
+    content: "";
+  }
+}
+@media (min-width: 720px) {
+  /* line 5, ../sass/partials/module/partials/_campaigns.scss */
+  .slide-list.campaign-list .content-block {
+    display: none;
+  }
+  /* line 27, ../sass/partials/module/partials/_campaigns.scss */
+  .slide-list.campaign-list .content-block.active {
+    display: block;
+  }
+  /* line 29, ../sass/partials/module/partials/_campaigns.scss */
+  .slide-list.campaign-list .content-block.active .slide-content {
+    display: block;
   }
 }
 

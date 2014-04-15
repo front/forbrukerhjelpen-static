@@ -23,24 +23,10 @@
     @include breakpoint(0 ($break-small - 1px)) {
       display: block;
       border-bottom: 8px solid $color-grey-light;
-      header h2:after {
-        font-family: "forbrukerhjelpen" !important;
-        content: "t";
-        display: block;
-        vertical-align: middle;
-        font-size: em(26,16);
-        padding-left: 15px;
-        border-left: 1px solid $color-grey;
-        // height: 35px;
-        color: $color-grey;
-        position: absolute;
-        top: 25%;
-        right: 15px;
-      }
       .slide-content {
         display: none;
       }
-      &.open {
+      & {
         .slide-content {
           display: block;
         }

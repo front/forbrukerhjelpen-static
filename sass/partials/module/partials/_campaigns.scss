@@ -1,0 +1,35 @@
+.slide-list.campaign-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  .content-block {
+    list-style: none;
+    .slide-content {
+      display: none;
+    }
+    @include breakpoint(0 ($break-small - 1px)) {
+      display: block;
+      border-bottom: 8px solid $color-grey-light;
+      & {
+        .slide-content {
+          display: block;
+        }
+        header h2 {
+          background-color: $color-blue-light;
+          &:after {
+            content: "";
+          }
+        }
+      }
+    }
+    @include breakpoint($break-small) {
+      display: none;
+      &.active {
+        display: block;
+        .slide-content {
+          display: block;
+        }
+      }
+    }
+  }
+}
