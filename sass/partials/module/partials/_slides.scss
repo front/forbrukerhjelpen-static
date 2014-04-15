@@ -28,6 +28,9 @@
       margin-top: 50px;
       @include breakpoint($break-small) {
         margin-top: 70px;
+        &.big-title {
+          margin-top: 60px;
+        }
       }
       width: 100%;
       text-align: center;
