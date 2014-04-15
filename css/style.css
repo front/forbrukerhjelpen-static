@@ -1794,25 +1794,28 @@ table tbody td small {
 .slide-header-block > div .menu-switch {
   position: absolute;
   left: 10px;
-  bottom: 10px;
+  top: 10px;
   height: 31px;
   z-index: 500;
 }
 @media (min-width: 720px) {
   /* line 65, ../sass/partials/module/partials/_slides.scss */
   .slide-header-block > div .menu-switch {
+    left: auto;
+    top: auto;
     right: 0;
+    bottom: 10px;
   }
 }
-/* line 74, ../sass/partials/module/partials/_slides.scss */
+/* line 77, ../sass/partials/module/partials/_slides.scss */
 .slide-header-block > div .menu-switch p {
   float: right;
 }
-/* line 77, ../sass/partials/module/partials/_slides.scss */
+/* line 80, ../sass/partials/module/partials/_slides.scss */
 .slide-header-block > div .menu-switch span.menu-label {
   color: #ffffff;
 }
-/* line 80, ../sass/partials/module/partials/_slides.scss */
+/* line 83, ../sass/partials/module/partials/_slides.scss */
 .slide-header-block > div .menu-switch .switch {
   color: #6f839a;
   cursor: pointer;
@@ -1828,38 +1831,38 @@ table tbody td small {
   -o-transition: .15s ease;
   transition: .15s ease;
 }
-/* line 96, ../sass/partials/module/partials/_slides.scss */
+/* line 99, ../sass/partials/module/partials/_slides.scss */
 .slide-header-block > div .menu-switch input[type="radio"]:checked + .switch {
   color: #fff;
   padding-left: 1em;
   padding-right: 1em;
 }
-/* line 102, ../sass/partials/module/partials/_slides.scss */
+/* line 105, ../sass/partials/module/partials/_slides.scss */
 .slide-header-block > div .menu-switch input[type="radio"]:checked + .switch--on {
   background-color: #7eab55;
 }
-/* line 106, ../sass/partials/module/partials/_slides.scss */
+/* line 109, ../sass/partials/module/partials/_slides.scss */
 .slide-header-block > div .menu-switch input[type="radio"]:checked + .switch--off {
   background-color: #dd4a38;
 }
-/* line 113, ../sass/partials/module/partials/_slides.scss */
+/* line 116, ../sass/partials/module/partials/_slides.scss */
 .slide-header-block .slide-nav {
   position: relative;
   height: 75px;
   display: none;
 }
-/* line 118, ../sass/partials/module/partials/_slides.scss */
+/* line 121, ../sass/partials/module/partials/_slides.scss */
 .slide-header-block .slide-nav.campaigns.closed {
   display: none;
 }
 @media (min-width: 720px) {
-  /* line 113, ../sass/partials/module/partials/_slides.scss */
+  /* line 116, ../sass/partials/module/partials/_slides.scss */
   .slide-header-block .slide-nav {
     display: block;
   }
 }
 @media (min-width: 0) and (max-width: 719px) {
-  /* line 126, ../sass/partials/module/partials/_slides.scss */
+  /* line 129, ../sass/partials/module/partials/_slides.scss */
   .slide-header-block .slide-nav.campaigns {
     position: absolute;
     left: 0;
@@ -1869,13 +1872,13 @@ table tbody td small {
     z-index: 100;
     display: none;
   }
-  /* line 135, ../sass/partials/module/partials/_slides.scss */
+  /* line 138, ../sass/partials/module/partials/_slides.scss */
   .slide-header-block .slide-nav.campaigns ul {
     list-style: none;
     padding: 0px;
     margin: -0px;
   }
-  /* line 139, ../sass/partials/module/partials/_slides.scss */
+  /* line 142, ../sass/partials/module/partials/_slides.scss */
   .slide-header-block .slide-nav.campaigns ul li {
     display: block;
     float: none;
@@ -1883,11 +1886,11 @@ table tbody td small {
     border-top: 1px solid #7b4970;
     background-color: #692f59;
   }
-  /* line 145, ../sass/partials/module/partials/_slides.scss */
+  /* line 148, ../sass/partials/module/partials/_slides.scss */
   .slide-header-block .slide-nav.campaigns ul li.muted {
     display: none;
   }
-  /* line 148, ../sass/partials/module/partials/_slides.scss */
+  /* line 151, ../sass/partials/module/partials/_slides.scss */
   .slide-header-block .slide-nav.campaigns ul li a {
     display: block;
     padding: 30px;
@@ -1899,7 +1902,7 @@ table tbody td small {
     background-position: right 60px center;
     background-size: 65px 54px;
   }
-  /* line 156, ../sass/partials/module/partials/_slides.scss */
+  /* line 159, ../sass/partials/module/partials/_slides.scss */
   .slide-header-block .slide-nav.campaigns ul li a:after {
     display: block;
     float: right;
@@ -1911,26 +1914,26 @@ table tbody td small {
     font-size: 1.625em;
     color: #7b4970;
   }
-  /* line 175, ../sass/partials/module/partials/_slides.scss */
+  /* line 178, ../sass/partials/module/partials/_slides.scss */
   .slide-header-block .slide-nav .menu-open .main-menu {
     display: block;
   }
-  /* line 178, ../sass/partials/module/partials/_slides.scss */
+  /* line 181, ../sass/partials/module/partials/_slides.scss */
   .slide-header-block .slide-nav .footer .main-menu {
     display: none;
   }
 }
-/* line 184, ../sass/partials/module/partials/_slides.scss */
+/* line 187, ../sass/partials/module/partials/_slides.scss */
 .slide-header-block ul {
   margin-top: 25px;
 }
-/* line 186, ../sass/partials/module/partials/_slides.scss */
+/* line 189, ../sass/partials/module/partials/_slides.scss */
 .slide-header-block ul li {
   display: block;
   float: left;
   width: 12.5%;
 }
-/* line 190, ../sass/partials/module/partials/_slides.scss */
+/* line 193, ../sass/partials/module/partials/_slides.scss */
 .slide-header-block ul li a {
   display: block;
   border-left: 1px solid #ccc;
@@ -1942,37 +1945,37 @@ table tbody td small {
   color: black;
   text-decoration: none;
 }
-/* line 201, ../sass/partials/module/partials/_slides.scss */
+/* line 204, ../sass/partials/module/partials/_slides.scss */
 .slide-header-block ul li:first-child a {
   border-left: none;
 }
-/* line 204, ../sass/partials/module/partials/_slides.scss */
+/* line 207, ../sass/partials/module/partials/_slides.scss */
 .slide-header-block ul li.active a, .slide-header-block ul li a:hover {
   color: #692f59;
   text-decoration: underline;
 }
 
-/* line 213, ../sass/partials/module/partials/_slides.scss */
+/* line 216, ../sass/partials/module/partials/_slides.scss */
 .slide-list {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
 }
-/* line 217, ../sass/partials/module/partials/_slides.scss */
+/* line 220, ../sass/partials/module/partials/_slides.scss */
 .slide-list .content-block {
   list-style: none;
 }
-/* line 219, ../sass/partials/module/partials/_slides.scss */
+/* line 222, ../sass/partials/module/partials/_slides.scss */
 .slide-list .content-block .slide-content {
   display: none;
 }
 @media (min-width: 0) and (max-width: 719px) {
-  /* line 217, ../sass/partials/module/partials/_slides.scss */
+  /* line 220, ../sass/partials/module/partials/_slides.scss */
   .slide-list .content-block {
     display: block;
     border-bottom: 8px solid #ededed;
   }
-  /* line 225, ../sass/partials/module/partials/_slides.scss */
+  /* line 228, ../sass/partials/module/partials/_slides.scss */
   .slide-list .content-block header h2:after {
     font-family: "forbrukerhjelpen" !important;
     content: "t";
@@ -1986,29 +1989,29 @@ table tbody td small {
     top: 25%;
     right: 15px;
   }
-  /* line 241, ../sass/partials/module/partials/_slides.scss */
+  /* line 244, ../sass/partials/module/partials/_slides.scss */
   .slide-list .content-block.open .slide-content {
     display: block;
   }
-  /* line 244, ../sass/partials/module/partials/_slides.scss */
+  /* line 247, ../sass/partials/module/partials/_slides.scss */
   .slide-list .content-block.open header h2 {
     background-color: #deeced;
   }
-  /* line 246, ../sass/partials/module/partials/_slides.scss */
+  /* line 249, ../sass/partials/module/partials/_slides.scss */
   .slide-list .content-block.open header h2:after {
     content: "u";
   }
 }
 @media (min-width: 720px) {
-  /* line 217, ../sass/partials/module/partials/_slides.scss */
+  /* line 220, ../sass/partials/module/partials/_slides.scss */
   .slide-list .content-block {
     display: none;
   }
-  /* line 254, ../sass/partials/module/partials/_slides.scss */
+  /* line 257, ../sass/partials/module/partials/_slides.scss */
   .slide-list .content-block.active {
     display: block;
   }
-  /* line 256, ../sass/partials/module/partials/_slides.scss */
+  /* line 259, ../sass/partials/module/partials/_slides.scss */
   .slide-list .content-block.active .slide-content {
     display: block;
   }
