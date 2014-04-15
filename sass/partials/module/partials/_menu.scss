@@ -117,7 +117,7 @@
 	}
 }
 
-.menu-toggle, .bank-menu-toggle {
+.menu-toggle {
 	float: right;
 	border: 2px solid #ccc;
 	padding: 6px 6px;
@@ -156,22 +156,6 @@
 		}
 	}
 
-	&.campaigns {
-		position: absolute;
-		right: 20px;
-		bottom: 10px;
-		border: 2px solid #fff;
-		span {
-			font-size: em(12,16px);
-			color: #fff;
-		}
-		div span {
-			background-color: #fff;
-		}
-
-
-
-	}
 }
 
 
