@@ -970,7 +970,7 @@ a {
 /* line 32, ../sass/partials/module/partials/_footer.scss */
 .footer .main-logo {
   float: left;
-  margin-top: 25px;
+  margin-top: 50px;
 }
 @media (min-width: 720px) {
   /* line 32, ../sass/partials/module/partials/_footer.scss */
