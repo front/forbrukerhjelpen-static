@@ -46,6 +46,7 @@ table {
           img {
             width: auto;
             max-width: auto;
+            max-height: 70px;
             height: auto;
             margin: auto;
             // position: absolute;
@@ -63,6 +64,15 @@ table {
           margin-left: -15px;
           width: 30px;
           height: 30px;
+        }
+        &.overflow {
+          img {
+            width: auto;
+            max-width: auto;
+            max-height: 70px;
+            height: auto;
+            margin: auto;
+          }
         }
       }
 
