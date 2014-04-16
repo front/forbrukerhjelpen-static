@@ -1677,12 +1677,13 @@ table tbody td {
   table tbody td.overflow img {
     width: auto;
     max-width: auto;
+    max-height: 70px;
     height: auto;
     margin: auto;
   }
 }
 @media (min-width: 0) and (max-width: 959px) {
-  /* line 58, ../sass/partials/module/partials/_tables.scss */
+  /* line 59, ../sass/partials/module/partials/_tables.scss */
   table tbody td.overlay img {
     position: absolute;
     z-index: 10;
@@ -1692,13 +1693,21 @@ table tbody td {
     width: 30px;
     height: 30px;
   }
+  /* line 69, ../sass/partials/module/partials/_tables.scss */
+  table tbody td.overflow img {
+    width: auto;
+    max-width: auto;
+    max-height: 70px;
+    height: auto;
+    margin: auto;
+  }
 }
-/* line 69, ../sass/partials/module/partials/_tables.scss */
+/* line 79, ../sass/partials/module/partials/_tables.scss */
 table tbody td strong {
   font-weight: 600;
   color: #692f59;
 }
-/* line 73, ../sass/partials/module/partials/_tables.scss */
+/* line 83, ../sass/partials/module/partials/_tables.scss */
 table tbody td small {
   font-size: 0.7em;
   color: #787878;
@@ -2313,7 +2322,7 @@ table tbody td small {
   }
   /* line 35, ../sass/partials/module/partials/_banks.scss */
   .banks-list .content-block header h2:after {
-    content: "u";
+    content: "";
   }
 }
 @media (min-width: 720px) {
