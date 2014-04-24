@@ -52,6 +52,10 @@
     @include breakpoint($break-large) {
       float: left;
       max-width: 50%;
+      &:nth-child(odd) {
+        clear: both;
+      }
+
 
       table {
         width: auto;
