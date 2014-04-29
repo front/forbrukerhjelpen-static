@@ -49,21 +49,22 @@ table {
             max-height: 70px;
             height: auto;
             margin: auto;
-            // position: absolute;
-            // z-index: 1000;
-            // top: 20px;
           }
         }
       }
       @include breakpoint(0 ($break-medium - 1px)) {
+        &.overlay {
+          position: relative;
+          text-align: center;
+        }
+
         &.overlay img {
-          position: absolute;
-          z-index: 10;
-          top: 7px;
-          left: 50%;
-          margin-left: -15px;
+          position: relative;
+          z-index: 2;
+          display: inline-block;
           width: 30px;
           height: 30px;
+          margin-bottom: -15px;
         }
         &.overflow {
           img {

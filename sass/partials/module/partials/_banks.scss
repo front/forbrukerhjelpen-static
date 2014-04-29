@@ -12,6 +12,17 @@
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
+
+  tbody {
+    td.overflow {
+      img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+      }
+    }
+  }
+
   .content-block {
     list-style: none;
     @include breakpoint(0 ($break-small - 1px)) {
@@ -47,6 +58,16 @@
           display: block;
         }
       }
+
+      tbody {
+        td.overflow {
+          img {
+            width: auto;
+            height: auto;
+            max-width: 100%;
+          }
+        }
+      }
     }
 
     @include breakpoint($break-large) {
@@ -58,7 +79,7 @@
 
 
       table {
-        width: auto;
+        width: 100%;
         border-spacing: 0px;
         padding: 5px;
         thead, tfoot {
@@ -93,6 +114,14 @@
             border-bottom: 1px solid $color-grey;
             padding: 5px;
             font-size: em(14,16);
+
+            &.overflow {
+              img {
+                width: 100% !important;
+                height: auto !important;
+                max-width: 100% !important;
+              }
+            }
 
             strong {
               font-weight: 600;
