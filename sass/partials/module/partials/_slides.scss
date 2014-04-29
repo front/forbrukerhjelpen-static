@@ -184,6 +184,16 @@
 
       }
     }
+
+    .slide-nav.banks-slider {
+      ul {
+        li {
+          min-width: 12.5%;
+          width: auto;
+        }
+      }
+    }
+
     ul {
       margin-top: 25px;
       li {

@@ -1932,17 +1932,22 @@ table tbody td small {
     display: none;
   }
 }
-/* line 187, ../sass/partials/module/partials/_slides.scss */
+/* line 190, ../sass/partials/module/partials/_slides.scss */
+.slide-header-block .slide-nav.banks-slider ul li {
+  min-width: 12.5%;
+  width: auto;
+}
+/* line 197, ../sass/partials/module/partials/_slides.scss */
 .slide-header-block ul {
   margin-top: 25px;
 }
-/* line 189, ../sass/partials/module/partials/_slides.scss */
+/* line 199, ../sass/partials/module/partials/_slides.scss */
 .slide-header-block ul li {
   display: block;
   float: left;
   width: 12.5%;
 }
-/* line 193, ../sass/partials/module/partials/_slides.scss */
+/* line 203, ../sass/partials/module/partials/_slides.scss */
 .slide-header-block ul li a {
   display: block;
   border-left: 1px solid #ccc;
@@ -1954,37 +1959,37 @@ table tbody td small {
   color: black;
   text-decoration: none;
 }
-/* line 204, ../sass/partials/module/partials/_slides.scss */
+/* line 214, ../sass/partials/module/partials/_slides.scss */
 .slide-header-block ul li:first-child a {
   border-left: none;
 }
-/* line 207, ../sass/partials/module/partials/_slides.scss */
+/* line 217, ../sass/partials/module/partials/_slides.scss */
 .slide-header-block ul li.active a, .slide-header-block ul li a:hover {
   color: #692f59;
   text-decoration: underline;
 }
 
-/* line 216, ../sass/partials/module/partials/_slides.scss */
+/* line 226, ../sass/partials/module/partials/_slides.scss */
 .slide-list {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
 }
-/* line 220, ../sass/partials/module/partials/_slides.scss */
+/* line 230, ../sass/partials/module/partials/_slides.scss */
 .slide-list .content-block {
   list-style: none;
 }
-/* line 222, ../sass/partials/module/partials/_slides.scss */
+/* line 232, ../sass/partials/module/partials/_slides.scss */
 .slide-list .content-block .slide-content {
   display: none;
 }
 @media (min-width: 0) and (max-width: 719px) {
-  /* line 220, ../sass/partials/module/partials/_slides.scss */
+  /* line 230, ../sass/partials/module/partials/_slides.scss */
   .slide-list .content-block {
     display: block;
     border-bottom: 8px solid #ededed;
   }
-  /* line 228, ../sass/partials/module/partials/_slides.scss */
+  /* line 238, ../sass/partials/module/partials/_slides.scss */
   .slide-list .content-block header h2:after {
     font-family: "forbrukerhjelpen" !important;
     content: "t";
@@ -1998,29 +2003,29 @@ table tbody td small {
     top: 25%;
     right: 15px;
   }
-  /* line 244, ../sass/partials/module/partials/_slides.scss */
+  /* line 254, ../sass/partials/module/partials/_slides.scss */
   .slide-list .content-block.open .slide-content {
     display: block;
   }
-  /* line 247, ../sass/partials/module/partials/_slides.scss */
+  /* line 257, ../sass/partials/module/partials/_slides.scss */
   .slide-list .content-block.open header h2 {
     background-color: #deeced;
   }
-  /* line 249, ../sass/partials/module/partials/_slides.scss */
+  /* line 259, ../sass/partials/module/partials/_slides.scss */
   .slide-list .content-block.open header h2:after {
     content: "u";
   }
 }
 @media (min-width: 720px) {
-  /* line 220, ../sass/partials/module/partials/_slides.scss */
+  /* line 230, ../sass/partials/module/partials/_slides.scss */
   .slide-list .content-block {
     display: none;
   }
-  /* line 257, ../sass/partials/module/partials/_slides.scss */
+  /* line 267, ../sass/partials/module/partials/_slides.scss */
   .slide-list .content-block.active {
     display: block;
   }
-  /* line 259, ../sass/partials/module/partials/_slides.scss */
+  /* line 269, ../sass/partials/module/partials/_slides.scss */
   .slide-list .content-block.active .slide-content {
     display: block;
   }
