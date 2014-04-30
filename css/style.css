@@ -1767,7 +1767,7 @@ table tbody td small {
   }
   /* line 31, ../sass/partials/module/partials/_slides.scss */
   .slide-header-block > div header.big-title {
-    margin-top: 60px;
+    margin-top: 40px;
   }
 }
 /* line 39, ../sass/partials/module/partials/_slides.scss */
@@ -2299,7 +2299,7 @@ table tbody td small {
 }
 /* line 18, ../sass/partials/module/partials/_banks.scss */
 .banks-list tbody td.overflow img {
-  width: 100%;
+  width: auto;
   height: auto;
   max-width: 100%;
 }
@@ -2422,12 +2422,12 @@ table tbody td small {
     height: auto !important;
     max-width: 100% !important;
   }
-  /* line 127, ../sass/partials/module/partials/_banks.scss */
+  /* line 126, ../sass/partials/module/partials/_banks.scss */
   .banks-list .content-block table tbody td strong {
     font-weight: 600;
     color: #692f59;
   }
-  /* line 131, ../sass/partials/module/partials/_banks.scss */
+  /* line 130, ../sass/partials/module/partials/_banks.scss */
   .banks-list .content-block table tbody td small {
     font-size: 0.7em;
     color: #787878;
