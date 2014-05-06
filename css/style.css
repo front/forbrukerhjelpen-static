@@ -1688,7 +1688,12 @@ table tbody td {
     position: relative;
     text-align: center;
   }
-  /* line 61, ../sass/partials/module/partials/_tables.scss */
+  /* line 59, ../sass/partials/module/partials/_tables.scss */
+  table tbody td.overlay.stars-rating {
+    padding-bottom: 20px;
+    padding-top: 0px;
+  }
+  /* line 65, ../sass/partials/module/partials/_tables.scss */
   table tbody td.overlay img {
     position: relative;
     z-index: 2;
@@ -1697,7 +1702,13 @@ table tbody td {
     height: 30px;
     margin-bottom: -15px;
   }
-  /* line 70, ../sass/partials/module/partials/_tables.scss */
+  /* line 74, ../sass/partials/module/partials/_tables.scss */
+  table tbody td.overlay.stars-rating img {
+    width: auto;
+    height: auto;
+    margin-bottom: -80px;
+  }
+  /* line 80, ../sass/partials/module/partials/_tables.scss */
   table tbody td.overflow img {
     width: auto;
     max-width: auto;
@@ -1706,12 +1717,12 @@ table tbody td {
     margin: auto;
   }
 }
-/* line 80, ../sass/partials/module/partials/_tables.scss */
+/* line 90, ../sass/partials/module/partials/_tables.scss */
 table tbody td strong {
   font-weight: 600;
   color: #692f59;
 }
-/* line 84, ../sass/partials/module/partials/_tables.scss */
+/* line 94, ../sass/partials/module/partials/_tables.scss */
 table tbody td small {
   font-size: 0.7em;
   color: #787878;

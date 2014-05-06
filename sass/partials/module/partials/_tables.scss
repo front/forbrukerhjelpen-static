@@ -56,6 +56,10 @@ table {
         &.overlay {
           position: relative;
           text-align: center;
+          &.stars-rating {
+            padding-bottom: 20px;
+            padding-top: 0px;
+          }
         }
 
         &.overlay img {
@@ -65,6 +69,12 @@ table {
           width: 30px;
           height: 30px;
           margin-bottom: -15px;
+        }
+
+        &.overlay.stars-rating img {
+          width: auto;
+          height: auto;
+          margin-bottom: -80px;
         }
         &.overflow {
           img {
