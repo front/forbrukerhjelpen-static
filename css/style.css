@@ -2470,7 +2470,7 @@ table tbody td small {
   /* line 5, ../sass/partials/module/partials/_campaigns.scss */
   .slide-list.campaign-list .content-block {
     display: block;
-    border-bottom: 8px solid #ededed;
+    border-bottom: 0;
   }
   /* line 14, ../sass/partials/module/partials/_campaigns.scss */
   .slide-list.campaign-list .content-block .slide-content {

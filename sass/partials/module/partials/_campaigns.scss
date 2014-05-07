@@ -9,7 +9,7 @@
     }
     @include breakpoint(0 ($break-small - 1px)) {
       display: block;
-      border-bottom: 8px solid $color-grey-light;
+      border-bottom: 0;
       & {
         .slide-content {
           display: block;
