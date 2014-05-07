@@ -1731,20 +1731,27 @@ table tbody td small {
 /* line 2, ../sass/partials/module/partials/_slides.scss */
 .slide-header-block {
   position: relative;
+  display: none;
 }
-/* line 5, ../sass/partials/module/partials/_slides.scss */
+@media (min-width: 480px) {
+  /* line 2, ../sass/partials/module/partials/_slides.scss */
+  .slide-header-block {
+    display: block;
+  }
+}
+/* line 9, ../sass/partials/module/partials/_slides.scss */
 .slide-header-block > div {
   position: relative;
   overflow: hidden;
   height: 260px;
 }
 @media (min-width: 480px) {
-  /* line 5, ../sass/partials/module/partials/_slides.scss */
+  /* line 9, ../sass/partials/module/partials/_slides.scss */
   .slide-header-block > div {
     height: 345px;
   }
 }
-/* line 12, ../sass/partials/module/partials/_slides.scss */
+/* line 16, ../sass/partials/module/partials/_slides.scss */
 .slide-header-block > div .back-img {
   position: absolute;
   z-index: 1;
@@ -1752,17 +1759,17 @@ table tbody td small {
   top: 0;
   display: none;
 }
-/* line 18, ../sass/partials/module/partials/_slides.scss */
+/* line 22, ../sass/partials/module/partials/_slides.scss */
 .slide-header-block > div .back-img.right {
   right: 0;
 }
 @media (min-width: 720px) {
-  /* line 12, ../sass/partials/module/partials/_slides.scss */
+  /* line 16, ../sass/partials/module/partials/_slides.scss */
   .slide-header-block > div .back-img {
     display: block;
   }
 }
-/* line 25, ../sass/partials/module/partials/_slides.scss */
+/* line 29, ../sass/partials/module/partials/_slides.scss */
 .slide-header-block > div header {
   position: absolute;
   z-index: 3;
@@ -1772,16 +1779,16 @@ table tbody td small {
   color: white;
 }
 @media (min-width: 720px) {
-  /* line 25, ../sass/partials/module/partials/_slides.scss */
+  /* line 29, ../sass/partials/module/partials/_slides.scss */
   .slide-header-block > div header {
     margin-top: 70px;
   }
-  /* line 31, ../sass/partials/module/partials/_slides.scss */
+  /* line 35, ../sass/partials/module/partials/_slides.scss */
   .slide-header-block > div header.big-title {
     margin-top: 40px;
   }
 }
-/* line 39, ../sass/partials/module/partials/_slides.scss */
+/* line 43, ../sass/partials/module/partials/_slides.scss */
 .slide-header-block > div h1, .slide-header-block > div h2 {
   text-transform: uppercase;
   color: white;
@@ -1789,12 +1796,12 @@ table tbody td small {
   margin-bottom: 0;
 }
 @media (min-width: 480px) {
-  /* line 39, ../sass/partials/module/partials/_slides.scss */
+  /* line 43, ../sass/partials/module/partials/_slides.scss */
   .slide-header-block > div h1, .slide-header-block > div h2 {
     font-size: 4.25em;
   }
 }
-/* line 48, ../sass/partials/module/partials/_slides.scss */
+/* line 52, ../sass/partials/module/partials/_slides.scss */
 .slide-header-block > div h2 {
   text-transform: uppercase;
   color: white;
@@ -1803,18 +1810,18 @@ table tbody td small {
   margin-bottom: 0;
 }
 @media (min-width: 480px) {
-  /* line 48, ../sass/partials/module/partials/_slides.scss */
+  /* line 52, ../sass/partials/module/partials/_slides.scss */
   .slide-header-block > div h2 {
     font-size: 3.375em;
     margin-bottom: 0.2em;
   }
 }
-/* line 59, ../sass/partials/module/partials/_slides.scss */
+/* line 63, ../sass/partials/module/partials/_slides.scss */
 .slide-header-block > div span {
   font-style: italic;
   font-size: 1.375em;
 }
-/* line 65, ../sass/partials/module/partials/_slides.scss */
+/* line 69, ../sass/partials/module/partials/_slides.scss */
 .slide-header-block > div .menu-switch {
   position: absolute;
   left: 10px;
@@ -1823,7 +1830,7 @@ table tbody td small {
   z-index: 500;
 }
 @media (min-width: 720px) {
-  /* line 65, ../sass/partials/module/partials/_slides.scss */
+  /* line 69, ../sass/partials/module/partials/_slides.scss */
   .slide-header-block > div .menu-switch {
     left: auto;
     top: auto;
@@ -1831,15 +1838,15 @@ table tbody td small {
     bottom: 10px;
   }
 }
-/* line 77, ../sass/partials/module/partials/_slides.scss */
+/* line 81, ../sass/partials/module/partials/_slides.scss */
 .slide-header-block > div .menu-switch p {
   float: right;
 }
-/* line 80, ../sass/partials/module/partials/_slides.scss */
+/* line 84, ../sass/partials/module/partials/_slides.scss */
 .slide-header-block > div .menu-switch span.menu-label {
   color: #ffffff;
 }
-/* line 83, ../sass/partials/module/partials/_slides.scss */
+/* line 87, ../sass/partials/module/partials/_slides.scss */
 .slide-header-block > div .menu-switch .switch {
   color: #6f839a;
   cursor: pointer;
@@ -1855,38 +1862,38 @@ table tbody td small {
   -o-transition: .15s ease;
   transition: .15s ease;
 }
-/* line 99, ../sass/partials/module/partials/_slides.scss */
+/* line 103, ../sass/partials/module/partials/_slides.scss */
 .slide-header-block > div .menu-switch input[type="radio"]:checked + .switch {
   color: #fff;
   padding-left: 1em;
   padding-right: 1em;
 }
-/* line 105, ../sass/partials/module/partials/_slides.scss */
+/* line 109, ../sass/partials/module/partials/_slides.scss */
 .slide-header-block > div .menu-switch input[type="radio"]:checked + .switch--on {
   background-color: #7eab55;
 }
-/* line 109, ../sass/partials/module/partials/_slides.scss */
+/* line 113, ../sass/partials/module/partials/_slides.scss */
 .slide-header-block > div .menu-switch input[type="radio"]:checked + .switch--off {
   background-color: #dd4a38;
 }
-/* line 116, ../sass/partials/module/partials/_slides.scss */
+/* line 120, ../sass/partials/module/partials/_slides.scss */
 .slide-header-block .slide-nav {
   position: relative;
   height: 75px;
   display: none;
 }
-/* line 121, ../sass/partials/module/partials/_slides.scss */
+/* line 125, ../sass/partials/module/partials/_slides.scss */
 .slide-header-block .slide-nav.campaigns.closed {
   display: none;
 }
 @media (min-width: 720px) {
-  /* line 116, ../sass/partials/module/partials/_slides.scss */
+  /* line 120, ../sass/partials/module/partials/_slides.scss */
   .slide-header-block .slide-nav {
     display: block;
   }
 }
 @media (min-width: 0) and (max-width: 719px) {
-  /* line 129, ../sass/partials/module/partials/_slides.scss */
+  /* line 133, ../sass/partials/module/partials/_slides.scss */
   .slide-header-block .slide-nav.campaigns {
     position: absolute;
     left: 0;
@@ -1896,13 +1903,13 @@ table tbody td small {
     z-index: 100;
     display: none;
   }
-  /* line 138, ../sass/partials/module/partials/_slides.scss */
+  /* line 142, ../sass/partials/module/partials/_slides.scss */
   .slide-header-block .slide-nav.campaigns ul {
     list-style: none;
     padding: 0px;
     margin: -0px;
   }
-  /* line 142, ../sass/partials/module/partials/_slides.scss */
+  /* line 146, ../sass/partials/module/partials/_slides.scss */
   .slide-header-block .slide-nav.campaigns ul li {
     display: block;
     float: none;
@@ -1910,11 +1917,11 @@ table tbody td small {
     border-top: 1px solid #7b4970;
     background-color: #692f59;
   }
-  /* line 148, ../sass/partials/module/partials/_slides.scss */
+  /* line 152, ../sass/partials/module/partials/_slides.scss */
   .slide-header-block .slide-nav.campaigns ul li.muted {
     display: none;
   }
-  /* line 151, ../sass/partials/module/partials/_slides.scss */
+  /* line 155, ../sass/partials/module/partials/_slides.scss */
   .slide-header-block .slide-nav.campaigns ul li a {
     display: block;
     padding: 30px;
@@ -1926,7 +1933,7 @@ table tbody td small {
     background-position: right 60px center;
     background-size: 65px 54px;
   }
-  /* line 159, ../sass/partials/module/partials/_slides.scss */
+  /* line 163, ../sass/partials/module/partials/_slides.scss */
   .slide-header-block .slide-nav.campaigns ul li a:after {
     display: block;
     float: right;
@@ -1938,31 +1945,31 @@ table tbody td small {
     font-size: 1.625em;
     color: #7b4970;
   }
-  /* line 178, ../sass/partials/module/partials/_slides.scss */
+  /* line 182, ../sass/partials/module/partials/_slides.scss */
   .slide-header-block .slide-nav .menu-open .main-menu {
     display: block;
   }
-  /* line 181, ../sass/partials/module/partials/_slides.scss */
+  /* line 185, ../sass/partials/module/partials/_slides.scss */
   .slide-header-block .slide-nav .footer .main-menu {
     display: none;
   }
 }
-/* line 190, ../sass/partials/module/partials/_slides.scss */
+/* line 194, ../sass/partials/module/partials/_slides.scss */
 .slide-header-block .slide-nav.banks-slider ul li {
   min-width: 12.5%;
   width: auto;
 }
-/* line 197, ../sass/partials/module/partials/_slides.scss */
+/* line 201, ../sass/partials/module/partials/_slides.scss */
 .slide-header-block ul {
   margin-top: 25px;
 }
-/* line 199, ../sass/partials/module/partials/_slides.scss */
+/* line 203, ../sass/partials/module/partials/_slides.scss */
 .slide-header-block ul li {
   display: block;
   float: left;
   width: 12.5%;
 }
-/* line 203, ../sass/partials/module/partials/_slides.scss */
+/* line 207, ../sass/partials/module/partials/_slides.scss */
 .slide-header-block ul li a {
   display: block;
   border-left: 1px solid #ccc;
@@ -1974,37 +1981,37 @@ table tbody td small {
   color: black;
   text-decoration: none;
 }
-/* line 214, ../sass/partials/module/partials/_slides.scss */
+/* line 218, ../sass/partials/module/partials/_slides.scss */
 .slide-header-block ul li:first-child a {
   border-left: none;
 }
-/* line 217, ../sass/partials/module/partials/_slides.scss */
+/* line 221, ../sass/partials/module/partials/_slides.scss */
 .slide-header-block ul li.active a, .slide-header-block ul li a:hover {
   color: #692f59;
   text-decoration: underline;
 }
 
-/* line 226, ../sass/partials/module/partials/_slides.scss */
+/* line 230, ../sass/partials/module/partials/_slides.scss */
 .slide-list {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
 }
-/* line 230, ../sass/partials/module/partials/_slides.scss */
+/* line 234, ../sass/partials/module/partials/_slides.scss */
 .slide-list .content-block {
   list-style: none;
 }
-/* line 232, ../sass/partials/module/partials/_slides.scss */
+/* line 236, ../sass/partials/module/partials/_slides.scss */
 .slide-list .content-block .slide-content {
   display: none;
 }
 @media (min-width: 0) and (max-width: 719px) {
-  /* line 230, ../sass/partials/module/partials/_slides.scss */
+  /* line 234, ../sass/partials/module/partials/_slides.scss */
   .slide-list .content-block {
     display: block;
     border-bottom: 8px solid #ededed;
   }
-  /* line 238, ../sass/partials/module/partials/_slides.scss */
+  /* line 242, ../sass/partials/module/partials/_slides.scss */
   .slide-list .content-block header h2:after {
     font-family: "forbrukerhjelpen" !important;
     content: "t";
@@ -2018,29 +2025,29 @@ table tbody td small {
     top: 25%;
     right: 15px;
   }
-  /* line 254, ../sass/partials/module/partials/_slides.scss */
+  /* line 258, ../sass/partials/module/partials/_slides.scss */
   .slide-list .content-block.open .slide-content {
     display: block;
   }
-  /* line 257, ../sass/partials/module/partials/_slides.scss */
+  /* line 261, ../sass/partials/module/partials/_slides.scss */
   .slide-list .content-block.open header h2 {
     background-color: #deeced;
   }
-  /* line 259, ../sass/partials/module/partials/_slides.scss */
+  /* line 263, ../sass/partials/module/partials/_slides.scss */
   .slide-list .content-block.open header h2:after {
     content: "u";
   }
 }
 @media (min-width: 720px) {
-  /* line 230, ../sass/partials/module/partials/_slides.scss */
+  /* line 234, ../sass/partials/module/partials/_slides.scss */
   .slide-list .content-block {
     display: none;
   }
-  /* line 267, ../sass/partials/module/partials/_slides.scss */
+  /* line 271, ../sass/partials/module/partials/_slides.scss */
   .slide-list .content-block.active {
     display: block;
   }
-  /* line 269, ../sass/partials/module/partials/_slides.scss */
+  /* line 273, ../sass/partials/module/partials/_slides.scss */
   .slide-list .content-block.active .slide-content {
     display: block;
   }

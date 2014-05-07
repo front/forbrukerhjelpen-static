@@ -1,6 +1,10 @@
 
 .slide-header-block {
   position: relative;
+  display: none;
+  @include breakpoint($break-xsmall) {
+    display: block;
+  }
 
   &>div {
     position: relative;
