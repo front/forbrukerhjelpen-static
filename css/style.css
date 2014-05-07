@@ -812,7 +812,7 @@ a {
     text-align: left;
     cursor: pointer;
     font-size: 1.25em;
-    color: black;
+    color: #642f53;
     font-weight: 600;
     margin-bottom: 0;
     padding: 20px 64px 20px 20px;
@@ -1664,7 +1664,7 @@ table tbody td {
 @media (min-width: 0) and (max-width: 719px) {
   /* line 31, ../sass/partials/module/partials/_tables.scss */
   table tbody td {
-    padding: 8px;
+    padding: 12px;
     font-size: 0.9375em;
   }
   /* line 42, ../sass/partials/module/partials/_tables.scss */
